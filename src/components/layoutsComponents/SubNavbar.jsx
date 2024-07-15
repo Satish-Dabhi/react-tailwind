@@ -1,55 +1,57 @@
 import { Typography } from "@material-tailwind/react";
-import { FaLinkedin } from "react-icons/fa6";
+// import { FaLinkedin } from "react-icons/fa6";
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
-const SubNavbar = ({color}) => {
-  const knowledgeColor = color ? 'bg-primary text-white' :null;
-  const socialColorFill = knowledgeColor ? 'white' :'#339FDE';
-  const socialStroke = knowledgeColor ? 'black' : '#339FDE';
+const SubNavbar = ({ color }) => {
+  const knowledgeColor = color ? "bg-primary text-white" : null;
+  const socialColorFill = knowledgeColor ? "white" : "#339FDE";
+  // const socialStroke = knowledgeColor ? 'black' : '#339FDE';
   return (
-    <div className={` flex p-5 w-full md:w-full  flex-col justify-center ${knowledgeColor} border-b border-blue-gray-50 py-2 md:flex-row md:justify-between`}>
-      <div className="container mx-auto  flex flex-col  md:items-center justify-start md:flex-row md:justify-between">
+    <div
+      className={`flex w-full md:w-full  flex-col justify-center ${knowledgeColor} border-b border-blue-gray-50 py-6 md:flex-row md:justify-between`}
+    >
+      <div className="container mx-auto  flex flex-col  md:items-center justify-start md:flex-row">
         <Typography
           variant="small"
           className="mb-4  text-center font-normal text-blue-gray-900 md:mb-0 flex items-center gap-1"
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="15"
+            viewBox="0 0 20 15"
             fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke={socialColorFill}
-            className="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              d="M2 14.759C1.45 14.759 0.979333 14.5833 0.588 14.2318C0.196667 13.8804 0.000666667 13.4574 0 12.9629V2.18667C0 1.69276 0.196 1.27009 0.588 0.918661C0.98 0.567236 1.45067 0.391224 2 0.390625H18C18.55 0.390625 19.021 0.566637 19.413 0.918661C19.805 1.27069 20.0007 1.69335 20 2.18667V12.9629C20 13.4568 19.8043 13.8798 19.413 14.2318C19.0217 14.5839 18.5507 14.7596 18 14.759H2ZM10 8.47282L18 3.98271V2.18667L10 6.67677L2 2.18667V3.98271L10 8.47282Z"
+              fill="#339FDE"
             />
           </svg>
-    <span className={`text-${socialColorFill}`}> epiidosisinvestment@gmail.com</span>     
+
+          <span className={`text-${socialColorFill} pl-2`}>
+            info@epiidosisinvestments.com
+          </span>
         </Typography>
         <Typography
           variant="small"
-          className="mb-4 text-center flex items-center font-normal text-blue-gray-900 md:mb-0"
+          className="mb-4 text-center flex items-center font-normal text-blue-gray-900 md:mb-0 pl-8"
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="17"
+            viewBox="0 0 18 17"
             fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke={socialColorFill}
-            className="w-6 h-6 "
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+              d="M3.62 7.58934C5.06 10.1307 7.38 12.2052 10.21 13.5073L12.41 11.5317C12.68 11.2892 13.08 11.2084 13.43 11.3161C14.55 11.6484 15.76 11.828 17 11.828C17.55 11.828 18 12.2321 18 12.726V15.8601C18 16.354 17.55 16.7581 17 16.7581C7.61 16.7581 0 9.92419 0 1.49177C0 0.99786 0.45 0.59375 1 0.59375H4.5C5.05 0.59375 5.5 0.99786 5.5 1.49177C5.5 2.6143 5.7 3.69192 6.07 4.69771C6.18 5.01202 6.1 5.36224 5.82 5.61369L3.62 7.58934Z"
+              fill="#339FDE"
             />
           </svg>
-         <span className={`text-${socialColorFill}`} >9756545662</span> 
+
+          <span className={`text-${socialColorFill} pl-2`}>+971 (04) 884-8644</span>
         </Typography>
-        <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
+        {/* <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
           <p
            
             className="opacity-80 transition-opacity hover:opacity-100"
@@ -107,7 +109,7 @@ const SubNavbar = ({color}) => {
           >
             <FaLinkedin className="h-5 w-5" color={socialColorFill} />
           </Typography>
-        </div>
+        </div> */}
       </div>
     </div>
   );

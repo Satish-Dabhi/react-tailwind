@@ -9,10 +9,9 @@ import {
 export function CardDefault({ data }) {
   console.log(data);
   const rendercardData = data.map((items, index) => {
-    console.log(items.title);
-    console.log(index);
+
     return (
-      <div key={index} className="mt-5 flex  ">
+      <div key={index} className="mt-5 flex mb-7">
         <div className="mt-6 w-auto ">
           <div className="relative h-56 p-5">
             <img src={items?.img} alt="card-image" />
@@ -22,7 +21,7 @@ export function CardDefault({ data }) {
             <Typography className="font-inter">{items?.content}</Typography>
           </CardBody>
           <CardFooter className="pt-0">
-            <button className="bg-blue-gray-800 flex items-center font-inria gap-2 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+            <button className="bg-gradient-to-r from-[#339FDE] to-[#1C5678]  rounded-none flex items-center font-inria gap-2 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
               Read More{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"

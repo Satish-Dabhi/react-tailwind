@@ -47,22 +47,19 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = navListMenuItems.map(({ title, link }, key) => (
-    <Link to={link} key={key}> 
+    <Link to={link} key={key}>
       <MenuItem className="flex items-center gap-3 rounded-lg">
-      
         <div>
           <Typography
             variant="h6"
             color="blue-gray"
-            className="flex items-center text-sm font-bold"
+            className="flex items-center text-sm font-bold font-inria text-xl font-normal"
           >
             {title}
           </Typography>
-         
         </div>
       </MenuItem>
-      </Link>
-    
+    </Link>
   ));
 
   return (
@@ -75,9 +72,9 @@ function NavListMenu() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium">
+          <Typography as="div" variant="small" className="font-medium font-inria">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 font-inria text-xl font-normal"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -98,7 +95,7 @@ function NavListMenu() {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0 font-inria">
             {renderItems}
           </ul>
         </MenuList>
@@ -114,69 +111,64 @@ function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Link to={"/"}>
-        <Typography variant="small" color="blue-gray" className="font-medium">
+        <Typography variant="small" color="blue-gray" className="font-medium font-inria text-xl font-normal">
           <ListItem className="flex items-center gap-2 py-2 pr-4">
             Home
           </ListItem>
         </Typography>
       </Link>
-      <Link to={'/aboutus'}>
-      <Typography variant="small" color="blue-gray" className="font-medium">
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          About Us
-        </ListItem>
-      </Typography>
-</Link>
-<Link to={'/industryinsight'}>
-      <Typography
-       
-       
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Industry Insights
-        </ListItem>
-      </Typography>
+      <Link to={"/aboutus"}>
+        <Typography variant="small" color="blue-gray" className="font-medium font-inria text-xl font-normal">
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+            About
+          </ListItem>
+        </Typography>
       </Link>
+      <Link to={"#"}>
+        <Typography variant="small" color="blue-gray" className="font-medium font-inria text-xl font-normal">
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Invest with Us
+          </ListItem>
+        </Typography>
+      </Link>
+      <Link to={"#"}>
+        <Typography variant="small" color="blue-gray" className="font-medium font-inria text-xl font-normal">
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Funding Solutions
+          </ListItem>
+        </Typography>
+      </Link>
+      {/* <Link to={"/industryinsight"}>
+        <Typography variant="small" color="blue-gray" className="font-medium font-inria">
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+            Industry Insights
+          </ListItem>
+        </Typography>
+      </Link> */}
 
       <NavListMenu />
-      <Link to={'/support'}>
-      <Typography
-       
-       
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Support
-        </ListItem>
-      </Typography>
+      {/* <Link to={"/support"}>
+        <Typography variant="small" color="blue-gray" className="font-medium font-inria">
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+            Support
+          </ListItem>
+        </Typography>
       </Link>
-      <Link to={'/contactus'}>
-      <Typography
-        
-      
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Contact Us
-        </ListItem>
-      </Typography>
-      </Link>
-
+      <Link to={"/contactus"}>
+        <Typography variant="small" color="blue-gray" className="font-medium font-inria">
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+            Contact Us
+          </ListItem>
+        </Typography>
+      </Link> */}
     </List>
   );
 }
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
-export function StickyNavbar({color}) {
+export function StickyNavbar({ color }) {
   const [openNav, setOpenNav] = React.useState(false);
-console.log(color)
+  console.log(color);
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -185,8 +177,8 @@ console.log(color)
   }, []);
 
   return (
-    <Navbar className={`mx-auto max-w-full px-4 py-2 bg-${color} rounded-none`}>
-      <div className="flex items-center justify-between text-blue-gray-900">
+    <Navbar className={`mx-auto max-w-full bg-${color} rounded-none px-4`}>
+      <div className="container flex items-center justify-between text-blue-gray-900 mx-auto">
         <Link to={"/"}>
           <img alt="logo" src={companyLogo} />
         </Link>
@@ -194,11 +186,11 @@ console.log(color)
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
-          <Button variant="outlined" size="sm" color="#339FDE">
-            Log In
+          <Button className="border-[#339FDE] text-[#339FDE] rounded-none font-inria px-[50px] py-[15px] normal-case text-xl font-normal" variant="outlined" size="sm" color="#339FDE">
+            Login
           </Button>
-          <Button size="sm" className="bg-primary">
-            Sign In
+          <Button size="sm" className="font-inria rounded-none bg-gradient-to-r from-[#339FDE] to-[#1C5678] px-[50px] py-[15px] normal-case text-xl font-normal">
+            Sign up
           </Button>
         </div>
         <IconButton
@@ -217,11 +209,11 @@ console.log(color)
       <Collapse open={openNav}>
         <NavList />
         <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button variant="outlined" size="sm" color="#339FDE" fullWidth>
-            Log In
+          <Button className="font-inria rounded-none px-[50px] py-[15px] normal-case text-xl font-normal" variant="outlined" size="sm" color="#339FDE" fullWidth>
+            Login
           </Button>
-          <Button className="bg-primary" size="sm" fullWidth>
-            Sign In
+          <Button className="font-inria rounded-none bg-gradient-to-r from-[#339FDE] to-[#1C5678] px-[50px] py-[15px] normal-case text-xl font-normal" size="sm" fullWidth>
+            Sign up
           </Button>
         </div>
       </Collapse>

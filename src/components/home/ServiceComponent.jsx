@@ -1,32 +1,37 @@
-import ButtonPrimaryUi from "../../ui/ButtonPrimaryUi";
-import ButtonSecondaryUi from "../../ui/ButtonSecondaryUi";
-import first from "/img/first.png";
-import second from "/img/second.png";
-import thirdservice from "/img/thirdservice.png";
-import fourthservice from "/img/fourthservice.png";
-import fifth from "/img/fifth.png";
-import sixthservice from "/img/sixthservice.png";
+// import first from "/img/first.png";
+// import second from "/img/second.png";
+import { Button } from "@material-tailwind/react";
+import assetMonitizationImg from "/img/asset-monitization.png";
+import loanStockImg from "/img/loan-stock.png";
+import structuredFinanceImg from "/img/structured-finance.png";
 const ServiceComponent = () => {
   return (
     <>
-      <div className=" bg-bgprimary p-5 md:mt-[7rem]">
+      <div className=" bg-bgprimary p-5">
         <div className="container mx-auto flex md:justify-center flex-wrap gap-12 md:gap-28 mt-12 mb-12 ">
-          <img alt="deal" src={first} className="md:h-[18rem]  " />
+          <img alt="deal" src={structuredFinanceImg} className="md:h-[18rem]  " />
           <div className="text-start text-wrap ">
             <p className="text-2xl md:text-4xl text-center md:text-start font-semibold font-inria">
-              Join Our Fundraising
+              Structured Finance
             </p>
-            <p className="text-2xl md:text-4xl font-semibold text-center md:text-start font-inria">
+            {/* <p className="text-2xl md:text-4xl font-semibold text-center md:text-start font-inria">
               Campaign Today
-            </p>
+            </p> */}
             <p className="text-wrap font-inter text-justify text-md w-full md:w-[30rem] p-5 md:pt-3 md:p-0 text-gray-600 mt-2">
-              Join Epiidosis Investments and embark on a transformative journey
-              to bring your projects to life. Our comprehensive funding process
-              streamlines every step, ensuring transparency, efficiency, and
-              support at every turn. Take the first step towards realizing your
-              vision by clicking Get Started below.
+              Elevate your projects with Epiidosis Investments. Gain access to
+              diverse funding options. Our streamlined process ensures
+              transparency and support at every step. Learn more about how we
+              empower visionaries to bring their projects to life and achieve
+              their goals.
             </p>
-            <div className="flex gap-2 mt-2 pl-5 pr-5 md:pl-0 md:pr-0 md:pt-2">
+            <Button
+              className="w-auto mt-[2rem] font-inria rounded-none bg-gradient-to-r from-[#339FDE] to-[#1C5678] px-[50px] py-[15px] normal-case text-xl font-normal"
+              size="sm"
+              fullWidth
+            >
+              Know more
+            </Button>
+            {/* <div className="flex gap-2 mt-2 pl-5 pr-5 md:pl-0 md:pr-0 md:pt-2">
               <ButtonPrimaryUi>Dashbaord</ButtonPrimaryUi>
               <ButtonSecondaryUi>
                 <span className="flex items-center gap-2">
@@ -47,29 +52,29 @@ const ServiceComponent = () => {
                   </svg>
                 </span>
               </ButtonSecondaryUi>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
       <div className="container mx-auto flex md:justify-center flex-wrap md:gap-28 mt-12 mb-12">
         <div className="text-start text-wrap m-4">
           <p className="text-3xl md:text-4xl font-semibold font-inria text-center md:text-start">
-            Exploring Asset {" "}
+          Asset Monetization 
           </p>
-          <p className="text-3xl md:text-4xl font-semibold font-inria text-center md:text-start">
-          Monetization  Opportunities
-          </p>
+          {/* <p className="text-3xl md:text-4xl font-semibold font-inria text-center md:text-start">
+            Monetization Opportunities
+          </p> */}
           <p className="text-wrap text-md text-justify w-full md:w-[30rem] text-gray-600 mt-2 md:mt-3 font-inter p-5 md:p-0">
-            Asset monetization refers to the process of converting tangible or
-            intangible assets into cash or income-generating opportunities. In
-            the context of Epiidosis Investments LLC, asset monetization is
-            facilitated through a structured engagement process that aims to
-            unlock the value of assets owned by companies across various
-            sectors. This process involves thorough due diligence, formal
-            offers, and strategic partnerships to maximize returns for asset
-            owners.
+          At Epiidosis Investments LLC, we empower individuals and organizations to achieve their financial goals by providing innovative investment solutions, strategic guidance, and unparalleled service.
           </p>
-          <div className="flex gap-2 mt-2 pl-5 pr-5 md:pr-0 md:pl-0">
+          <Button
+              className="w-auto mt-[2rem] font-inria rounded-none bg-gradient-to-r from-[#339FDE] to-[#1C5678] px-[50px] py-[15px] normal-case text-xl font-normal"
+              size="sm"
+              fullWidth
+            >
+              Know more
+            </Button>
+          {/* <div className="flex gap-2 mt-2 pl-5 pr-5 md:pr-0 md:pl-0">
             <ButtonPrimaryUi>Dashbaord</ButtonPrimaryUi>
             <ButtonSecondaryUi>
               <span className="flex items-center gap-2">
@@ -90,11 +95,55 @@ const ServiceComponent = () => {
                 </svg>
               </span>
             </ButtonSecondaryUi>
+          </div> */}
+        </div>
+        <img alt="deal" src={assetMonitizationImg} className="h-[18rem] p-5" />
+      </div>
+      <div className=" bg-bgprimary p-5">
+        <div className="container mx-auto flex md:justify-center flex-wrap gap-12 md:gap-28 mt-12 mb-12 ">
+          <img alt="deal" src={loanStockImg} className="md:h-[18rem]  " />
+          <div className="text-start text-wrap ">
+            <p className="text-2xl md:text-4xl text-center md:text-start font-semibold font-inria">
+            Loans Secured by Listed Stocks            </p>
+            {/* <p className="text-2xl md:text-4xl font-semibold text-center md:text-start font-inria">
+              Campaign Today
+            </p> */}
+            <p className="text-wrap font-inter text-justify text-md w-full md:w-[30rem] p-5 md:pt-3 md:p-0 text-gray-600 mt-2">
+            Unlock liquidity without selling stocks. Epiidosis Investments LLC offers loans against listed stocks, ensuring quick access to funds. Borrowers retain ownership and benefit from competitive rates.
+            </p>
+            <Button
+              className="w-auto mt-[2rem] font-inria rounded-none bg-gradient-to-r from-[#339FDE] to-[#1C5678] px-[50px] py-[15px] normal-case text-xl font-normal"
+              size="sm"
+              fullWidth
+            >
+              Know more
+            </Button>
+            {/* <div className="flex gap-2 mt-2 pl-5 pr-5 md:pl-0 md:pr-0 md:pt-2">
+              <ButtonPrimaryUi>Dashbaord</ButtonPrimaryUi>
+              <ButtonSecondaryUi>
+                <span className="flex items-center gap-2">
+                  See More{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </span>
+              </ButtonSecondaryUi>
+            </div> */}
           </div>
         </div>
-        <img alt="deal" src={second} className="h-[18rem] p-5" />
       </div>
-      <div className=" bg-bgprimary p-5 ">
+      {/* <div className=" bg-bgprimary p-5 ">
         <div className="container mx-auto md:justify-center flex flex-wrap md:gap-28 mt-12 mb-12">
           <img alt="deal" src={thirdservice} className="h-[18rem] " />
           <div className="text-start text-wrap ">
@@ -265,7 +314,7 @@ const ServiceComponent = () => {
           </div>
         </div>
         <img alt="deal" src={sixthservice} className="h-[18rem] p-5" />
-      </div>
+      </div> */}
     </>
   );
 };
