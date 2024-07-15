@@ -1,30 +1,24 @@
-import { BreadcrumbsDefault } from "../../ui/BreadcrumbsDefault";
-import heroSectionAboutUs from "/img/aboutus/aboutherosection.png";
+import heroSectionAboutUs from "/img/aboutus/about-us.jpeg";
 
-
-const beradcrumbs = [{
-  title:'Home',
-  link:'/'
-},
-{
-  title:'About Us',
-  link:'/aboutus'
-}]
 const HerosectionAboutUs = () => {
   return (
     <>
       <div
         style={{ backgroundImage: `url(${heroSectionAboutUs})` }}
-        className="relative w-full h-[550px] bg-cover bg-center bg-no-repeat md:h-[350px]"
+        className="relative w-full h-[550px] bg-cover bg-center bg-no-repeat"
       >
+        <div className="absolute inset-0 bg-[#102741] bg-opacity-60"></div>
+
         <div className="absolute inset-0 flex flex-col justify-center items-center">
-       
-          <BreadcrumbsDefault data = {beradcrumbs} />
-          <p className="text-white font-inria text-2xl mt-5 font-semibold  md:text-center md:text-6xl">
-            Discover Our Financial Excellence
+          <p className="text-center text-white font-inria text-5xl my-5 font-semibold  md:text-center">
+            About Epiidosis Investments LLC
           </p>
-          <p className=" text-left p-3 md:w-[58%] md:m-5 md:text-lg font-inter  text-gray-300">
-          Welcome to Epiidosis Investments LLC, where financial excellence meets strategic innovation.
+          <p className="text-white p-5 lg:w-[75%] font-inter text-base font-light text-center leading-36">
+            Epiidosis Investments LLC, headquartered in Dubai, is a leading
+            investment firm dedicated to unlocking high-potential opportunities
+            across diversified asset classes. We focus on sectors with robust
+            demand fundamentals, particularly those prioritized by governments
+            in the Middle East and East Africa.
           </p>
         </div>
       </div>

@@ -1,13 +1,40 @@
 import { Button } from "@material-tailwind/react";
 import herosection from "/img/herosection.png";
 // import playbutton from "/img/playbutton.png";
-import { CardBody, CardHeader } from "@material-tailwind/react";
 // import userslogo from "/logos/userslogo.png";
-import guidelogo from "/logos/guide-icon.png";
+import { CommonIconCard } from "../../ui/CommonIconCard";
 import guidancelogo from "/logos/guidance.png";
+import guidelogo from "/logos/guide-icon.png";
 // import userwings from "/logos/userwings.png";
 // import calling from "/logos/calling.png";
 // import handshake from "/logos/handshake.png";
+
+const commonCards = [
+  {
+    logo: guidelogo,
+    title: "Professional advice",
+    description:
+      "Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.",
+  },
+  {
+    logo: guidancelogo,
+    title: "Fully independent",
+    description:
+      "Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.",
+  },
+  {
+    logo: guidelogo,
+    title: "Transparant",
+    description:
+      "Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.",
+  },
+  {
+    logo: guidelogo,
+    title: "Great Support",
+    description:
+      "Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.",
+  },
+];
 
 function Herosection() {
   return (
@@ -62,84 +89,18 @@ function Herosection() {
       </div>
       <div className="md:absolute w-full flex justify-center items-center h-[30%]">
         <div className=" flex flex-col md:flex-row gap-5">
-          <div className="relative md:max-w-[20rem] md:justify-center overflow-hidden border shadow-2xl bg-white z-10 flex flex-col justify-end">
-            <CardHeader
-              floated={false}
-              shadow={false}
-              color="transparent"
-              className="mx-auto rounded-none w-[10rem] h-[10rem] flex justify-center items-center"
-            >
-              <img alt="logos" src={guidelogo} className="mt-5" />
-            </CardHeader>
-            <CardBody>
-              <p className="text-2xl lg:text-3xl font-inria font-bold mb-2 text-center text-[#339FDE]">
-                Professional advice
-              </p>
-              <p className="px-5 text-base lg:text-lg font-inter md:text-md font-light text-center">
-                Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.
-              </p>
-            </CardBody>
-            {/* <div className="bg-primary mt-12 h-3 w-auto "></div> */}
-          </div>
-
-          <div className="relative md:max-w-[20rem] md:justify-center overflow-hidden border shadow-2xl bg-white z-10 flex flex-col justify-end">
-            <CardHeader
-              floated={false}
-              shadow={false}
-              color="transparent"
-              className="mx-auto rounded-none w-[10rem] h-[10rem] flex justify-center items-center"
-            >
-              <img alt="logos" src={guidancelogo} className="mt-5" />
-            </CardHeader>
-            <CardBody>
-              <p className="text-2xl lg:text-3xl font-inria font-bold mb-2 text-center text-[#339FDE]">
-                Fully independent
-              </p>
-              <p className="px-5 text-base lg:text-lg font-inter md:text-md font-light text-center">
-                Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.
-              </p>
-            </CardBody>
-            {/* <div className="bg-primary mt-12 h-3 w-auto "></div> */}
-          </div>
-
-          <div className=" relative md:max-w-[20rem] lg:min-h-20  overflow-hidden border shadow-2xl bg-white z-10">
-            <CardHeader
-              floated={false}
-              shadow={false}
-              color="transparent"
-              className="mx-auto rounded-none w-[10rem] h-[10rem] flex justify-center items-center"
-            >
-              <img alt="logos" src={guidelogo} className="mt-5" />
-            </CardHeader>
-            <CardBody>
-              <p className="text-2xl lg:text-3xl mb-2 font-inria font-bold text-center text-[#339FDE]">
-                Transparant
-              </p>
-              <p className="px-5 text-base lg:text-lg font-inter md:text-md font-light text-center">
-                Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.
-              </p>
-            </CardBody>
-            {/* <div className="bg-primary  mt-12 h-3 w-auto "></div> */}
-          </div>
-          <div className=" relative md:max-w-[20rem]  overflow-hidden border shadow-2xl bg-white z-10">
-            <CardHeader
-              floated={false}
-              shadow={false}
-              color="transparent"
-              className="mx-auto rounded-none w-[10rem] h-[10rem] flex justify-center items-center"
-            >
-              <img alt="logos" src={guidelogo} className="mt-5" />
-            </CardHeader>
-            <CardBody>
-              <p className="text-2xl lg:text-3xl font-inria font-bold  mb-2 text-center text-[#339FDE]">
-                Great Support
-              </p>
-              <p className="px-5 text-base lg:text-lg font-inter md:text-md font-light text-center">
-                Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.
-              </p>
-            </CardBody>
-            {/* <div className="bg-primary  mt-12 h-3 w-auto "></div> */}
-          </div>
+          {commonCards &&
+            commonCards.length > 0 &&
+            commonCards.map((item, index) => {
+              return (
+                <CommonIconCard
+                  key={index}
+                  icon={item.logo}
+                  title={item.title}
+                  description={item.description}
+                />
+              );
+            })}
         </div>
       </div>
     </div>
