@@ -1,44 +1,65 @@
+import ellipse from "/img/aboutus/ellipse.png";
 
 
 function VisionSection() {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-8 p-8">
-      <div className="flex flex-col items-end text-right w-full md:w-1/2 pr-4 mt-15" >
-        <div className="flex items-center mb-4">
-          <h2 className="font-bold text-lg hover:text-blue-500" style={{ color: "#5F5D5E" }}>Established</h2>
-          <div className="h-3 w-3 bg-blue-500 rounded-full ml-2"></div>
+    <div className="container mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto my-3">
+      {/* Left Column */}
+      <div className="flex flex-col md:border-r-2 border-[#5F5D5E]">
+        {/* Section 1 */}
+        <div className="flex flex-col items-end md:items-end p-6">
+          <div className="flex items-center mb-3">
+            <p className="text-2xl font-inria font-bold">Established</p>
+            <img src={ellipse} height={35} width={35} className="mr-2" />
+          </div>
+          <div className="font-inter text-base font-light text-right md:text-end">
+            Founded in 2020, Epiidosis Investments LLC set out to provide access to diversified
+            high-potential investments in the Middle East and East Africa.
+          </div>
         </div>
-        <p className="text-gray-600 mb-8 pl-4">
-        Founded in 2020,Epiidosis Investments LLC set out to provide access to diversified high-potential investments in the Middle East and East Africa.
-        </p>
-        <div className="flex items-center mb-4">
-          <h2 className="font-bold text-lg hover:text-blue-500" style={{ color: "#5F5D5E" }}>Strategic Partnerships</h2>
-          <div className="h-3 w-3 bg-blue-500 rounded-full ml-2"></div>
+        {/* Section 2 */}
+        <div className="flex flex-col items-end mt-8 md:mt-0 md:items-end p-6">
+          <div className="flex items-center mb-3">
+            <p className="text-2xl font-inria font-bold">Strategic Partnerships</p>
+            <img src={ellipse} height={35} width={35} className="mr-2" />
+          </div>
+          <div className="font-inter text-base font-light text-right md:text-end">
+            Forged strategic alliances with global financial institutions, enabling us to offer
+            attractive investment opportunities through our capital markets, private equity, and
+            private debt platforms.
+          </div>
         </div>
-        <p className="text-gray-600 pl-4">
-        Forged strategic alliances with global financial institutions, enabling us to offer attractive investment opportunities through our capital markets, private equity, and private debt platforms.
-        </p>
       </div>
-      <div className="flex items-center justify-center h-full mx-8 md:block hidden">
-        <div className="h-80 w-px bg-black"></div> {/* Centered Separator line with increased height */}
-      </div>
-      <div className="flex flex-col items-start text-left w-full md:w-1/2 pl-4 mt-15">
-        <div className="flex items-center mb-4">
-          <div className="h-3 w-3 bg-blue-500 rounded-full mr-2"></div>
-          <h2 className="font-bold text-lg hover:text-blue-500" style={{ color: "#5F5D5E" }}>Our Investment Expert:</h2>
+      
+      {/* Right Column */}
+      <div className="flex flex-col">
+        {/* Section 3 */}
+        <div className="flex flex-col items-start p-6">
+          <div className="flex items-center mb-3">
+            <img src={ellipse} height={35} width={35} className="mr-2" />
+            <p className="text-2xl font-inria font-bold">Our Investment Expert:</p>
+          </div>
+          <div className="font-inter text-base font-light text-left">
+            Within a few years, we built a reputation as investment experts, with successful
+            ventures across various sectors including finance, fintech, energy, and healthcare.
+          </div>
         </div>
-        <p className="text-gray-600 mb-3 pr-4">
-        Within a few years, we built a reputation as investment experts, with successful ventures across various sectors including finance, fintech, energy, and healthcare
-        </p>
-        <div className="flex items-center mb-4">
-          <div className="h-3 w-3 bg-blue-500 rounded-full mr-2"></div>
-          <h2 className="font-bold text-lg hover:text-blue-500" style={{ color: "#5F5D5E" }}>Global Expansion:</h2>
+        {/* Section 4 */}
+        <div className="flex flex-col items-start mt-8 md:mt-0 p-6">
+          <div className="flex items-center mb-3">
+            <img src={ellipse} height={35} width={35} className="mr-2" />
+            <p className="text-2xl font-inria font-bold">Global Expansion:</p>
+          </div>
+          <div className="font-inter text-base font-light text-left">
+            Expanded our portfolio globally, managing credit and equity investments that enhanced
+            diversification and liquidity for our investors.
+          </div>
         </div>
-        <p className="text-gray-600 pr-4">
-        Expanded our portfolio globally, managing credit and equity investments that enhanced diversification and liquidity for our investors.
-        </p>
       </div>
     </div>
+  </div>
+  
   );
 }
 

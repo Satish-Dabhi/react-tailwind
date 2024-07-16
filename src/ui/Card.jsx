@@ -1,7 +1,7 @@
 import { CardBody, CardHeader } from "@material-tailwind/react";
 import PropTypes from "prop-types";
 
-function Card({ imageSrc, altText, title }) {
+function Card({ imageSrc, altText, title, iconWidth }) {
   // Example content for each card
   const cardContent = {
     Guidance: {
@@ -56,30 +56,28 @@ function Card({ imageSrc, altText, title }) {
   const { content } = cardContent[title];
 
   return (
-    <>
-      <div className="w-full md:w-80 flex flex-col items-center overflow-hidden border shadow-2xl bg-white z-10 transition-transform transform hover:scale-105 hover:shadow-xl">
-        <CardHeader
-          floated={false}
-          shadow={false}
-          color="transparent"
-          className="mx-auto h-24 w-24 bg-gradient-to-br from-[#1FA0EB] to-[#125B85] rounded-full relative"
-        >
-          {imageSrc && (
-            <img
-              src={imageSrc}
-              alt={altText}
-              className="absolute inset-0 object-cover rounded-full"
-            />
-          )}
-        </CardHeader>
-        <CardBody className="text-center p-4 pt-2">
-          <p className="text-blue-500 text-lg font-inria">{title}</p>
-          <p className="text-gray-700 text-sm mt-3 mx-4 font-helvetica">
-            {content}
-          </p>
-        </CardBody>
-      </div>
-    </>
+    <div className="w-full md:w-80 flex flex-col items-center overflow-hidden border shadow-2xl bg-white z-10 transition-transform transform hover:scale-105 hover:shadow-xl">
+      <CardHeader
+        floated={false}
+        shadow={false}
+        color="transparent"
+        className="mx-auto w-24 h-24 bg-gradient-to-br from-[#1FA0EB] to-[#125B85] rounded-full flex items-center justify-center"
+      >
+        {imageSrc && (
+          <img
+            src={imageSrc}
+            alt={altText}
+            className={`inset-0 object-cover rounded-full ${iconWidth}`}
+          />
+        )}
+      </CardHeader>
+      <CardBody className="text-center p-5 pt-2">
+        <p className="text-blue-500 text-lg font-inria">{title}</p>
+        <p className="text-gray-700 text-sm mt-3 mx-4 font-inter font-light text-base leading-[25px] tracking-[0.01em] text-center">
+          {content}
+        </p>
+      </CardBody>
+    </div>
   );
 }
 
@@ -87,6 +85,7 @@ Card.propTypes = {
   imageSrc: PropTypes.string.isRequired,
   altText: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  iconWidth: PropTypes.string,
 };
 
 export default Card;
