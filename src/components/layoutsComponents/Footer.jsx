@@ -1,38 +1,53 @@
+/* eslint-disable react/prop-types */
 import { Typography } from "@material-tailwind/react";
-import companyLogo from "/logos/logo-white.png";
 import { Link } from "react-router-dom";
+import companyLogo from "/logos/logo-white.png";
+import { FaLinkedin } from "react-icons/fa";
 
 const LINKS = [
   {
-    title: "Quicks Links",
+    title: "Quick Links",
     items: [
-      "Home",
-      "About Us",
-      "Contact Us",
-      "Structured Finance",
-      "Asset Monetization",
-      "Loans Secured by Listed Stocks ",
+      { text: "Home", showArrow: false },
+      { text: "About Us", showArrow: false },
+      { text: "Contact Us", showArrow: false },
+      { text: "Structured Finance", showArrow: false },
+      { text: "Asset Monetization", showArrow: false },
+      { text: "Loans Secured by Listed Stocks", showArrow: false },
     ],
   },
   {
     title: "Useful Links",
-    items: ["Invest with us", "Blogs", "Privacy Policy", "Terms Of Services"],
+    items: [
+      { text: "Invest With Us", showArrow: false },
+      { text: "Blogs", showArrow: false },
+      { text: "Privacy Policy", showArrow: false },
+      { text: "Terms Of Services", showArrow: false },
+    ],
   },
 ];
 
 const currentYear = new Date().getFullYear();
 
 export function Footer() {
+  const socialColorFill =  "#FFFFFF";
   return (
-    <footer className="relative w-full flex justify-center items-center  bg-[#0F4767]  text-white     p-5 ">
-      <div className=" w-full max-w-7xl  mt-8 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:p-12 justify-center">
-          <div>
-            <img alt="logo" src={companyLogo} />
-            <Typography className="mt-[15%]">
-              818, Park Lane Tower, Business Bay, 415203, Dubai
+    <footer
+      className="relative w-full flex justify-center text-white p-5"
+      style={{
+        background: "linear-gradient(262.98deg, #339FDE 0%, #1C5678 99.52%)",
+      }}
+    >
+      <div className="w-full max-w-7xl mt-8">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 md:p-12">
+          <div className="flex flex-col md:items-start">
+            <img alt="logo" src={companyLogo} className="mb-4" />
+            <Typography className="md:text-left text-lg mt-8">
+              818, Park Lane Tower, Business Bay,
+              <br />
+              415203, Dubai
             </Typography>
-            <Typography className="flex mt-5">
+            <div className="flex items-center gap-2 mt-1 text-white mt-3">
               <svg
                 width="21"
                 height="20"
@@ -46,9 +61,9 @@ export function Footer() {
                 />
               </svg>
 
-              <span className="pl-3">+971 (04) 884-8644</span>
-            </Typography>
-            <Typography className="flex mt-2">
+              <Typography className="text-base">+971 (04) 884-8644</Typography>
+            </div>
+            <div className="flex items-center gap-2 mt-3 text-white mt-5">
               <svg
                 width="22"
                 height="17"
@@ -59,95 +74,67 @@ export function Footer() {
                 <path
                   d="M5.88867 5.5L10.8887 9L15.8887 5.5"
                   stroke="white"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M0.888672 13.5V3.5C0.888672 2.39543 1.7841 1.5 2.88867 1.5H18.8887C19.9933 1.5 20.8887 2.39543 20.8887 3.5V13.5C20.8887 14.6046 19.9933 15.5 18.8887 15.5H2.88867C1.7841 15.5 0.888672 14.6046 0.888672 13.5Z"
                   stroke="white"
+                  strokeWidth="1.6"
                 />
               </svg>
 
-              <span className="pl-3">info@epiidosisinvestments.com</span>
-            </Typography>
+              <Typography className="text-base">
+                info@epiidosisinvestments.com
+              </Typography>
+            </div>
           </div>
           <div className="flex flex-col md:flex-row gap-5">
-            <div className="grid grid-cols-2  gap-4 ">
-              {LINKS.map(({ title, items }) => (
-                <ul key={title}>
-                  <Typography
-                    variant="small"
-                    color="blue-gray"
-                    className="mb-3 font-large opacity-80 text-white"
-                  >
-                    {title}
-                  </Typography>
-                  {items.map((link) => (
-                    <li key={link}>
+            {LINKS.map(({ title, items }) => (
+              <div
+                key={title}
+                className="flex flex-col md:items-start"
+              >
+                <Typography
+                  variant="small"
+                  color="blue-gray"
+                  className="mb-3 font-medium text-white text-2xl"
+                >
+                  {title}
+                </Typography>
+                <ul className="space-y-2">
+                  {items.map(({ text, showArrow }) => (
+                    <li key={text}>
                       <Typography
-                        as="a"
-                        href="#"
+                        as={Link}
+                        to={`/${text.split(" ").join("").toLowerCase()}`}
                         color="gray"
-                        className="py-1.5 flex font-inter items-center text-white gap-1 font-normal transition-colors hover:text-blue-gray-900"
+                        className="flex items-center text-white gap-1 font-normal transition-colors hover:text-blue-gray-900 text-xl"
                       >
-                        {/* <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={1.5}
-                          stroke="currentColor"
-                          className="w-6 h-6"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                          />
-                        </svg> */}
-                        <Link to={`${link.split(" ").join("").toLowerCase()}`}>
-                          {" "}
-                          {link}
-                        </Link>
+                        {showArrow && (
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-6 h-6"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                            />
+                          </svg>
+                        )}
+                        {text}
                       </Typography>
                     </li>
                   ))}
                 </ul>
-              ))}
-            </div>
-            {/* 
-            <div className="flex flex-col gap-5 md:space-y-1 ">
-              <Typography
-                variant="small"
-                color="blue-gray"
-                className="mb-3 font-medium opacity-80 text-white text-center"
-              >
-                Newsletter
-              </Typography>
-              <div className="flex flex-col md:flex-col gap-2 md:items-center ">
-                <div className="w-full md:w-auto">
-                  <Input label="newsletter" className="w-full" />
-                </div>
-
-                <Button
-                  variant="outlined"
-                  className="mt-2 flex gap-2 w-full items-center justify-center bg-white text-black"
-                >
-                  Submit
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                    />
-                  </svg>
-                </Button>
               </div>
-            </div> */}
+            ))}
           </div>
         </div>
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
@@ -155,11 +142,61 @@ export function Footer() {
             variant="small"
             className="mb-4 text-center font-normal text-white md:mb-0"
           >
-            &copy; {currentYear} Compumatrix Technologies All Rights Reserved.
+            &copy; {currentYear} All Rights Reserved.
           </Typography>
-          <div className="flex gap-4 text-blue-gray-900 sm:justify-center"></div>
+          <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
+            <div className="flex gap-4 text-blue-gray-900 justify-center md:justify-start">
+              <p className="opacity-80 transition-opacity hover:opacity-100">
+                {/* Placeholder icon */}
+                <svg
+                  className="h-5 w-5 "
+                  fill={socialColorFill}
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </p>
+
+              {/* Links */}
+              <Typography
+                as="a"
+                href="#"
+                className="opacity-80 transition-opacity hover:opacity-100"
+              >
+                {/* Placeholder icon */}
+                <svg
+                  className="h-5 w-5"
+                  fill={socialColorFill}
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </Typography>
+
+              {/* LinkedIn icon */}
+              <Typography
+                as="a"
+                href="#"
+                className="opacity-80 transition-opacity hover:opacity-100 flex items-center"
+              >
+                <FaLinkedin className="h-5 w-5" color={socialColorFill} />
+              </Typography>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
   );
 }
+
+export default Footer;

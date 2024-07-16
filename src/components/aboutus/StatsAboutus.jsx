@@ -7,7 +7,7 @@ const StatsAboutus = () => {
             <div className="bg-white    h-auto w-1"></div>
             <div className="text-white">
               <p className="text-xl font-inria">2015</p>
-              <p className=" text-gray-400 font-inter">
+              <p className=" text-gray-400 font-inter ">
                 Lorem ipsum dolor sit amet consectetur. Vel quam sapien
               </p>
             </div>

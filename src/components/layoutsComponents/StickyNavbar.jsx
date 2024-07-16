@@ -22,7 +22,7 @@ import { Link } from "react-router-dom";
 
 const navListMenuItems = [
   {
-    title: "Fundraising ",
+    title: "Structured Finance",
     link: "/fundraising",
   },
   {
@@ -33,27 +33,42 @@ const navListMenuItems = [
     title: "Loan Against Listed Stocks",
     link: "/loanagainststocks",
   },
+];
+
+const otherPagesMenuItems = [
   {
-    title: "Investoers Relations",
-    link: "/investorrelation",
+    title: "Blogs",
+    link: "/blogs",
   },
   {
-    title: "Knowledge Center Section",
-    link: "/knowledge",
+    title: "Contact Us",
+    link: "/contactus",
+  },
+  {
+    title: "Privacy Policy",
+    link: "/privacypolicy",
+  },
+  {
+    title: "Terms Of Services",
+    link: "/termsofservices",
   },
 ];
 
 function NavListMenu() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const [isFundraisingOpen, setIsFundraisingOpen] = React.useState(false);
+
+  const toggleFundraisingMenu = () => {
+    setIsFundraisingOpen(!isFundraisingOpen);
+  };
+
   const renderItems = navListMenuItems.map(({ title, link }, key) => (
     <Link to={link} key={key}>
-      <MenuItem className="flex items-center gap-3 rounded-lg">
+      <MenuItem className="flex items-center gap-3 rounded-lg hover:text-blue-600 cursor-pointer">
         <div>
           <Typography
             variant="h6"
             color="blue-gray"
-            className="flex items-center text-sm font-bold font-inria text-xl font-normal"
+            className="flex items-center text-sm font-bold font-inria"
           >
             {title}
           </Typography>
@@ -65,44 +80,108 @@ function NavListMenu() {
   return (
     <React.Fragment>
       <Menu
-        open={isMenuOpen}
-        handler={setIsMenuOpen}
+        open={isFundraisingOpen}
+        handler={setIsFundraisingOpen}
         offset={{ mainAxis: 20 }}
-        placement="bottom"
+        placement="bottom-start" // Adjust placement here
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium font-inria">
+          <Typography
+            as="div"
+            variant="small"
+            className="font-medium font-inria"
+          >
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 font-inria text-xl font-normal"
-              selected={isMenuOpen || isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 hover:text-blue-600 cursor-pointer"
+              selected={isFundraisingOpen}
+              onClick={toggleFundraisingMenu}
             >
-              Resources
+              Funding Solutions
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
-              />
-              <ChevronDownIcon
-                strokeWidth={2.5}
-                className={`block h-3 w-3 transition-transform lg:hidden ${
-                  isMobileMenuOpen ? "rotate-180" : ""
+                  isFundraisingOpen ? "rotate-180" : ""
                 }`}
               />
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0 font-inria">
+        <MenuList
+          className={`absolute bg-white shadow-lg mt-1 w-full lg:w-auto lg:block`}
+          style={{ borderRadius: "8px" }}
+        >
+          <ul className="grid grid-cols-1 gap-y-2 outline-none outline-0 p-4">
             {renderItems}
           </ul>
         </MenuList>
       </Menu>
-      <div className="block lg:hidden">
-        <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
-      </div>
+    </React.Fragment>
+  );
+}
+
+function OtherPagesMenu() {
+  const [isResourcesOpen, setIsResourcesOpen] = React.useState(false);
+
+  const toggleResourcesMenu = () => {
+    setIsResourcesOpen(!isResourcesOpen);
+  };
+
+  const renderItems = otherPagesMenuItems.map(({ title, link }, key) => (
+    <Link to={link} key={key}>
+      <MenuItem className="flex items-center gap-3 rounded-lg hover:text-blue-600 cursor-pointer">
+        <div>
+          <Typography
+            variant="h6"
+            color="blue-gray"
+            className="flex items-center text-sm font-bold font-inria"
+          >
+            {title}
+          </Typography>
+        </div>
+      </MenuItem>
+    </Link>
+  ));
+
+  return (
+    <React.Fragment>
+      <Menu
+        open={isResourcesOpen}
+        handler={setIsResourcesOpen}
+        offset={{ mainAxis: 20 }}
+        placement="bottom-start" // Adjust placement here
+        allowHover={true}
+      >
+        <MenuHandler>
+          <Typography
+            as="div"
+            variant="small"
+            className="font-medium font-inria"
+          >
+            <ListItem
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 hover:text-blue-600 cursor-pointer"
+              selected={isResourcesOpen}
+              onClick={toggleResourcesMenu}
+            >
+              Resources
+              <ChevronDownIcon
+                strokeWidth={2.5}
+                className={`hidden h-3 w-3 transition-transform lg:block ${
+                  isResourcesOpen ? "rotate-180" : ""
+                }`}
+              />
+            </ListItem>
+          </Typography>
+        </MenuHandler>
+        <MenuList
+          className={`absolute bg-white shadow-lg mt-1 w-full lg:w-auto lg:block`}
+          style={{ borderRadius: "8px" }}
+        >
+          <ul className="grid grid-cols-1 gap-y-2 outline-none outline-0 p-4">
+            {renderItems}
+          </ul>
+        </MenuList>
+      </Menu>
     </React.Fragment>
   );
 }
@@ -111,56 +190,40 @@ function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Link to={"/"}>
-        <Typography variant="small" color="blue-gray" className="font-medium font-inria text-xl font-normal">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Typography
+          variant="small"
+          color="blue-gray"
+          className="font-inria font-bold"
+        >
+          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer">
             Home
           </ListItem>
         </Typography>
       </Link>
       <Link to={"/aboutus"}>
-        <Typography variant="small" color="blue-gray" className="font-medium font-inria text-xl font-normal">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <Typography
+          variant="small"
+          color="blue-gray"
+          className="font-medium font-inria"
+        >
+          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer">
             About
           </ListItem>
         </Typography>
       </Link>
-      <Link to={"#"}>
-        <Typography variant="small" color="blue-gray" className="font-medium font-inria text-xl font-normal">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Invest with Us
+      <Link to={"/invest"}>
+        <Typography
+          variant="small"
+          color="blue-gray"
+          className="font-medium font-inria"
+        >
+          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer">
+            Invest with Us
           </ListItem>
         </Typography>
       </Link>
-      <Link to={"#"}>
-        <Typography variant="small" color="blue-gray" className="font-medium font-inria text-xl font-normal">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Funding Solutions
-          </ListItem>
-        </Typography>
-      </Link>
-      {/* <Link to={"/industryinsight"}>
-        <Typography variant="small" color="blue-gray" className="font-medium font-inria">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
-            Industry Insights
-          </ListItem>
-        </Typography>
-      </Link> */}
-
       <NavListMenu />
-      {/* <Link to={"/support"}>
-        <Typography variant="small" color="blue-gray" className="font-medium font-inria">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
-            Support
-          </ListItem>
-        </Typography>
-      </Link>
-      <Link to={"/contactus"}>
-        <Typography variant="small" color="blue-gray" className="font-medium font-inria">
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
-            Contact Us
-          </ListItem>
-        </Typography>
-      </Link> */}
+      <OtherPagesMenu />
     </List>
   );
 }
@@ -168,7 +231,7 @@ function NavList() {
 // eslint-disable-next-line react/prop-types, no-unused-vars
 export function StickyNavbar({ color }) {
   const [openNav, setOpenNav] = React.useState(false);
-  console.log(color);
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -177,46 +240,104 @@ export function StickyNavbar({ color }) {
   }, []);
 
   return (
-    <Navbar className={`mx-auto max-w-full bg-${color} rounded-none px-4`}>
-      <div className="container flex items-center justify-between text-blue-gray-900 mx-auto">
-        <Link to={"/"}>
-          <img alt="logo" src={companyLogo} />
-        </Link>
-        <div className="hidden lg:block">
+    <Navbar
+      className={` mx-auto max-w-full px-4 py-2 bg-${color} rounded-none `}
+    >
+      <div className="container mx-auto">
+        <div className="flex items-center justify-between text-blue-gray-900">
+          <Link to={"/"}>
+            <img alt="logo" src={companyLogo} className="w-[150px]"/>
+          </Link>
+          <div className="flex">
+            <div className="hidden lg:block mr-8">
+              <NavList />
+            </div>
+
+            <div className="hidden gap-2 lg:flex">
+              <Link to={"/Login"}>
+                <Button
+                  size="sm"
+                  className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal"
+                  style={{
+                    background: "white",
+                    color: "#1E8DCD",
+                    border: "1px solid #1E8DCD",
+                    padding: "0.5rem 1.25rem",
+                    borderRadius: "0",
+                    textTransform: "none",
+                  }}
+                >
+                  Login
+                </Button>
+              </Link>
+              <Link to={"/SignUp"}>
+                <Button
+                  size="sm"
+                  className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal"
+                  style={{
+                    background:
+                      "linear-gradient(104.32deg, #339FDE 3.51%, #1C5678 90.88%)",
+                    padding: "0.5rem 1.25rem",
+                    borderRadius: "0",
+                    marginRight: "3rem",
+                    textTransform: "none",
+                  }}
+                >
+                  Sign Up
+                </Button>
+              </Link>
+            </div>
+          </div>
+          <IconButton
+            variant="text"
+            color="blue-gray"
+            className="lg:hidden"
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            ) : (
+              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            )}
+          </IconButton>
+        </div>
+        <Collapse open={openNav}>
           <NavList />
-        </div>
-        <div className="hidden gap-2 lg:flex">
-          <Button className="border-[#339FDE] text-[#339FDE] rounded-none font-inria px-[50px] py-[15px] normal-case text-xl font-normal" variant="outlined" size="sm" color="#339FDE">
-            Login
-          </Button>
-          <Button size="sm" className="font-inria rounded-none bg-gradient-to-r from-[#339FDE] to-[#1C5678] px-[50px] py-[15px] normal-case text-xl font-normal">
-            Sign up
-          </Button>
-        </div>
-        <IconButton
-          variant="text"
-          color="blue-gray"
-          className="lg:hidden"
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-          )}
-        </IconButton>
+          <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+            <Link to={"/Login"}>
+              <Button
+                size="sm"
+                className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal"
+                style={{
+                  background: "white",
+                  color: "blue",
+                  border: "1px solid #1E8DCD",
+                  padding: "0.5rem 1.25rem",
+                  borderRadius: "0.25rem",
+                  textTransform: "none",
+                }}
+              >
+                Login
+              </Button>
+            </Link>
+            <Link to={"/SignUp"}>
+              <Button
+                size="sm"
+                className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal"
+                style={{
+                  background:
+                    "linear-gradient(104.32deg, #339FDE 3.51%, #1C5678 90.88%)",
+                  padding: "0.5rem 1.25rem",
+                  borderRadius: "0.25rem",
+                  textTransform: "none",
+                }}
+              >
+                Sign Up
+              </Button>
+            </Link>
+          </div>
+        </Collapse>
       </div>
-      <Collapse open={openNav}>
-        <NavList />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button className="font-inria rounded-none px-[50px] py-[15px] normal-case text-xl font-normal" variant="outlined" size="sm" color="#339FDE" fullWidth>
-            Login
-          </Button>
-          <Button className="font-inria rounded-none bg-gradient-to-r from-[#339FDE] to-[#1C5678] px-[50px] py-[15px] normal-case text-xl font-normal" size="sm" fullWidth>
-            Sign up
-          </Button>
-        </div>
-      </Collapse>
     </Navbar>
   );
 }

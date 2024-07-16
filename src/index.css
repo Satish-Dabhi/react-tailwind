@@ -6,3 +6,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* styles.css or a CSS module */
+
+.custom-swiper-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+  }
+  
+  .custom-swiper-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .swiper-button-prev {
+    left: 10px;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  .group-hover .group-hover\:scale-105 {
+    transform: scale(1.05);
+  }
+  
+  .group-hover .group-hover\:opacity-100 {
+    opacity: 1;
+  }
+  

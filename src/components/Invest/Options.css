@@ -1,0 +1,56 @@
+.options-main-container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .options-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust gap between left and right sections if needed */
+  }
+  
+  .left-section, .right-section {
+    width: 48%;
+  }
+  
+  .option-box {
+    display: flex;
+    align-items: center;
+    width: 609px;
+    height: 215px;
+    margin-bottom: 20px;
+    background-color: #fff; /* Set background color if needed */
+    border: 1px solid #ddd; /* Set border if needed */
+    border-radius: 10px; /* Set border radius if needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Set box shadow if needed */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .option-image {
+    width: 180px;
+    height: auto;
+    margin-right: 20px;
+    padding: 51px 35px;
+  }
+  
+  .option-content {
+    max-width: calc(100% - 60px); /* Adjusting for image width + margin */
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: larger;
+    color: #5F5D5E;
+    ;
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #5F5D5E;
+  }
+
+  

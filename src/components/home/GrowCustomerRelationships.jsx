@@ -26,8 +26,7 @@ const GrowCustomerRelationships = () => {
         <div>
           <p className="text-4xl mb-2 font-inria">Grow Customer Relationships Via Technology Solutions.</p>
           <p className="text-md text-gray-600 font-inter">
-            Lorem ipsum dolor sit amet consectetur. In eget mauris tincidunt id
-            lacus in mollis egestas.
+            Enhance customer relationships with our advanced technology solutions. At Epiidosis Investments LLC, we use AI, analytics, and digital platforms to personalize experiences, boost engagement, and drive loyalty, ensuring sustainable growth for your business.
           </p>
           <AccordionCustomIcon data = {GrowthaccordionData} />
         </div>

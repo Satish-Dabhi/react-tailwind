@@ -4,7 +4,6 @@ import SubNavbar from "./SubNavbar"
 
 
 const Navbar = ({color}) => {
-  console.log(color)
   return (
     <div>
     <SubNavbar color={color}/>

@@ -5,17 +5,17 @@ const ContactUs = () => {
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-2 md:mt-5">
-        <Inputs label="Enter you first name" className="bg-white " />
-        <Inputs label="Enter you last name" className="bg-white" />
+        <Inputs label="Enter you first name" className="bg-white rounded-none" />
+        <Inputs label="Enter you last name" className="bg-white rounded-none" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 mt-2 gap-2 md:mt-5">
-        <Inputs label="Enter your email" className="bg-white" />
-        <Inputs label="Enter phone number" className="bg-white" />
+        <Inputs label="Enter your email" className="bg-white rounded-none" />
+        <Inputs label="Enter phone number" className="bg-white rounded-none" />
       </div>
       <div className="mt-5">
-        <Textarea label="your message" className=" bg-white" />
+        <Textarea label="your message" className=" bg-white rounded-none" />
       </div>
-      <ButtonPrimaryUI>
+      <ButtonPrimaryUI className="rounded-none">
         <span className="flex gap-3 items-center">
           Submit{" "}
           <svg

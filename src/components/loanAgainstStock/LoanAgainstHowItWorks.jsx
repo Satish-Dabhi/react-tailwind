@@ -8,6 +8,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import FinwiseBackground from "../../../public/img/fundraising/Finwise4.png"; 
 
 // Import Swiper styles
 import "swiper/css";
@@ -66,13 +67,20 @@ const cardData = [
 const LoanAgainstHowItWorks = () => {
   return (
     <div className="relative min-h-[58rem] mb-[8rem] md:min-h-[33rem] 2xl:min-h-auto ">
-      <div className="relative bg-green h-fit md:h-full w-full">
-        <div className="w-full   container mx-auto p-12">
-          <Typography className="text-2xl md:text-4xl text-center font-inria text-white">
+      <div
+        className="absolute top-0 left-0 w-full h-full"
+        style={{
+          backgroundImage: `linear-gradient(270deg, rgba(217, 217, 217, 0.2) -4.17%, rgba(19, 69, 98, 0.63) -4.16%, #102741 103.96%), url(${FinwiseBackground})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
+      <div className="relative bg-transparent h-full w-full z-10">
+        <div className="w-full container mx-auto p-12">
+          <Typography className="text-2xl md:text-4xl text-center text-white font-inria font-semibold">
             How it works
           </Typography>
-
-          <p className="mt-2 text-lg text-white mb-10 md:mb-12 font-inter">
+          <p className="mt-2 text-lg text-white mb-12 md:mb-10 font-inter">
             Lorem ipsum dolor sit amet consectetur. Vel quam sapien diam sed
             egestas mattis. Pulvinar leo vitae lacus in quis. Convallis nunc
             turpis lacus laoreet dignissim turpis lacus ornare tristique. Eget

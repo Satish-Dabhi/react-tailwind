@@ -23,14 +23,18 @@ import EmailSupport from "./pages/EmailSupport";
 import TechnicalAssistancePage from "./pages/TechnicalAssistancePage";
 import BillingPaymentsPage from "./pages/BillingPaymentsPage";
 import EmergencySupportPage from "./pages/EmergencySupportPage";
+// import LeadForm from "./components/Invest/LeadForm";
+import Invest from "./pages/Invest";
 
 const App = () => {
   return (
     <Routes>
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/Invest" element={<Invest />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/fundraising" element={<FundraisingPage />} />
+        <Route path="/structuredfinance" element={<FundraisingPage />} />
         <Route path="/assetmonetization" element={<AssetMonetization />} />
         <Route
           path="/loanagainststocks"
@@ -64,6 +68,7 @@ const App = () => {
       </Route>
 
       <Route path="/knowledge" element={<KnowledgeCenterSection />} />
+      
    
 
       

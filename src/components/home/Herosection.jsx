@@ -1,68 +1,58 @@
 import { Button } from "@material-tailwind/react";
 import herosection from "/img/herosection.png";
-// import playbutton from "/img/playbutton.png";
-// import userslogo from "/logos/userslogo.png";
-import { CommonIconCard } from "../../ui/CommonIconCard";
-import guidancelogo from "/logos/guidance.png";
-import guidelogo from "/logos/guide-icon.png";
-// import userwings from "/logos/userwings.png";
-// import calling from "/logos/calling.png";
-// import handshake from "/logos/handshake.png";
-
-const commonCards = [
-  {
-    logo: guidelogo,
-    title: "Professional advice",
-    description:
-      "Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.",
-  },
-  {
-    logo: guidancelogo,
-    title: "Fully independent",
-    description:
-      "Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.",
-  },
-  {
-    logo: guidelogo,
-    title: "Transparant",
-    description:
-      "Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.",
-  },
-  {
-    logo: guidelogo,
-    title: "Great Support",
-    description:
-      "Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.",
-  },
-];
+import image1 from "/img/home/image1.png";
+import image2 from "/img/home/image2.png";
+import image3 from "/img/home/image3.png";
+import image4 from "/img/home/image4.png";
+import Card from "../../ui/Card";
 
 function Herosection() {
+  const cardValues = [
+    { imageSrc: image1, altText: "Circle 1", title: "Guidance" },
+    { imageSrc: image2, altText: "Circle 2", title: "Independence" },
+    { imageSrc: image3, altText: "Circle 3", title: "Transparency" },
+    { imageSrc: image4, altText: "Circle 4", title: "Support" },
+  ];
+
   return (
     <div className="relative w-full max-h-auto sm:min-h-[55rem] 2xl:min-h-[55rem]">
       <div className="relative bg-gradient-to-br from-[#102741] via-[#134562] to-[#D9D9D9] h-full w-full">
         <img
           alt="img"
           src={herosection}
-          className="w-full h-auto min-h-screen  xl:min-h-fit object-fill mix-blend-overlay opacity-75"
+          className="w-full h-auto min-h-screen xl:min-h-fit object-fill mix-blend-overlay opacity-75"
         />
-        <div className="absolute p-2 gap-5 md:p-[5rem] md:pt-0 top-1/4 flex md:top-1/2 md:-translate-y-1/2 text-white md:w-full ">
+        <div className="absolute p-2 gap-5 md:p-[5rem] top-1/4 flex md:top-1/2 md:-translate-y-1/2 text-white md:w-full">
           <div
-            className="h-[15rem] md:h-[18rem] bg-primary mt-5 animate-slidein [--slidein-delay:100ms] opacity-0"
+            className="h-[12rem] md:h-[14.4rem] bg-primary mt-5 animate-slidein [--slidein-delay:100ms] opacity-0"
             style={{ width: "5px" }}
-          ></div>{" "}
-          <div className="w-fit md:w-[55rem] md:ml-5  flex flex-col justify-center">
-            <p className="text-3xl text-start md:text-6xl font-inria font-bold  md:leading-[4.5rem] animate-slidein [--slidein-delay:300ms] opacity-0">
+          ></div>
+          <div className="w-full md:w-[55%] md:ml-5 flex flex-col justify-center">
+            <p className="text-3xl text-start md:text-6xl font-inria font-bold md:leading-[4.5rem] animate-slidein [--slidein-delay:300ms] opacity-0 text-white">
               Unlock Opportunities with Epiidosis Investments
             </p>
-            {/* <p className=" md:text-[60px] font-inria font-bold "></p> */}
-            <p className=" font-inter text-start mt-5  font-light md:text-2xl md:mt-5 animate-slidein [--slidein-delay:500ms] opacity-0">
+            <p className="font-inter text-start mt-5 font-light md:text-2xl md:mt-5 animate-slidein [--slidein-delay:500ms] opacity-0 text-white">
               Empower your investments with Epiidosis Investments LLC, driving
               sustainable socio-economic growth through strategic, innovative,
-              and globally diversified investment solutions.{" "}
+              and globally diversified investment solutions.
             </p>
-            <Button className="mt-8 px-8 py-6 rounded-none bg-gradient-to-r from-[#339FDE] to-[#1C5678] normal-case flex items-center w-fit  bg-primary mt-5 animate-slidein [--slidein-delay:700ms] opacity-0">
-              <span className="font-inter font-normal text-2xl">
-                Invest with Us
+            <Button
+              className="font-normal flex items-center w-fit mt-5 animate-slidein [--slidein-delay:700ms] opacity-0"
+              style={{
+                backgroundImage:
+                  "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
+                backgroundSize: "100%",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                borderRadius: "0",
+                // width: "15rem",
+                textAlign: "center",
+                marginTop: "3rem",
+              }}
+            >
+              <span className="font-inter font-normal normal-case text-xl px-[1rem]">
+                {" "}
+                Invest With Us{" "}
               </span>{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,27 +70,19 @@ function Herosection() {
               </svg>
             </Button>
           </div>
-          {/* <img
-            alt="playbutton"
-            src={playbutton}
-            className="self-center w-[15%] h-[15%] ml-auto    "
-          /> */}
         </div>
       </div>
-      <div className="md:absolute w-full flex justify-center items-center h-[30%]">
-        <div className=" flex flex-col md:flex-row gap-5">
-          {commonCards &&
-            commonCards.length > 0 &&
-            commonCards.map((item, index) => {
-              return (
-                <CommonIconCard
-                  key={index}
-                  icon={item.logo}
-                  title={item.title}
-                  description={item.description}
-                />
-              );
-            })}
+      <div className="md:absolute w-full flex justify-center items-center md:h-[25%] h-[40%]">
+        <div className="container flex flex-col md:flex-row gap-5 p-5">
+          {cardValues.map((card, index) => (
+            <Card
+              key={index}
+              imageSrc={card.imageSrc}
+              altText={card.altText}
+              title={card.title}
+              className="text-white font-helvetica"
+            />
+          ))}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import AboutOurCardUi from '../../ui/AboutOurCardUi';
+import AboutOurCardUiInvest from '../../ui/AboutOurCardUiInvest';
 import empowermenticon from '/img/investorRelation/empowermenticon.png';
 import heroinvestor from '/img/investorRelation/heroinvestor.png'
 import integrity from '/img/investorRelation/integrity.png'
@@ -30,7 +30,7 @@ const aboutUsData ={
 const AboutUsInvestorRelation = () => {
   return (
     <>
-     <AboutOurCardUi data={aboutUsData} />
+     <AboutOurCardUiInvest data={aboutUsData} />
     </>
   )
 }

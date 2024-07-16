@@ -10,9 +10,7 @@ const HeroSectionKnowledge = ({ color }) => {
             How can we help?
           </p>
           <p className="text-xl text-justify">
-            Lorem ipsum dolor sit amet consectetur. Vel quam sapien diam sed
-            egestas mattis. Pulvinar leo vitae lacus in quis. Convallis nunc
-            turpis lacus laoreet dignissim turpis lacus ornare tristique.{" "}
+          Explore answers to your frequently asked questions and discover comprehensive insights about our services and offerings. Gain clarity and confidence with expert guidance on navigating our website and understanding our commitment to your financial goals.{" "}
           </p>
           <div className="w-[80%] mx-auto mt-4">
             <Input

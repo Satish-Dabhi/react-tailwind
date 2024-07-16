@@ -5,37 +5,37 @@ import grid3 from '/img/fundraising/grid3.png'
 
 const whyChooseData = {
   title:"Why Choose Epiidosis for Fundraising",
-  desc:"Lorem ipsum dolor sit amet consectetur. Vel quam sapien diam sed egestas mattis. Pulvinar leo vitae lacus in quis. Convallis nunc turpis lacus laoreet dignissim turpis lacus ornare tristique.",
+  desc:"Epiidosis Investments ensures a streamlined and transparent fundraising process. Our rigorous verification and flexible investment options cater to diverse project needs, promoting growth and innovation. We prioritize trust, legal compliance, and strategic support to optimize project outcomes.",
   cardData:[
     {
       icon:grid1,
       subtitle:"Comprehensive Funding Process",
-      subdesc:"Lorem ipsum dolor sit amet consectetur. Euismod sed phasellus odio ultrices. Diam diam pretium porttitor eu pharetra tempor felis. Vulputate lectus pharetra cursus donec orci turpis."
+      subdesc:"Guiding fundraisers from onboarding to fund deployment with clarity and transparency."
     },
     {
       icon:grid2,
       subtitle:"Rigorous Verification Process",
-      subdesc:"Lorem ipsum dolor sit amet consectetur. Euismod sed phasellus odio ultrices. Diam diam pretium porttitor eu pharetra tempor felis. Vulputate lectus pharetra cursus donec orci turpis."
+      subdesc:"Ensuring authenticity through thorough KYC and document verification, enhancing investor confidence."
     },
     {
       icon:grid3,
       subtitle:"Flexible Investment Range",
-      subdesc:"Lorem ipsum dolor sit amet consectetur. Euismod sed phasellus odio ultrices. Diam diam pretium porttitor eu pharetra tempor felis. Vulputate lectus pharetra cursus donec orci turpis."
+      subdesc:"Supporting projects from USD 2 million and more, accommodating various stages of development."
     },
     {
       icon:grid1,
       subtitle:"Transparent Fee Structure",
-      subdesc:"Lorem ipsum dolor sit amet consectetur. Euismod sed phasellus odio ultrices. Diam diam pretium porttitor eu pharetra tempor felis. Vulputate lectus pharetra cursus donec orci turpis."
+      subdesc:"Clearly outlining costs upfront to foster trust and accountability."
     },
     {
       icon:grid2,
       subtitle:"Legal and Regulatory Compliance",
-      subdesc:"Lorem ipsum dolor sit amet consectetur. Euismod sed phasellus odio ultrices. Diam diam pretium porttitor eu pharetra tempor felis. Vulputate lectus pharetra cursus donec orci turpis."
+      subdesc:"Emphasizing adherence to laws and regulations to minimize risks and enhance project credibility."
     },
     {
       icon:grid3,
       subtitle:"Strategic Support and Guidance: ",
-      subdesc:"Lorem ipsum dolor sit amet consectetur. Euismod sed phasellus odio ultrices. Diam diam pretium porttitor eu pharetra tempor felis. Vulputate lectus pharetra cursus donec orci turpis."
+      subdesc:" Providing industry expertise and partnerships to optimize project success and overcome challenges."
     },
   ]
 }
@@ -43,7 +43,7 @@ const whyChooseData = {
 const WhyChooseEpiidosis = () => {
   return (
   
-    <div className='container mx-auto'>
+    <div className='container mx-auto mt-0'>
       <WhyChooseCard data={whyChooseData}/>
     </div>
   );

@@ -1,24 +1,27 @@
 import upcoming from "/img/industryInsights/upcoming.png";
 import ButtonPrimaryUi from "../ui/ButtonPrimaryUi";
+
 const UpcomingEventsUi = () => {
   return (
     <section className="container mx-auto mt-12 mb-12">
-      <div className=" gap-5 justify-items-center items-center">
-        <p className="bg-primary w-1 h-auto"></p>
-        <div className="grid justify-items-center">
-          <p className="text-2xl md:text-4xl font-semibold font-inria">Upcoming Events</p>
-          <p className="w-[60%] mt-2 text-justify">
-            Lorem ipsum dolor sit amet consectetur. Praesent nec non fringilla
-            tincidunt non. Id nunc lectus quam diam egestas cursus varius
-            pretium.
-          </p>
+      <div className="grid gap-5 items-start">
+        <div className="relative flex items-start">
+          <div className="absolute left-10 top-0 h-full w-1 bg-blue-500"></div>
+          <div className="pl-20">
+            <p className="text-2xl md:text-4xl font-semibold font-inria">Upcoming Events</p>
+            <p className="w-full md:w-[60%] mt-2 text-justify">
+              Lorem ipsum dolor sit amet consectetur. Praesent nec non fringilla
+              tincidunt non. Id nunc lectus quam diam egestas cursus varius
+              pretium.
+            </p>
+          </div>
         </div>
       </div>
-      <div className="mt-12 grid grid-cols-1 items-center justify-items-center md:grid-cols-2 p-2">
-        <img alt="upcoming" src={upcoming} className="size-[25rem]" />
-        <div>
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 items-center justify-items-center p-0">
+        <img alt="upcoming" src={upcoming} className="w-full md:w-auto h-auto md:h-[25rem]" />
+        <div className="p-5">
           <p className="text-2xl font-inria font-semibold mt-5 md:mt-0 text-justify">Financial Leadership Summit 2024</p>
-          <p className="mt-3 mb-3 "> <span className="text-lg font-inter text-justify">New York City,</span>  April 10-12, 2024</p>
+          <p className="mt-3 mb-3 text-lg font-inter text-justify">New York City, April 10-12, 2024</p>
           <p className="text-inter text-balance mb-3 text-justify">
             Lorem ipsum dolor sit amet consectetur. Fermentum amet nunc tortor
             augue bibendum auctor in fermentum sed. Pellentesque sit nunc cursus

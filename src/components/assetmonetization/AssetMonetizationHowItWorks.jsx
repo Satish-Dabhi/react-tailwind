@@ -8,6 +8,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import FinwiseBackground from "../../../public/img/fundraising/Finwise4.png"; 
 
 // Import Swiper styles
 import "swiper/css";
@@ -56,20 +57,25 @@ const cardData = [
 const AssetMonetizationHowItWorks = () => {
   return (
     <div className="relative min-h-[65rem] md:min-h-[33rem] 2xl:min-h-auto ">
-    <div className="relative bg-green h-fit md:h-full w-full">
-      <div className="w-full   container mx-auto p-12">
-        <Typography className="text-2xl md:text-4xl text-center text-white font-inria font-semibold">
-          How it works
-        </Typography>
-
-        <p className="mt-2 text-lg text-white mb-10 md:mb-[5rem] font-inter">
-          Lorem ipsum dolor sit amet consectetur. Vel quam sapien diam sed
-          egestas mattis. Pulvinar leo vitae lacus in quis. Convallis nunc
-          turpis lacus laoreet dignissim turpis lacus ornare tristique. Eget
-          porttitor tortor fames neque aenean mauris adipiscing metus.
-        </p>
+    
+    <div
+        className="absolute top-0 left-0 w-full h-full"
+        style={{
+          backgroundImage: `linear-gradient(270deg, rgba(217, 217, 217, 0.2) -4.17%, rgba(19, 69, 98, 0.63) -4.16%, #102741 103.96%), url(${FinwiseBackground})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
+      <div className="relative bg-transparent h-full w-full z-10">
+        <div className="w-full container mx-auto p-12">
+          <Typography className="text-2xl md:text-4xl text-center text-white font-inria font-semibold">
+            Our Process
+          </Typography>
+          <p className="mt-2 text-lg text-white mb-12 md:mb-10 font-inter">
+            Epiidosis Investments LLC facilitates a structured and transparent asset monetization process, from onboarding and due diligence to bank instrument monetization and fund transfer, ensuring efficiency and maximizing returns for asset owners.
+          </p>
+        </div>
       </div>
-    </div>
     <div className="absolute md:absolute w-full flex justify-center items-center  md:h-[55%]">
       {/* <div className="flex flex-wrap justify-center"> */}
       <Swiper

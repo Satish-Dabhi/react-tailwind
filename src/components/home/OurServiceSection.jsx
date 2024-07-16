@@ -1,17 +1,35 @@
+import Fnavigation from "/img/Fnavigation.png";
+
 const OurServiceSection = () => {
   return (
-    <div className="container sm:mt-[80rem] md:mt-[35rem] lg:mt-[15rem] 2xl:mt-[30rem] mb-12 mx-auto flex flex-col items-center justify-center w-full p-5 ">
-      <p className="text-3xl md:text-5xl lg:text-6xl  font-bold text-center font-inria">
-        Our Services
-      </p>
-      <div className="bg-primary h-1 justify-start w-[7rem]  md:w-[12rem] mr-[4rem]  md:mr-[5rem] lg:mr-[10rem]"></div>
-
-      <p className="md:mt-8 mt-5 font-inter md:text-center md:text-2xl text-justify">
-        Lorem ipsum dolor sit amet consectetur. Vel quam sapien diam sed egestas
-        mattis. Pulvinar leo vitae lacus in quis. Convallis nunc turpis lacus
-        laoreet dignissim turpis lacus ornare tristique. Eget porttitor tortor
-        fames neque aenean mauris adipiscing metus.
-      </p>
+    <div className="container mx-auto flex flex-col sm:mt-[1rem] md:mt-[6rem] lg:mt-[1rem] 2xl:mt-[8rem] md:flex-row md:justify-center items-center md:flex-wrap 2xl:gap-[5rem] mt-12 mb-12">
+      <img alt="deal" src={Fnavigation} className=" md:h-auto mb-8 md:mb-0" />
+      <div className="text-center md:text-start max-w-full md:max-w-[30rem]">
+        <h2 className="text-2xl md:text-4xl font-inria font-semibold">
+          Your Reliable Guide in Financial Navigation
+        </h2>
+        <div className="flex items-start mt-4">
+          <div className="w-3 h-full bg-blue-500"></div>
+          <p
+            className="text-sm md:text-base font-inter border-l-4 pl-5"
+            style={{
+              borderImage: "linear-gradient(to bottom, #4dc0b5, #3490dc) 1",
+              MozBorderImage: "linear-gradient(to bottom, #4dc0b5, #3490dc) 1", // For Firefox
+            }}
+          >
+            At Epiidosis Investments LLC, we empower individuals and
+            organizations to achieve their financial goals by providing
+            innovative investment solutions, strategic guidance, and
+            unparalleled service.
+          </p>
+        </div>
+        <p className="mt-4 text-sm md:text-base font-inter mr-4">
+          We are committed to delivering superior returns for our investors,
+          fostering economic growth in the communities we serve, and upholding
+          the highest standards of integrity, transparency, and professionalism
+          in all our endeavors.
+        </p>
+      </div>
     </div>
   );
 };
