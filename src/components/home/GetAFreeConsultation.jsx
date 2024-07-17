@@ -1,5 +1,5 @@
 import { Typography } from "@material-tailwind/react";
-import ContactUs from "./ContactUs";
+import ContactUs from "../../forms/ContactUsForm";
 const GetAFreeConsultation = () => {
   return (
     <div className="bg-bgcream ">

@@ -110,7 +110,7 @@ export function Footer() {
                         as={Link}
                         to={`/${text.split(" ").join("").toLowerCase()}`}
                         color="gray"
-                        className="flex items-center text-white gap-1 font-normal transition-colors hover:text-blue-gray-900 text-xl"
+                        className="flex items-center text-white gap-1 font-extralight transition-colors font-inter text-base font-light"
                       >
                         {showArrow && (
                           <svg

@@ -1,5 +1,5 @@
 import Ujjwall from "../../public/img/aboutus/Ujjwal.png";
-import Mohit from "../../public/img/aboutus/Mohit.png";
+import Mohit from "../../public/img/aboutus/mohit-rana.png";
 import Narendar from "../../public/img/aboutus/Narendar.jpg";
 import { useState } from "react";
 
@@ -38,25 +38,29 @@ const OurPartner = () => {
         <p className="text-lg font-inria my-2">Our Team</p>
         <p className="text-2xl font-semibold">Executive Management</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[55rem] mx-auto mb-5">
         {teamMembers.map((member, index) => (
           <div
-            key={index}
-            className={`bg-white rounded-lg shadow-lg transform transition-all duration-300 ${
-              activeMember === index ? "scale-105 shadow-xl" : "scale-100"
+            className={`py-6 bg-transparent transform transition-all duration-300 flex justify-center ${
+              activeMember === index ? "scale-105" : "scale-100"
             }`}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
+            key={index}
           >
             <img
               src={member.image}
-              alt={member.name}
-              className="w-full h-auto rounded-t-lg object-cover"
-              style={{ maxHeight: "250px" }}
+              className="relative shadow-2xl"
+              height={250}
+              width={250}
             />
-            <div className="p-3">
-              <p className="font-inria text-base font-bold">{member.name}</p>
-              <p className="font-inria text-[#339FDE] text-sm font-bold">{member.title}</p>
+            <div className="absolute bg-white p-3 w-[12rem] text-center top-[89%] left-[15%]">
+              <p className="font-inria text-base font-semibold">
+                {member.name}
+              </p>
+              <p className="font-inria text-[#339FDE] text-sm font-light">
+                {member.title}
+              </p>
             </div>
           </div>
         ))}

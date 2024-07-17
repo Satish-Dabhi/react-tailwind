@@ -36,6 +36,7 @@ const App = () => {
         <Route path="/fundraising" element={<FundraisingPage />} />
         <Route path="/structuredfinance" element={<FundraisingPage />} />
         <Route path="/assetmonetization" element={<AssetMonetization />} />
+        {/* <Route path="/test" element={<LeadForm />} /> */}
         <Route
           path="/loanagainststocks"
           element={<LoanAgainstListedStocks />}
