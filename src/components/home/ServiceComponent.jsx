@@ -106,7 +106,7 @@ const ServiceComponent = () => {
               rates.
             </p>
             <div className="flex gap-2 pl-5 pr-5 mt-4 md:pl-0 md:pr-0">
-              <ButtonPrimaryUi to="/loanagainststocks">
+              <ButtonPrimaryUi to="/loanssecuredbylistedstocks">
                 Know More
               </ButtonPrimaryUi>
             </div>

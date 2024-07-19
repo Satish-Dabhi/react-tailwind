@@ -38,7 +38,7 @@ const App = () => {
         <Route path="/assetmonetization" element={<AssetMonetization />} />
         {/* <Route path="/test" element={<LeadForm />} /> */}
         <Route
-          path="/loanagainststocks"
+          path="/loanssecuredbylistedstocks"
           element={<LoanAgainstListedStocks />}
         />
         <Route path="/investorrelation" element={<InvestorRelations />} />

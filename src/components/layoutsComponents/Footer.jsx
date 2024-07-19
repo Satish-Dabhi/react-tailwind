@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 import { Typography } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import companyLogo from "/logos/logo-white.png";
@@ -30,7 +31,7 @@ const LINKS = [
 const currentYear = new Date().getFullYear();
 
 export function Footer() {
-  const socialColorFill =  "#FFFFFF";
+  const socialColorFill = "#FFFFFF";
   return (
     <footer
       className="relative w-full flex justify-center text-white p-5"
@@ -38,11 +39,15 @@ export function Footer() {
         background: "linear-gradient(262.98deg, #339FDE 0%, #1C5678 99.52%)",
       }}
     >
-      <div className="w-full max-w-7xl mt-8">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 md:p-12">
+      <div className="w-full mt-8">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 md:px-12 ">
           <div className="flex flex-col md:items-start">
-            <img alt="logo" src={companyLogo} className="mb-4" />
-            <Typography className="md:text-left text-lg mt-8">
+            <img
+              alt="logo"
+              src={companyLogo}
+              className="mb-4 w-[270px] h-[50px]"
+            />
+            <Typography className="md:text-left text-lg mt-8 font-poppins">
               818, Park Lane Tower, Business Bay,
               <br />
               415203, Dubai
@@ -61,7 +66,7 @@ export function Footer() {
                 />
               </svg>
 
-              <Typography className="text-base">+971 (04) 884-8644</Typography>
+              <Typography className="text-base font-poppins">+971 (04) 884-8644</Typography>
             </div>
             <div className="flex items-center gap-2 mt-3 text-white mt-5">
               <svg
@@ -85,17 +90,14 @@ export function Footer() {
                 />
               </svg>
 
-              <Typography className="text-base">
+              <Typography className="text-base font-poppins">
                 info@epiidosisinvestments.com
               </Typography>
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-5">
             {LINKS.map(({ title, items }) => (
-              <div
-                key={title}
-                className="flex flex-col md:items-start"
-              >
+              <div key={title} className="flex flex-col md:items-start">
                 <Typography
                   variant="small"
                   color="blue-gray"
@@ -103,14 +105,14 @@ export function Footer() {
                 >
                   {title}
                 </Typography>
-                <ul className="space-y-2">
+                <ul className="space-y-1">
                   {items.map(({ text, showArrow }) => (
                     <li key={text}>
                       <Typography
                         as={Link}
                         to={`/${text.split(" ").join("").toLowerCase()}`}
                         color="gray"
-                        className="flex items-center text-white gap-1 font-extralight transition-colors font-inter text-base font-light"
+                        className="flex items-center text-white gap-1 font-extralight transition-colors font-poppins text-base font-light"
                       >
                         {showArrow && (
                           <svg
@@ -140,24 +142,23 @@ export function Footer() {
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
             variant="small"
-            className="mb-4 text-center font-normal text-white md:mb-0"
+            className="mb-4 text-center font-normal text-white md:mb-0 font-poppins"
           >
             &copy; {currentYear} All Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
             <div className="flex gap-4 text-blue-gray-900 justify-center md:justify-start">
-              <p className="opacity-80 transition-opacity hover:opacity-100">
-                {/* Placeholder icon */}
+              <p className="transition-opacity hover:opacity-100">
                 <svg
-                  className="h-5 w-5 "
-                  fill={socialColorFill}
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
+                  width="10"
+                  height="19"
+                  viewBox="0 0 10 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fillRule="evenodd"
-                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                    clipRule="evenodd"
+                    d="M2.1621 3.90124V6.41671H0V9.4924H2.1621V18.6334H6.60011V9.49332H9.57917C9.57917 9.49332 9.85829 8.01863 9.99356 6.40573H6.61836V4.30218C6.61836 3.9882 7.10145 3.56529 7.58025 3.56529H10V0.363281H6.71068C2.05153 0.363281 2.1621 3.44172 2.1621 3.90124Z"
+                    fill="white"
                   />
                 </svg>
               </p>
@@ -166,7 +167,7 @@ export function Footer() {
               <Typography
                 as="a"
                 href="#"
-                className="opacity-80 transition-opacity hover:opacity-100"
+                className="transition-opacity hover:opacity-100"
               >
                 {/* Placeholder icon */}
                 <svg
@@ -187,7 +188,7 @@ export function Footer() {
               <Typography
                 as="a"
                 href="#"
-                className="opacity-80 transition-opacity hover:opacity-100 flex items-center"
+                className="transition-opacity hover:opacity-100 flex items-center"
               >
                 <FaLinkedin className="h-5 w-5" color={socialColorFill} />
               </Typography>

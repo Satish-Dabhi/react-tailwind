@@ -16,6 +16,7 @@ function HeroSection({
         className="relative w-full h-[550px] bg-cover bg-center bg-no-repeat md:h-[600px]"
       >
         <div className="absolute inset-0 flex flex-col container mx-auto md:py-[70px] py-[50px] p-3">
+          <div className="w-full lg:w-[60%]">
           <p className="text-3xl text-start md:text-6xl font-inria font-bold md:leading-[4.5rem] animate-slidein [--slidein-delay:300ms] opacity-0 text-white">
             {bannerTitle}
           </p>
@@ -54,6 +55,7 @@ function HeroSection({
               />
             </svg>
           </Button>
+          </div>
         </div>
       </div>
       <div className="lg:absolute w-full flex justify-center items-center lg:h-[15%] h-[40%]">

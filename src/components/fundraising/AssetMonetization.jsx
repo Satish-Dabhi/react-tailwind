@@ -28,8 +28,7 @@ const AssetMonetization = () => {
         <img
           src={AssetMonetizationImage}
           alt="Asset Monetization"
-          className="mx-auto"
-          style={{ width: "100%", maxWidth: "800px" }}
+          className="mx-auto w-full lg:w-1/2"
         />
       </div>
     </div>

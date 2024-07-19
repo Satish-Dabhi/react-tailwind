@@ -10,7 +10,7 @@ const FinanceOptionCard = ({
   onButtonClick,
 }) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center bg-white p-6">
+    <div className="flex flex-col lg:flex-row items-center bg-white">
       {/* Image Section */}
       <div className="w-full lg:w-1/2 mb-6 lg:mb-0 lg:pr-6">
         <img src={imgage1} alt="Finance Options" className="w-full h-auto" />
@@ -27,7 +27,7 @@ const FinanceOptionCard = ({
         {description && (
           <p className="text-gray-600 text-lg mt-4 lg:mt-6">{description}</p>
         )}
-        <ul className="text-gray-600 mb-4 text-center">
+        <ul className="text-gray-600 mb-4 text-center flex justify-center">
           <div className="text-left">
             {features.map((feature, index) => (
               <>
@@ -44,7 +44,7 @@ const FinanceOptionCard = ({
             title="Diverse Funding Solutions"
             description="Epidosis Investments offers a range of funding options including capital markets funds, private equity, and private debt platforms, tailored to meet diverse project requirements."
           />
-          <div className="h-40 lg:h-auto w-px bg-black my-4 lg:my-0 ml-3"></div>{" "}
+          <div className="h-0 lg:h-auto w-px bg-black my-4 lg:my-0 ml-3"></div>
           {/* Separator line */}
           <FeatureCard
             title="Flexibility and Scalability"
@@ -54,7 +54,7 @@ const FinanceOptionCard = ({
 
         {/* Button Section */}
         <Button
-          className="font-inria font-normal flex items-center mt-8 lg:mt-10 animate-slidein [--slidein-delay:700ms] opacity-0"
+          className="px-10 font-inria font-normal flex items-center mt-8 lg:mt-10 animate-slidein [--slidein-delay:700ms] opacity-0"
           style={{
             backgroundImage:
               "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
@@ -66,7 +66,7 @@ const FinanceOptionCard = ({
           }}
           onClick={onButtonClick}
         >
-          <span className="font-inria font-normal text-md lg:text-lg px-4 ">
+          <span className="font-inria font-normal text-md lg:text-lg normal-case">
             {buttonText}
           </span>{" "}
           <svg

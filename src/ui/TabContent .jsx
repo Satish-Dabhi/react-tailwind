@@ -51,34 +51,29 @@ const TabContent = ({ selectedTab }) => {
   const { title, part1, part2 } = content[selectedTab];
 
   return (
-    <div className="p-6 flex flex-col md:flex-row">
-      <div className="md:w-1/2">
-        <div className="h-64 md:h-auto flex items-center justify-center">
+    <div className="p-6 flex flex-col lg:flex-row">
+      <div className="lg:w-[35%]">
+        <div className="h-64 lg:h-auto flex items-center justify-center">
           <img
             src={image4}
             alt={title}
-            className="object-cover w-3/4 md:w-full h-full"
+            className="object-cover w-full h-full"
             // style={{ maxWidth: "70%", marginLeft: "30%" }}
           />
         </div>
       </div>
-      <div className="md:w-1/2 bg-white p-6 rounded-s-3xl shadow-md ml-0 md:ml-[-8rem] relative -top-16 md:top-0 -left-0 md:left-16 my-5">
+      <div className="lg:w-[70%] bg-white p-6 rounded-3xl shadow-lg ml-0 lg:ml-[-7rem] relative -top-16 lg:top-0 -left-0 lg:left-16 my-5">
         <h2
-          className="text-2xl md:text-3xl font-helvetica text-center mb-4"
+          className="font-bold lg:text-xl font-inria text-center mb-4"
           style={{ color: "#5F5D5E" }}
         >
           {title}
         </h2>
         <div
-          className="flex flex-col md:flex-row text-gray-700"
-          style={{
-            color: "#5F5D5E",
-            fontFamily: "Helvetica, Arial, sans-serif",
-            fontSize: "1rem",
-          }}
+          className="flex flex-col lg:flex-row font-inter text-sm font-light text-[#5F5D5E] leading-7"
         >
-          <div className="md:w-1/2 pr-2">{part1}</div>
-          <div className="md:w-1/2 pl-2 mt-4 md:mt-0">{part2}</div>
+          <div className="lg:w-1/2 pl-6 pr-4">{part1}</div>
+          <div className="lg:w-1/2 pl-12 mt-4 lg:mt-0">{part2}</div>
         </div>
       </div>
     </div>

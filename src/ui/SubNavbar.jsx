@@ -1,29 +1,37 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const tabs = [
-  'Renewable Energy',
-  'Tourism & Hospitality',
-  'Commercial',
-  'Agriculture',
-  'Industry',
-  'Education',
-  'Healthcare'
+  "Renewable Energy",
+  "Tourism & Hospitality",
+  "Commercial",
+  "Agriculture",
+  "Industry",
+  "Education",
+  "Healthcare",
 ];
 
 const SubNavbar = ({ selectedTab, setSelectedTab }) => {
   return (
-<div className="flex flex-wrap justify-center border-b mb-4 w-full">
-  {tabs.map((tab) => (
-    <button
-      key={tab}
-      className={`px-4 py-2 font-medium ${selectedTab === tab ? 'text-blue-700 border-b-2 border-blue-500' : 'text-gray-700'} mb-2 mx-2 sm:mx-0 sm:mb-0 sm:mr-2`}
-      onClick={() => setSelectedTab(tab)}
-    >
-      {tab}
-    </button>
-  ))}
-</div>
-
+    <div className="flex flex-wrap justify-center border-b mb-4">
+      {tabs.map((tab) => (
+        <button
+          key={tab}
+          style={{
+            borderImage: "linear-gradient(to left, #339FDE, #1C5678) 1",
+            MozBorderImage: "linear-gradient(to left, #339FDE, #1C5678) 1", // For Firefox
+            borderBottomWidth: `${ selectedTab === tab ? '4px' : '0'}`
+          }}
+          className={`font-inter text-2xl leading-9 px-2 py-2 ${
+            selectedTab === tab
+              ? "text-[#339FDE] border-b-2 font-bold b-w-2"
+              : "text-[#95989A]"
+          } mx-2`}
+          onClick={() => setSelectedTab(tab)}
+        >
+          {tab}
+        </button>
+      ))}
+    </div>
   );
 };
 

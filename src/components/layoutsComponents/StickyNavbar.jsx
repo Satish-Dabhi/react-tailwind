@@ -31,7 +31,7 @@ const navListMenuItems = [
   },
   {
     title: "Loan Against Listed Stocks",
-    link: "/loanagainststocks",
+    link: "/loanssecuredbylistedstocks",
   },
 ];
 
