@@ -7,7 +7,7 @@ const CardReuse = ({ cards }) => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="bg-[#E8F6FF] p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300"
+            className="bg-[#E8F6FF] p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300"
           >
             <h2 className="font-inter text-lg font-bold leading-6 text-[#5F5D5E] text-center">
               {card.title}

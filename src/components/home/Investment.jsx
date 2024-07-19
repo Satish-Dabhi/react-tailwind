@@ -4,7 +4,7 @@ import SampleImage from "/img/home/image1.png"; // Replace with the path to your
 const InvestmentCardsContainer = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col md:flex-row justify-center items-center mt-10 md:space-x-8">
+      <div className="flex flex-col md:flex-row justify-center items-center my-14 md:space-x-8">
         <InvestmentCard
           title="E&k - Energy Infra Project"
           subtitle="E&K Energy Infra Holdings Limited"

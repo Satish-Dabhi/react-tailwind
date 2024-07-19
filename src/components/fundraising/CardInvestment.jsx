@@ -30,7 +30,7 @@ const cards = [
 
 const CardInvestment = () => {
   return (
-    <div className="container mx-auto my-8">
+    <div className="container mx-auto my-12">
       <CardReuse cards={cards} />
     </div>
   );

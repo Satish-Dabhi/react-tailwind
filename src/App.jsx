@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import AppLayout from "./layout/AppLyout";
 import "./App.css";
 import AboutUs from "./pages/AboutUs";
-import FundraisingPage from "./pages/FundraisingPage";
+import StructuredFinance from "./pages/StructuredFinance";
 import AssetMonetization from "./pages/AssetMonetization";
 import LoanAgainstListedStocks from "./pages/LoanAgainstListedStocks";
 import InvestorRelations from "./pages/InvestorRelations";
@@ -31,10 +31,10 @@ const App = () => {
     <Routes>
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/Invest" element={<Invest />} />
+        <Route path="/investwithus" element={<Invest />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/fundraising" element={<FundraisingPage />} />
-        <Route path="/structuredfinance" element={<FundraisingPage />} />
+        <Route path="/structuredfinance" element={<StructuredFinance />} />
+        {/* <Route path="/structuredfinance" element={<StructuredFinance />} /> */}
         <Route path="/assetmonetization" element={<AssetMonetization />} />
         {/* <Route path="/test" element={<LeadForm />} /> */}
         <Route
@@ -46,7 +46,7 @@ const App = () => {
         <Route path="/termsofservices" element={<TermsOfServicePage />} />
         <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
         <Route path="/industryinsight" element={<IndustryInsightsPage />} />
-       
+
         <Route element={<SidebarLayout />}>
           <Route index path="/support" element={<SupportPage />} />
           <Route path="/knowledge/base" element={<KnowledgeBase />} />
@@ -63,16 +63,10 @@ const App = () => {
           />
           <Route path="/billing/payments" element={<BillingPaymentsPage />} />
           <Route path="/emergency/support" element={<EmergencySupportPage />} />
-
         </Route>
-     
       </Route>
 
       <Route path="/knowledge" element={<KnowledgeCenterSection />} />
-      
-   
-
-      
     </Routes>
   );
 };

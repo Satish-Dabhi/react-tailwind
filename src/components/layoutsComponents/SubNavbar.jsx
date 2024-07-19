@@ -1,46 +1,46 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { Typography } from "@material-tailwind/react";
 import { FaLinkedin } from "react-icons/fa";
-import { MdEmail, MdPhone } from 'react-icons/md'; // Import both email and phone icons
+import { MdEmail, MdPhone } from "react-icons/md";
 
 const SubNavbar = ({ color }) => {
-  const knowledgeColor = color ? 'bg-primary text-white' : null;
-  const socialColorFill = knowledgeColor ? 'white' : '#339FDE'; // Assuming this is the color for icons
+  const knowledgeColor = color ? "bg-primary text-white" : null;
+  const socialColorFill = knowledgeColor ? "white" : "#339FDE";
 
   return (
-    <div className={`flex p-5 w-full md:w-full flex-col justify-center ${knowledgeColor} border-b border-blue-gray-50 py-2 md:flex-row md:justify-between`}>
-      <div className="container mx-auto flex flex-col md:items-center justify-start md:flex-row md:justify-between">
+    <div
+      className={`flex p-5 w-full flex-col justify-center ${knowledgeColor} border-b border-blue-gray-50 py-2 md:flex-row md:justify-between`}
+    >
+      <div className="container mx-auto flex flex-col lg:flex-row md:items-center justify-end md:justify-between">
         <Typography
           variant="small"
-          className="mb-4 ml-7 text-center font-normal text-blue-gray-900 md:mb-0 flex items-center gap-1"
+          className="mb-4 text-end font-normal text-blue-gray-900 md:mb-0 md:flex md:items-center gap-1"
         >
-          {/* Email icon and text */}
-          <div className="relative">
+          <div className="email-container flex justify-end">
             <MdEmail
-              className={`w-6 h-6 text-${socialColorFill}`} // Adjust size and color dynamically
-              style={{ marginLeft: '-2.9rem' }}
-              color={socialColorFill} // Set the color dynamically
+              className={`w-6 h-6 text-${socialColorFill}`}
+              color={socialColorFill}
             />
+            <span className={`text-${socialColorFill} ml-0`}>
+              info@epiidosisinvestments.com
+            </span>
           </div>
-          <span className={`text-${socialColorFill} ml-0`}>info@epiidosisinvestments.com</span>
-          
-          {/* Phone icon and text */}
-          <MdPhone
-            className={`w-6 h-6 text-${socialColorFill}`} // Adjust size and color dynamically
-            style={{ marginLeft: '2rem' }}
-            color={socialColorFill}
-          />
-          <span className={`text-${socialColorFill}`}>+971 (04) 884-8644</span>
+
+          <div className="phone-container flex justify-end mt-3 lg:mt-0">
+            <MdPhone
+              className={`w-6 h-6 text-${socialColorFill} lg:ml-3`}
+              color={socialColorFill}
+            />
+            <span className={`text-${socialColorFill}`}>
+              +971 (04) 884-8644
+            </span>
+          </div>
         </Typography>
-        
-        {/* Icons aligned to the right */}
+
         <div className="flex gap-4 text-blue-gray-900 justify-end md:justify-start">
-          <p
-            className="opacity-80 transition-opacity hover:opacity-100"
-          >
-            {/* Placeholder icon */}
+          <p className="opacity-80 transition-opacity hover:opacity-100">
             <svg
-              className="h-5 w-5 "
+              className="h-5 w-5"
               fill={socialColorFill}
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -52,14 +52,12 @@ const SubNavbar = ({ color }) => {
               />
             </svg>
           </p>
-          
-          {/* Links */}
+
           <Typography
             as="a"
             href="#"
             className="opacity-80 transition-opacity hover:opacity-100"
           >
-            {/* Placeholder icon */}
             <svg
               className="h-5 w-5"
               fill={socialColorFill}
@@ -73,8 +71,7 @@ const SubNavbar = ({ color }) => {
               />
             </svg>
           </Typography>
-          
-          {/* LinkedIn icon */}
+
           <Typography
             as="a"
             href="#"
@@ -88,7 +85,6 @@ const SubNavbar = ({ color }) => {
   );
 };
 
-// Define PropTypes for the color prop
 SubNavbar.propTypes = {
   color: PropTypes.bool,
 };

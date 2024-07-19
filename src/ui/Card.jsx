@@ -50,13 +50,25 @@ function Card({ imageSrc, altText, title, iconWidth }) {
     "Global Reach & Flexible Solutions": {
       content: `Access a diverse pool of international investors and benefit from customized financing solutions tailored to meet the specific needs and goals of your asset portfolio.`,
     },
+    "Comprehensive Funding Process": {
+      content:
+        "Guiding fundraisers from onboarding to fund deployment with clarity and transparency.",
+    },
+    "Rigorous Verification Process": {
+      content:
+        "Ensuring authenticity through thorough KYC and document verification, enhancing investor confidence.",
+    },
+    "Flexible Investment Range": {
+      content:
+        "Supporting projects from USD 2 million and more, accommodating various stages of development.",
+    },
   };
 
   // Retrieve content based on title
   const { content } = cardContent[title];
 
   return (
-    <div className="w-full md:w-80 flex flex-col items-center overflow-hidden border shadow-2xl bg-white z-10 transition-transform transform hover:scale-105 hover:shadow-xl">
+    <div className="w-full lg:w-80 flex flex-col items-center overflow-hidden border shadow-2xl bg-white z-10 transition-transform transform hover:scale-105 hover:shadow-xl">
       <CardHeader
         floated={false}
         shadow={false}

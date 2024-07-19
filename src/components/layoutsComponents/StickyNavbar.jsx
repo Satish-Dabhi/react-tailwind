@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 const navListMenuItems = [
   {
     title: "Structured Finance",
-    link: "/fundraising",
+    link: "/structuredfinance",
   },
   {
     title: "Asset Monetization",
@@ -211,7 +211,7 @@ function NavList() {
           </ListItem>
         </Typography>
       </Link>
-      <Link to={"/invest"}>
+      <Link to={"/investwithus"}>
         <Typography
           variant="small"
           color="blue-gray"

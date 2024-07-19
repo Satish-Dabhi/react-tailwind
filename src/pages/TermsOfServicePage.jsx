@@ -2,11 +2,13 @@
 const TermsOfServicePage = () => {
   return (
     <div className="container mx-auto p-5">
-      <h1 className="text-4xl font-semibold mt-12 mb-5 text-center">Terms of Service</h1>
-      <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria5">
-        Introduction 
+      <h1 className="text-4xl font-semibold mt-12 mb-5 text-center">
+        Terms of Service
       </h1>
-      <p style={{fontSize:15}}>
+      <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria5">
+        Introduction
+      </h1>
+      <p style={{ fontSize: 15 }}>
         Welcome to the Terms & Conditions governing the use of
         epiidosisinvestments.com (hereinafter referred to as the "Website"),
         owned and operated by Epiidosis Investments LLC (referred to as
@@ -24,11 +26,11 @@ const TermsOfServicePage = () => {
         legal@epiidosisinvestments.com. Thank you for choosing Epiidosis
         Investments LLC.
       </p>
-     
+
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria5">
         Acceptance of Terms
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing or using the website epiidosisinvestments.com (referred to
         as the "Site"), owned and operated by Epiidosis Investments LLC
         (referred to as "Epiidosis Investments," "we," "us," or "our"), you
@@ -52,44 +54,44 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         User Eligibility
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing or using the website epiidosisinvestments.com ("the
         Website"), you acknowledge and agree to the following terms and
         conditions regarding user eligibility:
       </p>
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Age Requirement: Users must be at least 18 years old to access or use
           the Website. By accessing or using the Website, you represent and
           warrant that you are at least 18 years of age.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Legal Capacity: Users must have the legal capacity to enter into
           agreements and abide by these terms and conditions. If you are
           accessing or using the Website on behalf of a company, organization,
           or other legal entity, you represent and warrant that you have the
           authority to bind such entity to these terms and conditions.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Compliance with Laws: Users must comply with all applicable laws,
           regulations, and ordinances when accessing or using the Website. You
           are solely responsible for ensuring that your use of the Website is in
           compliance with all applicable laws and regulations.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Restricted Access: Certain features or services offered on the Website
           may be restricted to users who meet specific eligibility criteria.
           Epiidosis Investments LLC reserves the right to restrict access to
           such features or services at its discretion.{" "}
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Account Registration: Some features or services on the Website may
           require users to create an account. By registering for an account, you
           represent and warrant that all information provided is accurate,
           current, and complete, and that you will maintain and update this
           information as necessary.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Suspension or Termination: Epiidosis Investments LLC reserves the
           right to suspend or terminate access to the Website, or any part
           thereof, to any user who violates these terms and conditions or
@@ -97,7 +99,7 @@ const TermsOfServicePage = () => {
           harmful, or illegal.
         </li>
       </ol>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing or using the Website, you acknowledge that Epiidosis
         Investments LLC may verify your eligibility at any time, and that
         failure to meet the eligibility requirements may result in the
@@ -106,7 +108,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Account Registration and Security
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By registering an account on epiidosisinvestments.com, users agree to
         provide accurate, current, and complete information as prompted by the
         registration form. Users are responsible for maintaining the
@@ -122,19 +124,19 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         User Content
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing or using the website epiidosisinvestments.com ("the
         Website"), you acknowledge and agree to the following terms and
         conditions regarding user eligibility:
       </p>
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Ownership: Any content, including but not limited to text, images,
           videos, audio clips, or any other materials submitted, posted, or
           displayed by users on our website ("User Content"), remains the sole
           property of the respective users who contributed it.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           License: By submitting User Content on our website, you grant
           Epiidosis Investments LLC a worldwide, non-exclusive, royalty-free,
           perpetual, irrevocable, and fully sublicensable license to use,
@@ -142,115 +144,115 @@ const TermsOfServicePage = () => {
           display such User Content in connection with the operation and
           promotion of the website and our business.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Responsibility: You are solely responsible for the User Content you
           submit, post, or display on our website. You represent and warrant
           that you have all necessary rights, permissions, and consents to
           submit such User Content and grant the licenses described herein.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Accuracy: You agree that any User Content you submit will be accurate,
           lawful, and not violate the rights of any third party, including
           intellectual property rights, privacy rights, or publicity rights.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Prohibited Content: You may not submit any User Content that is
           unlawful, defamatory, obscene, harassing, threatening, abusive, or
           otherwise objectionable. Epiidosis Investments LLC reserves the right
           to remove or delete any User Content that violates these terms or our
           community guidelines.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Monitoring: While we do not actively monitor all User Content, we
           reserve the right to review, edit, or remove any User Content at our
           discretion, without prior notice or liability.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Prohibited Content: You may not submit any User Content that is
           unlawful, defamatory, obscene, harassing, threatening, abusive, or
           otherwise objectionable. Epiidosis Investments LLC reserves the right
           to remove or delete any User Content that violates these terms or our
           community guidelines.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Monitoring: While we do not actively monitor all User Content, we
           reserve the right to review, edit, or remove any User Content at our
           discretion, without prior notice or liability.
         </li>
       </ol>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing or using the Website, you acknowledge that Epiidosis
         Investments LLC may verify your eligibility at any time, and that
         failure to meet the eligibility requirements may result in the
         suspension or termination of your access to the Website.
       </p>
-      <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria" >
+      <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Prohibited Activities
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Users of the website epiidosisinvestments.com, operated by Epiidosis
         Investments LLC, Dubai, are prohibited from engaging in the following
         activities
       </p>
 
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Unauthorized Access: Users shall not attempt to gain unauthorized
           access to any portion of the website, server, or any other systems or
           networks connected to the website.{" "}
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Malicious Use: Users shall not engage in any activity that may
           interfere with, disrupt, or damage the proper functioning of the
           website, including the introduction of viruses, malware, or any other
           harmful code.{" "}
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Unauthorized Use: Users shall not use the website or its contents for
           any unlawful or unauthorized purpose, including but not limited to
           infringement of intellectual property rights, violation of privacy
           rights, or transmission of illegal or objectionable content.{" "}
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Data Mining: Users shall not engage in any data mining, scraping,
           harvesting, or similar activities to extract or collect information
           from the website without prior authorization.{" "}
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           False Representation: Users shall not impersonate any person or entity
           or falsely represent their affiliation with any person or entity while
           using the website.{" "}
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Commercial Use: Users shall not use the website for any commercial
           purposes without obtaining prior written consent from Epiidosis
           Investments LLC.{" "}
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Spamming: Users shall not engage in spamming, phishing, or other
           unsolicited communication activities on the website.{" "}
         </li>
-        <li style={{fontSize:15}} >
+        <li style={{ fontSize: 15 }}>
           Violation of Security: Users shall not violate or attempt to violate
           the security or integrity of the website, including but not limited to
           bypassing security measures, probing, scanning, or testing
           vulnerabilities.{" "}
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Reverse Engineering: Users shall not reverse engineer, decompile, or
           disassemble any part of the website or its underlying technology.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Misuse of User Accounts: Users shall not share, transfer, or assign
           their user accounts or login credentials to any third party without
           prior consent from Epiidosis Investments LLC.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Violation of Law: Users shall not use the website in any manner that
           violates applicable laws, regulations, or third-party rights.
         </li>
       </ol>
-      <p style={{fontSize:15}} >
+      <p style={{ fontSize: 15 }}>
         Epiidosis Investments LLC reserves the right to take appropriate action,
         including but not limited to suspension or termination of user accounts
         and legal recourse, against any user found to be engaging in prohibited
@@ -262,7 +264,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Third-Party Links
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Our website, epiidosisinvestments.com, may contain links to third-party
         websites or services that are not owned or controlled by Epiidosis
         Investments LLC. We do not endorse or assume any responsibility for the
@@ -278,14 +280,14 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Intellectual Property Rights
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         All content and materials available on epiidosisinvestments.com,
         including but not limited to text, graphics, logos, button icons,
         images, audio clips, digital downloads, data compilations, and software,
         are the property of Epiidosis Investments LLC or its licensors and are
         protected by copyright, trademark, and other intellectual property laws.{" "}
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Users are granted a limited, non-exclusive, non-transferable license to
         access and use the website and its content for personal, non-commercial
         purposes only. This license does not permit any resale or commercial use
@@ -293,14 +295,14 @@ const TermsOfServicePage = () => {
         contents, or any use of data mining, robots, or similar data gathering
         and extraction tools.
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Except as expressly permitted by these Terms & Conditions, users may not
         reproduce, distribute, modify, create derivative works of, publicly
         display, publicly perform, republish, download, store, or transmit any
         of the website's content without the prior written consent of Epiidosis
         Investments LLC.{" "}
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         All trademarks, service marks, trade names, and logos displayed on the
         website are the property of their respective owners and may not be used
         without the prior written consent of the trademark owner. Any
@@ -315,7 +317,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Copyright Policy
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Epiidosis Investments LLC respects the intellectual property rights of
         others and expects users of epiidosisinvestments.com to do the same.
         This Copyright Policy outlines our commitment to protecting copyright
@@ -323,7 +325,7 @@ const TermsOfServicePage = () => {
         infringement claims related to content posted on our website.
       </p>
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Ownership of Content: All content, including text, images, graphics,
           videos, audio clips, software, and other materials available on
           epiidosisinvestments.com, is the property of Epiidosis Investments LLC
@@ -332,36 +334,36 @@ const TermsOfServicePage = () => {
           using copyrighted content without authorization from the copyright
           owner, except as permitted by law.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Notice of Copyright Infringement: If you believe that your copyrighted
           work has been used or displayed on epiidosisinvestments.com in a
           manner that constitutes copyright infringement, please provide our
           designated Copyright Agent with a written notice ("Infringement
           Notice") containing the following information:
           <ul className="list-disc pl-10 pt-5">
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               Identification of the copyrighted work claimed to have been
               infringed, or, if multiple copyrighted works are covered by a
               single notification, a representative list of such works.
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               Identification of the material that is claimed to be infringing or
               to be the subject of infringing activity and that is to be removed
               or access to which is to be disabled, and information reasonably
               sufficient to permit Epiidosis Investments LLC to locate the
               material
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               Information reasonably sufficient to permit Epiidosis Investments
               LLC to contact you, such as an address, telephone number, and, if
               available, an email address.
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               A statement that you have a good faith belief that use of the
               material in the manner complained of is not authorized by the
               copyright owner, its agent, or the law.{" "}
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               A statement that the information in the notification is accurate,
               and under penalty of perjury, that you are authorized to act on
               behalf of the owner of an exclusive right that is allegedly
@@ -369,7 +371,7 @@ const TermsOfServicePage = () => {
             </li>
           </ul>
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Designated Copyright Agent: Infringement Notices should be sent to our
           designated Copyright Agent:
           <div className="mt-3 pl-10 ">
@@ -383,24 +385,24 @@ const TermsOfServicePage = () => {
             <p className="font-medium">Phone: +971-4-884-8644</p>
           </div>
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Counter-Notification: If you believe that material you posted on
           epiidosisinvestments.com was removed or access to it was disabled by
           mistake or misidentification, you may file a counter-notification
           ("Counter-Notification") with our Copyright Agent. The
           Counter-Notification must include:
           <ul className="list-disc pl-10 mt-3">
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               Identification of the material that has been removed or to which
               access has been disabled and the location at which the material
               appeared before it was removed or access was disabled.
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               A statement under penalty of perjury that you have a good faith
               belief that the material was removed or disabled as a result of
               mistake or misidentification.
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               Your name, address, and telephone number, and a statement that you
               consent to the jurisdiction of the Federal District Court for the
               judicial district in which your address is located (or a United
@@ -411,18 +413,18 @@ const TermsOfServicePage = () => {
             </li>
           </ul>
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Repeat Infringers: Epiidosis Investments LLC may terminate access to
           the website for users who are found to be repeat infringers of
           copyrighted content.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Modification of Policy: This Copyright Policy may be revised from time
           to time without notice, and any changes will be effective immediately
           upon posting on epiidosisinvestments.com.
         </li>
       </ol>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing or using epiidosisinvestments.com, you agree to comply with
         this Copyright Policy and all applicable copyright laws and regulations.
         Failure to adhere to these terms may result in the removal of infringing
@@ -431,7 +433,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Trademarks
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         All trademarks, service marks, trade names, logos, and other
         intellectual property rights displayed on epiidosisinvestments.com are
         the property of Epiidosis Investments LLC, its affiliates, or
@@ -447,20 +449,20 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         User-Generated Content
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing and using the website epiidosisinvestments.com ("the
         Website"), owned and operated by Epiidosis Investments LLC ("the
         Company"), users acknowledge and agree to abide by the following terms
         and conditions regarding user-generated content:
       </p>
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Responsibility: Users are solely responsible for any content they
           contribute, submit, or post on the Website, including but not limited
           to comments, reviews, suggestions, feedback, and other materials
           ("User-Generated Content")..
         </li>
-        <li style={{fontSize:15}} >
+        <li style={{ fontSize: 15 }}>
           Ownership: Users retain ownership of their User-Generated Content.
           However, by submitting content on the Website, users grant the Company
           a non-exclusive, royalty-free, perpetual, irrevocable, and fully
@@ -468,45 +470,45 @@ const TermsOfServicePage = () => {
           translate, distribute, and display such content worldwide in any
           media.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Compliance: Users agree that their User-Generated Content will comply
           with all applicable laws, regulations, and third-party rights,
           including but not limited to copyright, trademark, privacy, publicity,
           and defamation laws.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Prohibited Content: Users must not submit any User-Generated Content
           that is unlawful, defamatory, obscene, offensive, abusive, harassing,
           threatening, discriminatory, or otherwise objectionable. The Company
           reserves the right to remove or refuse to publish any User-Generated
           Content that violates these Terms & Conditions.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Monitoring: While the Company does not pre-screen User-Generated
           Content, it reserves the right to monitor, edit, or remove any content
           that violates these Terms & Conditions or is otherwise deemed
           inappropriate, in its sole discretion.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Liability: The Company disclaims any liability for User-Generated
           Content posted by users. Users acknowledge that they may be exposed to
           User-Generated Content that is inaccurate, offensive, indecent, or
           objectionable and agree to use the Website at their own risk.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Indemnification: Users agree to indemnify and hold the Company
           harmless from any claims, damages, losses, liabilities, costs, and
           expenses (including legal fees) arising out of or related to their
           User-Generated Content, including but not limited to any violation of
           these Terms & Conditions or infringement of third-party rights.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           8. Modification: The Company reserves the right to modify, suspend, or
           discontinue any aspect of the User-Generated Content feature on the
           Website at any time without prior notice.
         </li>
       </ol>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By contributing User-Generated Content on the Website, users acknowledge
         that they have read, understood, and agreed to be bound by these Terms &
         Conditions. Failure to comply with these terms may result in the removal
@@ -517,7 +519,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Digital Millennium Copyright Act (DMCA) Compliance
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Epiidosis Investments LLC, operator of the website
         epiidosisinvestments.com, is committed to upholding the principles of
         copyright protection and compliance with the Digital Millennium
@@ -526,21 +528,21 @@ const TermsOfServicePage = () => {
         DMCA compliance, we have implemented the following measures:
       </p>
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Notice and Takedown Procedure: We have established a notice and
           takedown procedure to address claims of copyright infringement on our
           website. If you believe that your copyrighted work has been used in a
           manner that constitutes copyright infringement, please notify our
           designated DMCA agent using the contact information provided below.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Notice of Copyright Infringement: If you believe that your copyrighted
           work has been used or displayed on epiidosisinvestments.com in a
           manner that constitutes copyright infringement, please provide our
           designated Copyright Agent with a written notice ("Infringement
           Notice") containing the following information:
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           2. DMCA Agent Contact Information: Our designated DMCA agent is
           responsible for receiving and processing notifications of alleged
           copyright infringement. You may contact our DMCA agent using the
@@ -556,30 +558,30 @@ const TermsOfServicePage = () => {
             <p className="font-medium">Phone: +971-4-884-8644</p>
           </div>
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Notification Requirements: To submit a valid DMCA notification, please
           ensure that your notice includes the following information:
           <ul className="list-disc pl-10 mt-3">
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               A physical or electronic signature of the copyright owner or
               authorized representative.
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               Identification of the copyrighted work claimed to have been
               infringed, or, if multiple copyrighted works are covered by a
               single notification, a representative list of such works.
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               Information reasonably sufficient to permit the service provider
               to contact the complaining party, such as an address, telephone
               number, and, if available, an email address.
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               A statement that the complaining party has a good faith belief
               that use of the material in the manner complained of is not
               authorized by the copyright owner, its agent, or the law.
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               A statement that the information in the notification is accurate,
               and under penalty of perjury, that the complaining party is
               authorized to act on behalf of the owner of an exclusive right
@@ -587,24 +589,26 @@ const TermsOfServicePage = () => {
             </li>
           </ul>
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Counter-Notification Procedure: If you believe that material you
           posted on our website was removed or access to it was disabled by
           mistake or misidentification, you may submit a counter-notification to
           our DMCA agent. Your counter-notification must include:
           <ul className="list-disc pl-10 mt-3">
-            <li style={{fontSize:15}}>Your physical or electronic signature.</li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
+              Your physical or electronic signature.
+            </li>
+            <li style={{ fontSize: 15 }}>
               Identification of the material that has been removed or to which
               access has been disabled and the location at which the material
               appeared before it was removed or access was disabled.
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               A statement under penalty of perjury that you have a good faith
               belief that the material was removed or disabled as a result of
               mistake or misidentification.
             </li>
-            <li style={{fontSize:15}}>
+            <li style={{ fontSize: 15 }}>
               Your name, address, and telephone number, and a statement that you
               consent to the jurisdiction of the federal district court for the
               judicial district in which your address is located, or if your
@@ -615,19 +619,19 @@ const TermsOfServicePage = () => {
             </li>
           </ul>
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Repeat Infringer Policy: We have implemented a repeat infringer policy
           in accordance with the DMCA. Users who repeatedly infringe copyrights
           may have their accounts terminated or access to our website suspended.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Removal of Infringing Content: Upon receipt of a valid DMCA
           notification, we will promptly remove or disable access to the
           allegedly infringing material. We may also terminate the accounts of
           users who infringe copyrights.{" "}
         </li>
       </ol>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By using our website, you acknowledge and agree to comply with our DMCA
         compliance measures. If you have any questions or concerns about
         copyright infringement or our DMCA compliance procedures, please contact
@@ -637,7 +641,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Disclaimer of Warranties{" "}
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         At Epiidosis Investments LLC, we strive to provide accurate and
         up-to-date information on our website, epiidosisinvestments.com.
         However, we make no representations or warranties of any kind, express
@@ -649,7 +653,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-xl mt-6 font-semibold mb-3 ">
         No Guarantee of Uninterrupted Access
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         We do not guarantee that our website will be available uninterrupted or
         error-free, or that defects will be corrected. Furthermore, we do not
         warrant that the servers that make our website available will be free of
@@ -661,7 +665,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-xl mt-6 font-semibold mb-3 ">
         No Legal or Financial Advice
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         The information provided on epiidosisinvestments.com is for general
         informational purposes only and does not constitute legal, financial, or
         other professional advice. Therefore, before making any decisions or
@@ -670,7 +674,7 @@ const TermsOfServicePage = () => {
         your specific circumstances.
       </p>
       <h1 className="text-xl mt-6 font-semibold mb-3 ">Changes and Updates</h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         We reserve the right to modify, suspend, or discontinue any aspect of
         our website at any time without prior notice. Additionally, we may
         revise these Terms & Conditions from time to time without notice. By
@@ -680,7 +684,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-xl mt-6 font-semibold mb-3 ">
         Your Acceptance of These Terms
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By using our website, you signify your acceptance of this Disclaimer of
         Warranties. If you do not agree to this Disclaimer, please refrain from
         using our website. Your continued use of the website following the
@@ -691,7 +695,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Limitation of Liability
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing or using the website epiidosisinvestments.com, you agree
         that Epiidosis Investments LLC, its affiliates, officers, directors,
         employees, agents, and licensors shall not be liable to you or any third
@@ -700,43 +704,45 @@ const TermsOfServicePage = () => {
         including but not limited to:
       </p>
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Any errors, inaccuracies, or omissions in the content displayed on the
           website.
         </li>
-        <li style={{fontSize:15}} >
+        <li style={{ fontSize: 15 }}>
           Any unauthorized access to or use of our servers and/or any personal
           information stored therein.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Any interruption or cessation of transmission to or from the website.{" "}
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Any bugs, viruses, Trojan horses, or the like that may be transmitted
           to or through the website by any third party.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Any loss or damage of any kind incurred as a result of the use of any
           content posted, emailed, transmitted, or otherwise made available via
           the website.
         </li>
-        <li style={{fontSize:15}}>Any reliance on any information obtained from the website.</li>
+        <li style={{ fontSize: 15 }}>
+          Any reliance on any information obtained from the website.
+        </li>
       </ol>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         This limitation of liability applies whether the alleged liability is
         based on contract, tort, negligence, strict liability, or any other
         basis, even if Epiidosis Investments LLC has been advised of the
         possibility of such damages.
       </p>
 
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         You specifically acknowledge that Epiidosis Investments LLC shall not be
         liable for any defamatory, offensive, or illegal conduct of any third
         party and that the risk of harm or damage from the foregoing rests
         entirely with you.
       </p>
 
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         In jurisdictions that do not allow the exclusion or limitation of
         liability for consequential or incidental damages, the liability of
         Epiidosis Investments LLC is limited to the fullest extent permitted by
@@ -746,7 +752,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Indemnification
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         As a condition of using our website epiidosisinvestments.com, you agree
         to indemnify and hold harmless Epiidosis Investments LLC, its
         subsidiaries, affiliates, officers, agents, and employees from and
@@ -756,7 +762,7 @@ const TermsOfServicePage = () => {
         transmit through the website, your violation of these Terms &
         Conditions, or your violation of any rights of another.
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         You agree to cooperate as reasonably required by Epiidosis Investments
         LLC in the defense of any claim. Epiidosis Investments LLC reserves the
         right to assume the exclusive defense and control of any matter subject
@@ -767,20 +773,20 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Governing Law and Jurisdiction
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         As a user of epiidosisinvestments.com, you agree that these Terms &
         Conditions and your use of the website shall be governed by and
         construed in accordance with the laws of the United Arab Emirates (UAE)
         without regard to its conflict of law provisions.
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Any dispute arising out of or related to your use of the website shall
         be subject to the exclusive jurisdiction of the courts of Dubai, UAE.
         You expressly consent to the personal jurisdiction of such courts and
         waive any objection to the venue or jurisdiction of such courts.
       </p>
 
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing or using our website, you agree to submit to the
         jurisdiction of the courts of Dubai, UAE for the resolution of any
         disputes arising from or related to these Terms & Conditions or your use
@@ -790,7 +796,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Severability
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         In the event that any provision of these Terms & Conditions is
         determined to be unlawful, void, or unenforceable, such provision shall
         nonetheless be enforceable to the fullest extent permitted by applicable
@@ -802,7 +808,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Waiver of Class Action
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         As a user of epiidosisinvestments.com, you acknowledge and agree that
         any dispute resolution proceedings will be conducted on an individual
         basis and not in a class, consolidated, or representative action. You
@@ -821,7 +827,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Arbitration
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         As part of the Terms & Conditions for using epiidosisinvestments.com
         ("the Website"), a corporate website of Epiidosis Investments LLC
         headquartered in Dubai, users agree to resolve any disputes or claims
@@ -834,7 +840,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-xl mt-6 font-semibold mb-3 ">
         Arbitration Agreement
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing or using the Website, users agree to submit any disputes,
         claims, or controversies arising out of or relating to the use of the
         Website, including but not limited to the interpretation, applicability,
@@ -846,7 +852,7 @@ const TermsOfServicePage = () => {
       </p>
 
       <h1 className="text-xl mt-6 font-semibold mb-3 ">Arbitration Process</h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Arbitration proceedings shall be conducted in accordance with the rules
         and procedures of a mutually agreed-upon arbitration provider, such as
         the American Arbitration Association (AAA) or the International Chamber
@@ -856,7 +862,7 @@ const TermsOfServicePage = () => {
       </p>
 
       <h1 className="text-xl mt-6 font-semibold mb-3 ">Arbitration Awards</h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         The arbitrator's decision shall be final and binding on all parties and
         may be entered as a judgment in any court of competent jurisdiction. The
         prevailing party in arbitration proceedings shall be entitled to recover
@@ -866,7 +872,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-xl mt-6 font-semibold mb-3 ">
         Waiver of Class Action
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By agreeing to arbitration, users waive their right to participate in
         any class action lawsuit or class-wide arbitration. All disputes shall
         be resolved on an individual basis, and users may not consolidate their
@@ -875,7 +881,7 @@ const TermsOfServicePage = () => {
       </p>
 
       <h1 className="text-xl mt-6 font-semibold mb-3 ">Opt-Out Provision</h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Users have the right to opt out of this arbitration agreement within
         thirty (30) days of first accessing or using the Website. To exercise
         this right, users must provide written notice of their decision to opt
@@ -883,19 +889,19 @@ const TermsOfServicePage = () => {
       </p>
 
       <h1 className="text-xl mt-6 font-semibold mb-3 ">Continued Use</h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Continued use of the Website after opting out of arbitration constitutes
         acceptance of these Terms & Conditions, including the arbitration
         agreement.
       </p>
 
       <h1 className="text-xl mt-6 font-semibold mb-3 ">Contact Information</h1>
-      <p style={{fontSize:15}}  >
+      <p style={{ fontSize: 15 }}>
         For inquiries or concerns regarding arbitration or these Terms &
         Conditions, users can contact Epiidosis Investments LLC at
         legal@epiidosisinvestments.com.
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         This Arbitration section governs the resolution of disputes arising from
         the use of the Website and ensures that users understand their rights
         and obligations in the event of a dispute.
@@ -904,7 +910,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-xl mt-6 font-semibold mb-3 ">
         Changes to Terms & Conditions
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         At Epiidosis Investments LLC, we reserve the right to modify or update
         these Terms & Conditions at any time without prior notice. Users are
         encouraged to review this section periodically for any changes. By
@@ -916,7 +922,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-xl mt-6 font-semibold mb-3 ">
         Notification of Changes
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         At Epiidosis Investments LLC, we reserve the right to modify or update
         these Terms & Conditions at any time, without prior notice, to reflect
         changes in our practices, legal requirements, or website
@@ -924,18 +930,18 @@ const TermsOfServicePage = () => {
         will be effective immediately upon posting on our website,
         epiidosisinvestments.com.
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         We encourage users to review these Terms & Conditions periodically to
         stay informed about any changes or updates. Your continued use of our
         website after the posting of any modifications indicates your acceptance
         of the updated terms.{" "}
       </p>
-      <p style={{fontSize:15}} >
+      <p style={{ fontSize: 15 }}>
         In the event of significant changes that may affect your rights or
         obligations, we may provide additional notification through email or
         prominent notices on our website.{" "}
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         If you have any questions or concerns about these Terms & Conditions or
         any changes thereto, please contact us at
         legal@epiidosisinvestments.com.
@@ -944,7 +950,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         Electronic Communications
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         At Epiidosis Investments LLC, we may communicate with users
         electronically for various purposes related to the use of our website,
         epiidosisinvestments.com. By using our website and providing your
@@ -952,35 +958,35 @@ const TermsOfServicePage = () => {
         from us, including but not limited to:
       </p>
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}} >
+        <li style={{ fontSize: 15 }}>
           Email Communications: We may send you emails regarding account
           registration, updates, newsletters, promotions, and other relevant
           information related to our services.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Notifications: You may receive electronic notifications, alerts, or
           messages regarding your account activity, changes to our website, or
           important updates that may affect your user experience.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Consent Confirmation: By providing your email address or other contact
           information, you acknowledge and agree that we may use electronic
           communications as a method of confirming your consent to various
           actions, such as subscribing to newsletters or receiving promotional
           offers.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Opt-Out Options: Users have the option to unsubscribe from receiving
           electronic communications from us at any time by following the
           instructions provided in the communication or by contacting our
           support team.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Retention of Communications: We may retain records of electronic
           communications sent to and received from users for administrative,
           legal, or compliance purposes.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Security of Communications: While we take reasonable measures to
           secure electronic communications transmitted through our website,
           users should be aware that no method of electronic transmission or
@@ -988,7 +994,7 @@ const TermsOfServicePage = () => {
           sharing sensitive information electronically.
         </li>
       </ol>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By providing your consent to receive electronic communications from
         Epiidosis Investments LLC, you acknowledge and agree that electronic
         communications constitute a legally binding form of communication and
@@ -1001,13 +1007,13 @@ const TermsOfServicePage = () => {
       <h1 className="text-4xl font-semibold font-inria text-primary mt-12 mb-5">
         Entire Agreement
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         As part of your use of the website epiidosisinvestments.com, owned and
         operated by Epiidosis Investments LLC, based in Dubai, you agree that
         these Terms & Conditions constitute the entire agreement between you and
         Epiidosis Investments LLC regarding the subject matter herein.
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By accessing or using the website, you acknowledge and agree that these
         Terms & Conditions supersede any prior agreements, communications, or
         understandings, whether oral or written, between you and Epiidosis
@@ -1017,7 +1023,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-4xl font-semibold font-inria text-primary mt-12 mb-5">
         Assignment and Transfer
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         At Epiidosis Investments LLC, users acknowledge and agree that they may
         not assign, transfer, or delegate their rights or obligations under
         these Terms & Conditions without prior written consent from Epiidosis
@@ -1026,7 +1032,7 @@ const TermsOfServicePage = () => {
         reserves the right to assign, transfer, or delegate any of its rights or
         obligations under these Terms & Conditions without restriction.
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Furthermore, in the event of a merger, acquisition, reorganization, or
         sale of assets involving Epiidosis Investments LLC, users acknowledge
         and agree that their personal information and other data may be
@@ -1036,7 +1042,7 @@ const TermsOfServicePage = () => {
         information.
       </p>
 
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Furthermore, in the event of a merger, acquisition, reorganization, or
         sale of assets involving Epiidosis Investments LLC, users acknowledge
         and agree that their personal information and other data may be
@@ -1045,7 +1051,7 @@ const TermsOfServicePage = () => {
         entity's terms and policies regarding the use and protection of their
         information.
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Any assignment or transfer in violation of these Terms & Conditions
         shall be deemed a material breach and may result in the termination of
         user access to the website and services provided by Epiidosis
@@ -1056,7 +1062,7 @@ const TermsOfServicePage = () => {
         Language
       </h1>
 
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         As part of our commitment to inclusivity and accessibility, we provide
         translations of the terms and conditions into other languages for users
         of our website, epiidosisinvestments.com. Epiidosis Investments LLC,
@@ -1074,7 +1080,7 @@ const TermsOfServicePage = () => {
         Feedback and Suggestions
       </h1>
 
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         At Epiidosis Investments LLC, we value your feedback and suggestions as
         they help us improve our services and enhance your user experience on
         our website, epiidosisinvestments.com. We encourage you to share your
@@ -1087,24 +1093,24 @@ const TermsOfServicePage = () => {
       <h1 className="text-xl mt-6 font-semibold mb-3 ">
         How to Provide Feedback and Suggestions
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         We welcome feedback and suggestions through various channels, including:
       </p>
 
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Contact Form: You can use the contact form provided on our website to
           submit your feedback and suggestions directly to our team. Please
           ensure to provide accurate contact information so that we can respond
           to your inquiry promptly.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Email: Feel free to send us an email at
           feedback@epiidosisinvestments.com with your feedback and suggestions.
           Our dedicated team will review your message and take appropriate
           action based on your input.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Customer Support: If you have specific concerns or suggestions related
           to our products or services, you can reach out to our customer support
           team for assistance. They are available to address any questions or
@@ -1115,27 +1121,27 @@ const TermsOfServicePage = () => {
       <h1 className="text-4xl font-semibold font-inria text-primary mt-12 mb-5">
         Guidelines for Providing Feedback and Suggestions
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         To ensure that we can effectively address your feedback and suggestions,
         please adhere to the following guidelines:
       </p>
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Be Specific: Clearly articulate your feedback or suggestion, providing
           detailed information to help us understand the issue or improvement
           you are proposing.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Be Constructive: Offer constructive criticism and practical
           suggestions for improvement. We value constructive feedback that helps
           us identify areas for enhancement and implement meaningful changes.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Be Respectful: Maintain a respectful and courteous tone when providing
           feedback or suggestions. We value open and honest communication but
           expect all interactions to be conducted in a professional manner.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Provide Contact Information: If you would like us to follow up on your
           feedback or suggestion, please provide accurate contact information so
           that we can reach out to you if necessary.
@@ -1145,14 +1151,14 @@ const TermsOfServicePage = () => {
       <h1 className="text-4xl font-semibold font-inria text-primary mt-12 mb-5">
         Our Commitment to Feedback and Suggestions
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         At Epiidosis Investments LLC, we are committed to actively listening to
         our users and incorporating their feedback into our decision-making
         processes. Your input is invaluable to us, and we are dedicated to
         continuously improving our website and services based on your
         suggestions.
       </p>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         By providing feedback and suggestions, you contribute to our ongoing
         efforts to deliver a seamless and user-friendly experience for all
         visitors to our website. We appreciate your engagement and look forward
@@ -1162,38 +1168,40 @@ const TermsOfServicePage = () => {
       <h1 className="text-primary text-4xl mt-12 mb-5 font-semibold font-inria">
         No Unlawful or Prohibited Use
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Users of epiidosisinvestments.com, a corporate website of Epiidosis
         Investments LLC, Dubai, are prohibited from engaging in any unlawful or
         prohibited activities while accessing or using the website. This
         includes, but is not limited to:
       </p>
       <ol className="text-lg font-inter p-10 list-decimal">
-        <li style={{fontSize:15}}>Violating any applicable laws, regulations, or ordinances.</li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
+          Violating any applicable laws, regulations, or ordinances.
+        </li>
+        <li style={{ fontSize: 15 }}>
           Infringing upon the rights of others, including intellectual property
           rights.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Transmitting or posting any material that is unlawful, defamatory,
           obscene, or offensive.{" "}
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Interfering with the operation of the website or the servers and
           networks connected to it.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Attempting to gain unauthorized access to any portion or feature of
           the website, or any other systems or networks connected to the
           website.
         </li>
-        <li style={{fontSize:15}}>
+        <li style={{ fontSize: 15 }}>
           Engaging in any conduct that could damage, disable, overburden, or
           impair the website or interfere with any other party's use and
           enjoyment of the website.
         </li>
       </ol>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Users found violating these terms may be subject to legal action and
         termination of their access to the website. Epiidosis Investments LLC
         reserves the right to investigate and take appropriate legal action
@@ -1205,7 +1213,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-4xl font-semibold font-inria text-primary mt-12 mb-5">
         Headings and Construction
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         In drafting the terms and conditions for the use of our website,
         epiidosisinvestments.com, we employ clear headings and construction to
         ensure ease of understanding and navigation. Each section of the terms
@@ -1218,7 +1226,7 @@ const TermsOfServicePage = () => {
       <h1 className="text-4xl font-semibold font-inria text-primary mt-12 mb-5">
         Contact Information
       </h1>
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         As part of our commitment to transparency and accessibility, we provide
         contact information for users to reach out to us regarding any
         inquiries, concerns, or feedback related to the terms and conditions of
@@ -1232,7 +1240,7 @@ const TermsOfServicePage = () => {
         <li>Phone: +971-4-884-8644 </li>
       </ul>
 
-      <p style={{fontSize:15}}>
+      <p style={{ fontSize: 15 }}>
         Our dedicated support team is available to address your queries and
         ensure clarity on any aspect of the Terms & Conditions. We value your
         feedback and strive to provide timely and efficient assistance to all
@@ -1240,16 +1248,38 @@ const TermsOfServicePage = () => {
       </p>
 
       <h1 className="text-4xl font-semibold font-inria text-primary mt-12 mb-5">
-      Effective Date
+        Effective Date
       </h1>
-<p style={{fontSize:15}}>As of 15h of March, 2024, these Terms & Conditions govern your use of the website epiidosisinvestments.com (the "Website") operated by Epiidosis Investments LLC ("Epiidosis Investments," "we," "us," or "our"). By accessing or using the Website, you agree to comply with these Terms & Conditions. If you do not agree with any part of these Terms & Conditions, you must not use the Website.</p>
-<p style={{fontSize:15}}>These Terms & Conditions constitute a legally binding agreement between you and Epiidosis Investments. Please read these Terms & Conditions carefully before using the Website.</p>
-<p style={{fontSize:15}}>We reserve the right to modify or update these Terms & Conditions at any time without prior notice. Any changes to these Terms & Conditions will be effective immediately upon posting on the Website. Your continued use of the Website after the posting of any modifications constitutes acceptance of those changes.</p>
- <p style={{fontSize:15}}>It is your responsibility to review these Terms & Conditions periodically for any updates or changes. If you do not agree with the modified Terms & Conditions, you must discontinue using the Website.</p>   
-    <p style={{fontSize:15}}>This comprehensive list covers all essential aspects of the terms and conditions governing the use of the website, providing clarity and transparency for users.</p>
-     
-     
-      
+      <p style={{ fontSize: 15 }}>
+        As of 15h of March, 2024, these Terms & Conditions govern your use of
+        the website epiidosisinvestments.com (the "Website") operated by
+        Epiidosis Investments LLC ("Epiidosis Investments," "we," "us," or
+        "our"). By accessing or using the Website, you agree to comply with
+        these Terms & Conditions. If you do not agree with any part of these
+        Terms & Conditions, you must not use the Website.
+      </p>
+      <p style={{ fontSize: 15 }}>
+        These Terms & Conditions constitute a legally binding agreement between
+        you and Epiidosis Investments. Please read these Terms & Conditions
+        carefully before using the Website.
+      </p>
+      <p style={{ fontSize: 15 }}>
+        We reserve the right to modify or update these Terms & Conditions at any
+        time without prior notice. Any changes to these Terms & Conditions will
+        be effective immediately upon posting on the Website. Your continued use
+        of the Website after the posting of any modifications constitutes
+        acceptance of those changes.
+      </p>
+      <p style={{ fontSize: 15 }}>
+        It is your responsibility to review these Terms & Conditions
+        periodically for any updates or changes. If you do not agree with the
+        modified Terms & Conditions, you must discontinue using the Website.
+      </p>
+      <p style={{ fontSize: 15 }}>
+        This comprehensive list covers all essential aspects of the terms and
+        conditions governing the use of the website, providing clarity and
+        transparency for users.
+      </p>
     </div>
   );
 };
