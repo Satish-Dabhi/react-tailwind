@@ -26,28 +26,28 @@ const OfficeDetails = ({ office }) => {
   const { email, phone, address, mapSrc } = officeData[office];
 
   return (
-    <div className="md:px-10 lg:pl-28 mt-5">
+    <div className="px-10 lg:pl-28 mt-5">
       <p className="text-3xl font-bold mb-4 font-inria">
         Get A free consultation
       </p>
       <ul className="mb-4">
         <li className="flex items-center mb-6">
-          <MdMail className="h-8 w-8 mr-4 text-3xl text-blue-500" />
+          <MdMail className="h-7 w-7 mr-4 text-3xl text-blue-500" />
           <span className="text-[#5F5D5E]"> {email}</span>
         </li>
         <li className="flex items-center mb-6">
-          <MdPhone className="h-8 w-8 mr-4 text-3xl text-blue-500" />
+          <MdPhone className="h-7 w-7 mr-4 text-3xl text-blue-500" />
           <span className="text-[#5F5D5E]"> {phone}</span>
         </li>
         <li className="flex items-center mb-6">
-          <MdLocationOn className="h-8 w-8 mr-4 text-3xl text-blue-500" />
+          <MdLocationOn className="h-7 w-7 mr-4 text-3xl text-blue-500" />
           <span className="text-[#5F5D5E]"> {address}</span>
         </li>
       </ul>
       <iframe
         title={`${office} Office Map`}
         src={mapSrc}
-        width="420"
+        width="85%"
         height="300"
         style={{ border: 0, borderRadius: 10 }}
         allowFullScreen=""
@@ -81,7 +81,7 @@ const ContactUsUI = () => {
           >
             Dubai Office
           </button>
-          <button
+          <button 
             className={`px-4 py-2 transition-colors duration-300 text-xl ${
               selectedOffice === "india"
                 ? "text-[#39A1DE] font-bold"

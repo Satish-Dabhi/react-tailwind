@@ -25,6 +25,8 @@ import BillingPaymentsPage from "./pages/BillingPaymentsPage";
 import EmergencySupportPage from "./pages/EmergencySupportPage";
 // import LeadForm from "./components/Invest/LeadForm";
 import Invest from "./pages/Invest";
+import Blogs from "./pages/Blog";
+import BlogDetails from "./pages/BlogDetails";
 
 const App = () => {
   return (
@@ -33,6 +35,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/investwithus" element={<Invest />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogsDetails" element={<BlogDetails />} />
         <Route path="/structuredfinance" element={<StructuredFinance />} />
         {/* <Route path="/structuredfinance" element={<StructuredFinance />} /> */}
         <Route path="/assetmonetization" element={<AssetMonetization />} />
