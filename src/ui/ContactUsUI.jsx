@@ -26,30 +26,30 @@ const OfficeDetails = ({ office }) => {
   const { email, phone, address, mapSrc } = officeData[office];
 
   return (
-    <div className="px-10 lg:pl-20 mt-5">
+    <div className="md:px-10 lg:pl-28 mt-5">
       <p className="text-3xl font-bold mb-4 font-inria">
         Get A free consultation
       </p>
       <ul className="mb-4">
-        <li className="flex items-center mb-4">
-          <MdMail className="h-5 w-5 mr-4 text-3xl text-blue-500" />
+        <li className="flex items-center mb-6">
+          <MdMail className="h-8 w-8 mr-4 text-3xl text-blue-500" />
           <span className="text-[#5F5D5E]"> {email}</span>
         </li>
-        <li className="flex items-center mb-4">
-          <MdPhone className="h-5 w-5 mr-4 text-3xl text-blue-500" />
+        <li className="flex items-center mb-6">
+          <MdPhone className="h-8 w-8 mr-4 text-3xl text-blue-500" />
           <span className="text-[#5F5D5E]"> {phone}</span>
         </li>
-        <li className="flex items-center mb-4">
-          <MdLocationOn className="h-5 w-5 mr-4 text-3xl text-blue-500" />
+        <li className="flex items-center mb-6">
+          <MdLocationOn className="h-8 w-8 mr-4 text-3xl text-blue-500" />
           <span className="text-[#5F5D5E]"> {address}</span>
         </li>
       </ul>
       <iframe
         title={`${office} Office Map`}
         src={mapSrc}
-        width="100%"
+        width="420"
         height="300"
-        style={{ border: 0 }}
+        style={{ border: 0, borderRadius: 10 }}
         allowFullScreen=""
         loading="lazy"
       ></iframe>
@@ -102,9 +102,9 @@ const ContactUsUI = () => {
         </nav>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         <OfficeDetails office={selectedOffice} />
-        <div className="md:px-10 lg:pl-20 mt-5">
+        <div className="md:px-10 lg:pr-28 mt-5">
           <ContactUsForm />
         </div>
       </div>

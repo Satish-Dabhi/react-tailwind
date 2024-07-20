@@ -36,9 +36,9 @@ const ContactUsForm = () => {
   // Reusable input field component
 
   return (
-    <div className="max-w-md mx-auto my-8">
+    <div className="max-w-md my-8">
       <div className="flex flex-col items-center justify-center p-4">
-        <form className="space-y-6 w-full" onSubmit={handleSubmit}>
+        <form className="space-y-12 w-full" onSubmit={handleSubmit}>
           <InputField
             label="Name"
             id="name"
@@ -76,7 +76,7 @@ const ContactUsForm = () => {
           />
           <div className="flex justify-end">
             <Button
-              className="font-normal flex items-center w-fit mt-3 animate-slidein [--slidein-delay:700ms] opacity-0"
+              className="font-normal flex items-center w-fit !mt-0 animate-slidein [--slidein-delay:700ms] opacity-0"
               style={{
                 backgroundImage:
                   "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
@@ -90,23 +90,25 @@ const ContactUsForm = () => {
               }}
               type="submit"
             >
-              <span className="font-inria font-normal normal-case text-xl px-[1rem]">
-                Submit
-              </span>{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 ml-1"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                />
+              <div className="px-[1rem] flex items-center">
+                <span className="font-inria font-normal normal-case text-xl pr-2">
+                  Submit
+                </span>{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-4 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
               </svg>
+              </div>
             </Button>
           </div>
         </form>
