@@ -16,10 +16,10 @@ function MissionSection() {
     >
       <div className="absolute inset-0 bg-black opacity-50 hover:opacity-40 transition-opacity duration-300"></div> {/* Overlay for text visibility */}
       <div className="mt-3 md:mt-12 text-white absolute inset-0 flex flex-col px-12 lg:px-24">
-          <p className="text-white font-inria text-4xl my-5 font-semibold">
+          <p className="text-white font-inria text-2xl lg:text-4xl my-5 font-semibold">
             OUR HISTORY
           </p>
-          <p className="mt-3 md:mt-12 text-white font-inter text-base font-light leading-36 leading-[25px] tracking-[0.01em]">
+          <p className="mt-3 md:mt-12 text-white font-inter text-xs lg:text-base font-light leading-36 leading-[25px] tracking-[0.01em]">
             Epiidosis Investments LLC has quickly risen to prominence since its
             inception in 2020. Founded with a vision to identify and capitalize
             on high-potential investment opportunities, we have established

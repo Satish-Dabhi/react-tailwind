@@ -20,7 +20,7 @@ const OurClientService = () => {
           </p>
         </div>
         <div className="flex justify-center mt-4 mb-4">
-          <ButtonPrimaryUi>
+          <ButtonPrimaryUi text='Explore Now'>
             <span className="flex">
               Explore Now{" "}
               <svg

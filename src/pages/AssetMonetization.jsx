@@ -29,6 +29,25 @@ const monetizationOptions = [
     details: ['Free from any debts', 'Situated in prime commercial locations', 'Generating Return on Investment (ROI)'],
   },
 ];
+
+// const heroBannerCards = [
+//   {
+//     imageSrc: bannerImg1,
+//     altText: "retainPortfolioImg",
+//     title: "Retain Portfolio Ownership",
+//   },
+//   {
+//     imageSrc: bannerImg2,
+//     altText: "flexibleFundImg",
+//     title: "Flexible Fund Utilization",
+//   },
+//   {
+//     imageSrc: bannerImg3,
+//     altText: "efficientAndCompetitiveImg",
+//     title: "Efficient and Competitive",
+//   },
+// ];
+
 const AssetMonetization = () => {
   const handleContactUs = () => {
     // Handle contact us button click

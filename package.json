@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "proxy": "https://erp.epiidosisinvestments.com",
   "scripts": {
     "start": "vite",
     "dev": "vite",

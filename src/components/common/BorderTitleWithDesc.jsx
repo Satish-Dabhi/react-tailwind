@@ -6,7 +6,7 @@ function BorderTitleWithDesc({ title, description }) {
       <p className="text-4xl font-inria font-semibold relative">
         <span className="relative">
           {title}
-          <span className="absolute -bottom-[1rem] left-0 h-[6px] w-[30%] bg-gradient-to-r from-[#339FDE] to-[#1C5678]"></span>
+          <span className="absolute -bottom-[1rem] left-0 h-[4px] w-[30%] bg-gradient-to-r from-[#339FDE] to-[#1C5678]"></span>
         </span>
       </p>
       {description && <p className="text-gray-600 text-lg mt-10">{description}</p>}

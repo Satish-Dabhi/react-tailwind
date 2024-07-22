@@ -7,7 +7,7 @@ const FounderCard = ({ image, name, title, description }) => {
         <img
           src={image}
           alt={name}
-          className="w-full md:w-64 h-40 md:h-80 rounded object-cover shadow-md mb-4 md:mb-0"
+          className="w-full md:w-64 rounded object-cover shadow-md mb-4 md:mb-0"
         />
         <div className="md:ml-5 md:mr-10">
           <p className="font-inria text-base font-light">{title}</p>

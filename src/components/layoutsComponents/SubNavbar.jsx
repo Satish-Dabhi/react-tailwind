@@ -14,7 +14,7 @@ const SubNavbar = ({ color }) => {
       <div className="container mx-auto flex flex-col lg:flex-row md:items-center justify-end md:justify-between">
         <Typography
           variant="small"
-          className="mb-4 text-end font-normal text-blue-gray-900 md:mb-0 md:flex md:items-center gap-1"
+          className="mb-4 text-end font-normal text-blue-gray-900 md:mb-0 md:flex md:items-center gap-1 pl-[18px]"
         >
           <div className="email-container flex justify-end">
             <MdEmail
@@ -38,7 +38,11 @@ const SubNavbar = ({ color }) => {
         </Typography>
 
         <div className="flex gap-4 text-blue-gray-900 justify-end md:justify-start">
-          <p className="opacity-80 transition-opacity hover:opacity-100">
+        <Typography
+                as="a"
+                href="https://www.facebook.com/epiidosisinvestments"
+                className="transition-opacity hover:opacity-100"
+              >
             <svg
               className="h-5 w-5"
               fill={socialColorFill}
@@ -51,11 +55,11 @@ const SubNavbar = ({ color }) => {
                 clipRule="evenodd"
               />
             </svg>
-          </p>
+          </Typography>
 
           <Typography
             as="a"
-            href="#"
+            href="https://www.instagram.com/epiidosisinvestments/"
             className="opacity-80 transition-opacity hover:opacity-100"
           >
             <svg
@@ -74,7 +78,7 @@ const SubNavbar = ({ color }) => {
 
           <Typography
             as="a"
-            href="#"
+           href="https://www.linkedin.com/company/epiidosis-investments-llc/"
             className="opacity-80 transition-opacity hover:opacity-100 flex items-center"
           >
             <FaLinkedin className="h-5 w-5" color={socialColorFill} />

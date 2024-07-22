@@ -41,3 +41,21 @@
     opacity: 1;
   }
   
+
+  .navbar-main-block {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.navbar-main-block.scrolled {
+    background-color: white; /* Change to your desired color when scrolled */
+    color: white;
+}
+
+.flex-grow{
+  padding-top:106px;
+}

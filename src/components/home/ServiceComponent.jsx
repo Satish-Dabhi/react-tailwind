@@ -8,11 +8,12 @@ const ServiceComponent = () => {
   return (
     <>
       <div className="bg-bgprimary p-5 md:py-8">
-        <div className="container mx-auto flex flex-col md:flex-row md:justify-center items-center md:flex-wrap 2xl:gap-[15rem] mt-12 mb-12">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row md:justify-center items-center md:flex-wrap 2xl:gap-[15rem] mt-12 mb-12">
           <img
             alt="deal"
             src={Sfinance}
-            className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0"
+            className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0 mr-auto"
           />
           <div className="text-center md:text-start max-w-full md:max-w-[30rem]">
             <p
@@ -35,13 +36,15 @@ const ServiceComponent = () => {
               bring their projects to life and achieve their goals.
             </p>
             <div className="flex justify-center md:justify-start mt-4">
-              <ButtonPrimaryUi to="/fundraising">Know More</ButtonPrimaryUi>
+              <ButtonPrimaryUi to="/structuredfinance" text="Know More">Know More</ButtonPrimaryUi>
             </div>
           </div>
         </div>
+        </div>
       </div>
 
-      <div className="container mx-auto flex flex-col md:flex-row md:justify-center items-center md:flex-wrap 2xl:gap-[15rem] mt-12 mb-12">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row md:justify-center items-center md:flex-wrap 2xl:gap-[15rem] mt-12 mb-12">
         <div className="text-start text-wrap m-4">
           <p
             className="text-3xl md:text-4xl font-semibold font-inria text-center md:text-start"
@@ -64,21 +67,23 @@ const ServiceComponent = () => {
             monetization solutions.
           </p>
           <div className="flex gap-2 mt-4 pl-5 pr-5 md:pr-0 md:pl-0">
-            <ButtonPrimaryUi to="/assetmonetization">Know More</ButtonPrimaryUi>
+            <ButtonPrimaryUi to="/assetmonetization" text="Know More">Know More</ButtonPrimaryUi>
           </div>
         </div>
         <img
           alt="deal"
           src={Asset}
-          className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0"
+          className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0 ml-auto"
         />
+        </div>
       </div>
       <div className="bg-bgprimary p-5">
-        <div className="container mx-auto flex flex-col md:flex-row md:justify-center items-center md:flex-wrap 2xl:gap-[15rem] mt-12 mb-12">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row md:justify-center items-center md:flex-wrap 2xl:gap-[15rem] mt-12 mb-12">
           <img
             alt="deal"
             src={Lstocks}
-            className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0"
+            className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0 mr-auto"
           />
           <div className="text-start text-wrap">
             <p
@@ -106,10 +111,11 @@ const ServiceComponent = () => {
               rates.
             </p>
             <div className="flex gap-2 pl-5 pr-5 mt-4 md:pl-0 md:pr-0">
-              <ButtonPrimaryUi to="/loanssecuredbylistedstocks">
+              <ButtonPrimaryUi to="/loanssecuredbylistedstocks" text="Know More">
                 Know More
               </ButtonPrimaryUi>
             </div>
+          </div>
           </div>
         </div>
       </div>

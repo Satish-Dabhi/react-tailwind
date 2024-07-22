@@ -148,7 +148,12 @@ export function Footer() {
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
             <div className="flex gap-4 text-blue-gray-900 justify-center md:justify-start">
-              <p className="transition-opacity hover:opacity-100">
+              {/* <p className="transition-opacity hover:opacity-100"> */}
+              <Typography
+                as="a"
+                href="https://www.facebook.com/epiidosisinvestments"
+                className="transition-opacity hover:opacity-100"
+              >
                 <svg
                   width="10"
                   height="19"
@@ -161,12 +166,13 @@ export function Footer() {
                     fill="white"
                   />
                 </svg>
-              </p>
+              {/* </p> */}
+              </Typography>
 
               {/* Links */}
               <Typography
                 as="a"
-                href="#"
+                href="https://www.instagram.com/epiidosisinvestments/"
                 className="transition-opacity hover:opacity-100"
               >
                 {/* Placeholder icon */}
@@ -187,7 +193,7 @@ export function Footer() {
               {/* LinkedIn icon */}
               <Typography
                 as="a"
-                href="#"
+                href="https://www.linkedin.com/company/epiidosis-investments-llc/"
                 className="transition-opacity hover:opacity-100 flex items-center"
               >
                 <FaLinkedin className="h-5 w-5" color={socialColorFill} />

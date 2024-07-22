@@ -246,7 +246,7 @@ export function StickyNavbar({ color }) {
       <div className="container mx-auto">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Link to={"/"}>
-            <img alt="logo" src={companyLogo} className="w-[150px]"/>
+            <img alt="logo" src={companyLogo} className="w-[256px]"/>
           </Link>
           <div className="flex">
             <div className="hidden lg:block mr-8">

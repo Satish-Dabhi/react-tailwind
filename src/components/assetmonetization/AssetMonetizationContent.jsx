@@ -14,13 +14,18 @@ const AssetMonetizationContent = () => {
     <div style={divStyle}>
       <h2 className="text-center text-3xl font-semibold mb-4"><br></br>How it works</h2>
       <div className="max-w-4xl mx-auto">
-        <p className="text-center">
+        <p className="text-center text-white">
         Epiidosis Investments simplifies the investment process with a structured approach. From registration and documentation to fund deployment and project management, we ensure a clear pathway for investors. Our step-by-step guide emphasizes transparency, efficiency, and strategic deployment of funds to maximize project success.
 
         </p>
       </div>
       <div className="relative mx-auto max-w-full mt-8">
         <img src={AssetMonetizationImage} alt="Asset Monetization" className="mx-auto" style={{ width: "100%", maxWidth: "800px" }} />
+      </div>
+      <div className="max-w-4xl mx-auto">
+      <p className="text-center text-white mt-10">
+        *The dashboard provides real-time updates on the asset owner&apos;s progress, offering status and instructions for each step in the asset monetization process.
+        </p>
       </div>
     </div>
   );

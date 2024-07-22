@@ -8,8 +8,7 @@ const OfficeDetails = ({ office }) => {
     dubai: {
       email: "info@epiidosisinvestments.com",
       phone: "+971 (04) 884 8644",
-      address:
-        "818, Park Lane Tower, Business Bay,415203,Dubai",
+      address: "818, Park Lane Tower, Business Bay,415203,Dubai",
       mapSrc:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.482678850987!2d55.26850901549535!3d25.187607283902174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6ad8b9cde8c3%3A0xc426e0d40297036d!2sEpiidosis%20Investments%20LLC!5e0!3m2!1sen!2sae",
     },
@@ -26,30 +25,30 @@ const OfficeDetails = ({ office }) => {
   const { email, phone, address, mapSrc } = officeData[office];
 
   return (
-    <div className="px-10 lg:pl-28 mt-5">
+    <div className="px-10 lg:pl-20 mt-5">
       <p className="text-3xl font-bold mb-4 font-inria">
         Get A free consultation
       </p>
       <ul className="mb-4">
-        <li className="flex items-center mb-6">
-          <MdMail className="h-7 w-7 mr-4 text-3xl text-blue-500" />
+        <li className="flex items-center mb-4">
+          <MdMail className="h-5 w-5 mr-4 text-3xl text-blue-500" />
           <span className="text-[#5F5D5E]"> {email}</span>
         </li>
-        <li className="flex items-center mb-6">
-          <MdPhone className="h-7 w-7 mr-4 text-3xl text-blue-500" />
+        <li className="flex items-center mb-4">
+          <MdPhone className="h-5 w-5 mr-4 text-3xl text-blue-500" />
           <span className="text-[#5F5D5E]"> {phone}</span>
         </li>
-        <li className="flex items-center mb-6">
-          <MdLocationOn className="h-7 w-7 mr-4 text-3xl text-blue-500" />
+        <li className="flex items-center mb-4">
+          <MdLocationOn className="h-5 w-5 mr-4 text-3xl text-blue-500" />
           <span className="text-[#5F5D5E]"> {address}</span>
         </li>
       </ul>
       <iframe
         title={`${office} Office Map`}
         src={mapSrc}
-        width="85%"
+        width="80%"
         height="300"
-        style={{ border: 0, borderRadius: 10 }}
+        style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
       ></iframe>
@@ -102,9 +101,9 @@ const ContactUsUI = () => {
         </nav>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
         <OfficeDetails office={selectedOffice} />
-        <div className="md:px-10 lg:pr-28 mt-5">
+        <div className="md:px-5 lg:pl-10 md:mt-0">
           <ContactUsForm />
         </div>
       </div>

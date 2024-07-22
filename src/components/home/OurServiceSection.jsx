@@ -2,8 +2,9 @@ import Fnavigation from "/img/Fnavigation.png";
 
 const OurServiceSection = () => {
   return (
-    <div className="container mx-auto flex flex-col sm:mt-[1rem] md:mt-[6rem] lg:mt-[1rem] 2xl:mt-[8rem] md:flex-row md:justify-center items-center md:flex-wrap 2xl:gap-[5rem] mt-12 mb-12">
-      <img alt="deal" src={Fnavigation} className=" md:h-auto mb-8 md:mb-0" />
+    <div className="container mx-auto px-4">
+      <div className="flex flex-col sm:mt-[1rem] md:mt-[6rem] lg:mt-[1rem] 2xl:mt-[8rem] md:flex-row md:justify-center items-center md:flex-wrap 2xl:gap-[5rem] mt-12 mb-12">
+      <img alt="deal" src={Fnavigation} className=" md:h-auto mb-8 md:mb-0 mr-auto" />
       <div className="text-center md:text-start max-w-full md:max-w-[30rem]">
         <h2 className="text-2xl md:text-4xl font-inria font-semibold">
           Your Reliable Guide in Financial Navigation
@@ -29,6 +30,7 @@ const OurServiceSection = () => {
           the highest standards of integrity, transparency, and professionalism
           in all our endeavors.
         </p>
+      </div>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import { Button } from "@material-tailwind/react";
 import PropTypes from "prop-types";
 import imgage1 from "../../../public/img/fundraising/pngwing.com (4) 1.png";
+import { Link } from "react-router-dom";
 
 const FinanceOptionCard = ({
   title,
@@ -8,6 +9,7 @@ const FinanceOptionCard = ({
   features,
   buttonText,
   onButtonClick,
+  buttonLink
 }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center bg-white">
@@ -37,7 +39,7 @@ const FinanceOptionCard = ({
             ))}
           </div>
         </ul>
-
+       
         {/* Feature Cards Section */}
         <div className="flex flex-col lg:flex-row justify-between mt-6 lg:mt-10 gap-3">
           <FeatureCard
@@ -53,6 +55,8 @@ const FinanceOptionCard = ({
         </div>
 
         {/* Button Section */}
+      <Link 
+        to={buttonLink} >
         <Button
           className="px-10 font-inria font-normal flex items-center mt-8 lg:mt-10 animate-slidein [--slidein-delay:700ms] opacity-0"
           style={{
@@ -83,7 +87,9 @@ const FinanceOptionCard = ({
               d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
             />
           </svg>
+          
         </Button>
+        </Link>
       </div>
     </div>
   );
@@ -118,6 +124,7 @@ FinanceOptionCard.propTypes = {
   buttonText: PropTypes.string.isRequired,
   onButtonClick: PropTypes.func.isRequired,
   buttonStyle: PropTypes.object, // Add prop type for custom button styles
+  buttonLink: PropTypes.string.isRequired
 };
 
 FeatureCard.propTypes = {
