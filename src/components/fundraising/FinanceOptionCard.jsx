@@ -9,7 +9,7 @@ const FinanceOptionCard = ({
   features,
   buttonText,
   onButtonClick,
-  buttonLink
+  buttonLink,
 }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center bg-white">
@@ -39,7 +39,7 @@ const FinanceOptionCard = ({
             ))}
           </div>
         </ul>
-       
+
         {/* Feature Cards Section */}
         <div className="flex flex-col lg:flex-row justify-between mt-6 lg:mt-10 gap-3">
           <FeatureCard
@@ -55,40 +55,38 @@ const FinanceOptionCard = ({
         </div>
 
         {/* Button Section */}
-      <Link 
-        to={buttonLink} >
-        <Button
-          className="px-10 font-inria font-normal flex items-center mt-8 lg:mt-10 animate-slidein [--slidein-delay:700ms] opacity-0"
-          style={{
-            backgroundImage:
-              "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
-            backgroundSize: "100%",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            borderRadius: "0",
-            textAlign: "center",
-          }}
-          onClick={onButtonClick}
-        >
-          <span className="font-inria font-normal text-md lg:text-lg normal-case">
-            {buttonText}
-          </span>{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6 ml-1"
+        <Link to={buttonLink}>
+          <Button
+            className="px-10 font-inria font-normal flex items-center mt-8 lg:mt-10 animate-slidein [--slidein-delay:700ms] opacity-0"
+            style={{
+              backgroundImage:
+                "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
+              backgroundSize: "100%",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              borderRadius: "0",
+              textAlign: "center",
+            }}
+            onClick={onButtonClick}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-            />
-          </svg>
-          
-        </Button>
+            <span className="font-inria font-normal text-md lg:text-lg normal-case">
+              {buttonText}
+            </span>{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6 ml-1"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </Button>
         </Link>
       </div>
     </div>
@@ -124,7 +122,7 @@ FinanceOptionCard.propTypes = {
   buttonText: PropTypes.string.isRequired,
   onButtonClick: PropTypes.func.isRequired,
   buttonStyle: PropTypes.object, // Add prop type for custom button styles
-  buttonLink: PropTypes.string.isRequired
+  buttonLink: PropTypes.string.isRequired,
 };
 
 FeatureCard.propTypes = {

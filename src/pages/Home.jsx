@@ -41,7 +41,9 @@ const Home = () => {
       <SectionTitle title={"Explore Our Investment Portfolio Sectors"} />
       <HomeOption />
       <BorderTitleWithDesc title="Targeted Region" />
-      <img src={SampleImage} alt={"targeted-region"} />
+      <div className="container mx-auto">
+        <img src={SampleImage} alt={"targeted-region"} />
+      </div>
       <SectionTitle title={"Latest Updates"} />
       <OurBlogsCard />
     </div>

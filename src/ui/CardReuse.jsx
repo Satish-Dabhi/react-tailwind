@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const CardReuse = ({ cards }) => {
   return (
-    <div className="container mx-auto my-8">
+    <div className="container mx-auto my-8 flex justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-0 max-w-7xl">
         {cards.map((card, index) => (
           <div

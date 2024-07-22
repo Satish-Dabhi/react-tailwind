@@ -1,22 +1,32 @@
-  import PropTypes from 'prop-types';
-import { Button } from '@material-tailwind/react';
+import PropTypes from "prop-types";
+import { Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const AssetMonetizationOptions = ({ monetizationOptions, onButtonClick }) => {
   return (
-    <div className="w-1/2 p-6 bg-white shadow-md rounded-lg">
-      <h2 className="text-2xl font-semibold mb-4" style={{ color: '#5F5D5E' }}>Asset Monetization Options</h2>
-      <p className="text-gray-600 mb-4" style={{ color: '#5F5D5E' }}>
-        Showcase different asset types suitable for monetization. Different Classes of Assets Considered by Epiidosis Investments LLC
+    <div className=" p-6">
+      <p className="text-2xl font-inria font-semibold relative">
+        <span className="relative">
+          Asset Monetization Options
+          <span className="absolute -bottom-4 left-0 h-1 w-20 bg-[#339FDE]"></span>
+        </span>
       </p>
+      <p className="text-gray-600 text-lg mt-4 lg:mt-6">
+        Showcase different asset types suitable for monetization. Different
+        Classes of Assets Considered by Epiidosis Investments LLC
+      </p>
+
       <div className="flex justify-between mb-4 mt-10 items-start">
         {monetizationOptions.map((option, index) => (
           <div key={index} className="flex-1 p-4">
             <div className="flex items-center mb-2">
-              <h3 className="font-semibold" style={{ color: '#5F5D5E' }}>{option.title}</h3>
+              <h3 className="font-semibold" style={{ color: "#5F5D5E" }}>
+                {option.title}
+              </h3>
             </div>
-            <ul className="text-gray-600 text-sm" style={{ color: '#5F5D5E' }}>
+            <ul className="text-gray-600 text-sm" style={{ color: "#5F5D5E" }}>
               {option.details.map((detail, i) => (
-                <li key={i} className="flex items-center mb-1">
+                <li key={i} className="flex items-center mb-2">
                   <span className="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
                   {detail}
                 </li>
@@ -25,21 +35,36 @@ const AssetMonetizationOptions = ({ monetizationOptions, onButtonClick }) => {
           </div>
         ))}
       </div>
-      <Button 
-        className="bg-gradient-to-r from-[#1C5678] to-[#339FDE] px-4 py-2 text-white rounded-none mt-10" 
-        onClick={onButtonClick}
-      >
-        Contact Us
-      </Button>
+      <Link to={"/contactus"}>
+        <Button
+          className="px-10 font-inria font-normal flex items-center mt-8 lg:mt-6 animate-slidein [--slidein-delay:700ms] opacity-0"
+          style={{
+            backgroundImage:
+              "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            borderRadius: "0",
+            textAlign: "center",
+          }}
+          onClick={onButtonClick}
+        >
+          <span className="font-inria font-normal text-md lg:text-lg normal-case">
+            Contact US
+          </span>
+        </Button>
+      </Link>
     </div>
   );
 };
 
 AssetMonetizationOptions.propTypes = {
-  monetizationOptions: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    details: PropTypes.arrayOf(PropTypes.string).isRequired,
-  })).isRequired,
+  monetizationOptions: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      details: PropTypes.arrayOf(PropTypes.string).isRequired,
+    })
+  ).isRequired,
   onButtonClick: PropTypes.func.isRequired,
 };
 
