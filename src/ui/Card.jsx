@@ -2,24 +2,24 @@ import { CardBody, CardHeader } from "@material-tailwind/react";
 import PropTypes from "prop-types";
 
 function Card({ imageSrc, altText, title, iconWidth }) {
-  console.log('title');
+  console.log("title");
   // Example content for each card
   const cardContent = {
     Guidance: {
       content:
-        "Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success, wealth, stability, and prosperity. Achieve your dreams with our support.",
+        "Expert guidance, tailored strategies. Begin confidently with us on your financial journey toward success.",
     },
     Transparency: {
       content:
-        "Clear insights, integrity, and honesty in business. Trust us for transparency in every interaction, ensuring your peace of mind and confidence. We prioritize ethical practices and your best interests.",
+        "Clear insights, Integrity and honesty in business. Trust us for transparency in every interaction, ensuring your peace of mind.",
     },
     Independence: {
       content:
-        "Freedom to invest your way. Explore opportunities with confidence in our unwavering independence and commitment. Make informed decisions, leveraging our unbiased advice and support for your financial growth.",
+        "Freedom to invest your way. Explore opportunities with confidence in our unwavering independence and commitment.",
     },
     Support: {
       content:
-        "Dedicated assistance, exceptional service. Count on us for unwavering support, guiding you to financial prosperity. Our team is here to assist you at every step, ensuring your success and satisfaction.",
+        "Dedicated assistance, exceptional service. Count on us for unwavering support, guiding you to financial prosperity.",
     },
     "Mission Statement": {
       content:
@@ -62,7 +62,7 @@ function Card({ imageSrc, altText, title, iconWidth }) {
     "Flexible Investment Range": {
       content:
         "Supporting projects from USD 2 million and more, accommodating various stages of development.",
-    }
+    },
   };
 
   // Retrieve content based on title
@@ -74,13 +74,13 @@ function Card({ imageSrc, altText, title, iconWidth }) {
         floated={false}
         shadow={false}
         color="transparent"
-        className="mx-auto w-24 h-24 bg-gradient-to-br from-[#1FA0EB] to-[#125B85] rounded-full flex items-center justify-center"
+        className="mx-auto w-24 h-24 bg-gradient-to-br from-[#0F4767] to-[#1E8DCD] rounded-full flex items-center justify-center shadow-[0_0px_19px_-1px_rgba(0,0,0,0.5)]  "
       >
         {imageSrc && (
           <img
             src={imageSrc}
             alt={altText}
-            className={`inset-0 object-cover rounded-full ${iconWidth}`}
+            className={`inset-0 object-cover rounded-full ${iconWidth} `}
           />
         )}
       </CardHeader>

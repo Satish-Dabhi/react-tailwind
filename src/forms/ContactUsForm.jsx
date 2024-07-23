@@ -76,7 +76,7 @@ const ContactUsForm = () => {
           />
           <div className="flex justify-end">
             <Button
-              className="font-normal flex items-center w-fit mt-3 animate-slidein [--slidein-delay:700ms] opacity-0"
+              className="font-normal flex items-center w-fit mt-3 animate-slidein [--slidein-delay:700ms] opacity-0 border-2 border-transparent hover:border-white"
               style={{
                 backgroundImage:
                   "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
@@ -93,7 +93,7 @@ const ContactUsForm = () => {
               <span className="font-inria font-normal normal-case text-xl px-[1rem]">
                 Submit
               </span>{" "}
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -106,7 +106,7 @@ const ContactUsForm = () => {
                   strokeLinejoin="round"
                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
                 />
-              </svg>
+              </svg> */}
               {/* </div> */}
             </Button>
           </div>

@@ -27,11 +27,14 @@ const Home = () => {
       <HeroSection
         cards={heroBannerCards}
         bannerImg={homeBanner}
-        bannerTitle={"Unlock Opportunities with Epiidosis Investments"}
+        bannerTitle={"Unlock Opportunities\nwith Epiidosis Investments"}
         bannerDesc={
-          "Empower your investments with Epiidosis Investments LLC, driving sustainable socio-economic growth through strategic, innovative, and globally diversified investment solutions."
+          "Empower your investments with Epiidosis Investments LLC,\ndriving sustainable socio-economic growth through strategic,\ninnovative, and globally diversified investment solutions."
         }
+        contentSectionWidth={"60%"}
         buttonText={"Invest With Us"}
+        borderLeft={true}
+        buttonLink={"/investwithus"}
       />
       <OurServiceSection />
       <SectionTitle title={"Our Funding Solutions"} />

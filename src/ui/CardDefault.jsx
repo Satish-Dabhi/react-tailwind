@@ -21,11 +21,12 @@ export function CardDefault({ data }) {
                 <button
                   className="flex items-center font-inria gap-2 hover:bg-blue-700 text-white font-bold py-2 px-6 border border-blue-700"
                   style={{
-                    background: 'linear-gradient(273.56deg, #1C5678 0%, #339FDE 100.26%)',
+                    background:
+                      "linear-gradient(273.56deg, #1C5678 0%, #339FDE 100.26%)",
                   }}
                 >
                   Read More{" "}
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -38,7 +39,7 @@ export function CardDefault({ data }) {
                       strokeLinejoin="round"
                       d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
                     />
-                  </svg>
+                  </svg> */}
                 </button>
               </CardFooter>
             </div>

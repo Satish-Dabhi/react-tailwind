@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-import { StickyNavbar } from "./StickyNavbar"
-import SubNavbar from "./SubNavbar"
+import { StickyNavbar } from "./StickyNavbar";
+import SubNavbar from "./SubNavbar";
 
-
-const Navbar = ({color}) => {
+const Navbar = ({ color }) => {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -12,19 +11,17 @@ const Navbar = ({color}) => {
       setScrolled(isScrolled);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
-    <div className={`navbar-main-block ${scrolled ? 'scrolled' : ''}`}>
-    <SubNavbar color={color}/>
+    <div className={`navbar-main-block ${scrolled ? "scrolled" : ""}`}>
+      <SubNavbar color={color} />
       <StickyNavbar color={color} />
-
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
-
+export default Navbar;

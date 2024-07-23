@@ -1,27 +1,20 @@
-// import React from 'react';
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const ButtonPrimaryUi = ({ to, children }) => {
   return (
     <Link to={to}>
-    <button
-      className="font-inria text-white font-bold py-2 px-6  rounded-none
-                 bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900
-                 hover:text-gray-200 hover:border-transparent"
-      style={{
-        background: "linear-gradient(90deg, #1E8DCD 0%, #0F4767 96.77%)",
-        borderRadius: "0",
-      }}
-    >
-      {children}
-    </button>
+      <button
+        className="font-inria text-white font-bold py-2 px-6 rounded-none bg-gradient-to-r from-[#1E8DCD] to-[#0F4767] border-2 border-transparent hover:border-white transition-all duration-300"
+      >
+        {children}
+      </button>
     </Link>
   );
 };
 
 ButtonPrimaryUi.propTypes = {
-  to: PropTypes.node.isRequired,
+  to: PropTypes.string.isRequired, // Ensure 'to' is a string, not node
   children: PropTypes.node.isRequired,
 };
 

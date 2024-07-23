@@ -7,7 +7,7 @@ const HomeOption = () => {
 
   return (
     <div>
-      <div className="container mx-auto my-12">
+      <div className="container mx-auto mt-12">
         <SubNavbar selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
 
         <TabContent selectedTab={selectedTab} />

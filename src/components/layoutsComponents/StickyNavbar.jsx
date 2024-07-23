@@ -68,7 +68,7 @@ function NavListMenu() {
           <Typography
             variant="h6"
             color="blue-gray"
-            className="flex items-center text-sm font-bold font-inria"
+            className="flex items-center text-sm font-bold font-inria text-xl"
           >
             {title}
           </Typography>
@@ -93,7 +93,7 @@ function NavListMenu() {
             className="font-medium font-inria"
           >
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 hover:text-blue-600 cursor-pointer"
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 hover:text-blue-600 cursor-pointer text-xl"
               selected={isFundraisingOpen}
               onClick={toggleFundraisingMenu}
             >
@@ -134,7 +134,7 @@ function OtherPagesMenu() {
           <Typography
             variant="h6"
             color="blue-gray"
-            className="flex items-center text-sm font-bold font-inria"
+            className="flex items-center text-sm font-bold font-inria text-xl"
           >
             {title}
           </Typography>
@@ -159,7 +159,7 @@ function OtherPagesMenu() {
             className="font-medium font-inria"
           >
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 hover:text-blue-600 cursor-pointer"
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 hover:text-blue-600 cursor-pointer text-xl"
               selected={isResourcesOpen}
               onClick={toggleResourcesMenu}
             >
@@ -195,7 +195,7 @@ function NavList() {
           color="blue-gray"
           className="font-inria font-bold"
         >
-          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer">
+          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer text-xl">
             Home
           </ListItem>
         </Typography>
@@ -206,7 +206,7 @@ function NavList() {
           color="blue-gray"
           className="font-medium font-inria"
         >
-          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer">
+          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer text-xl">
             About
           </ListItem>
         </Typography>
@@ -217,7 +217,7 @@ function NavList() {
           color="blue-gray"
           className="font-medium font-inria"
         >
-          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer">
+          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer text-xl">
             Invest with Us
           </ListItem>
         </Typography>
@@ -241,7 +241,7 @@ export function StickyNavbar({ color }) {
 
   return (
     <Navbar
-      className={` mx-auto max-w-full px-4 py-2 bg-${color} rounded-none `}
+      className={`p-0 mx-auto max-w-full bg-${color} rounded-none `}
     >
       <div className="container mx-auto">
         <div className="flex items-center justify-between text-blue-gray-900">
@@ -257,12 +257,11 @@ export function StickyNavbar({ color }) {
               <Link to={"/Login"}>
                 <Button
                   size="sm"
-                  className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal"
+                  className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal text-lg px-10"
                   style={{
                     background: "white",
                     color: "#1E8DCD",
                     border: "1px solid #1E8DCD",
-                    padding: "0.5rem 1.25rem",
                     borderRadius: "0",
                     textTransform: "none",
                   }}
@@ -273,13 +272,11 @@ export function StickyNavbar({ color }) {
               <Link to={"/SignUp"}>
                 <Button
                   size="sm"
-                  className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal"
+                  className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal text-lg px-10"
                   style={{
                     background:
                       "linear-gradient(104.32deg, #339FDE 3.51%, #1C5678 90.88%)",
-                    padding: "0.5rem 1.25rem",
                     borderRadius: "0",
-                    marginRight: "3rem",
                     textTransform: "none",
                   }}
                 >

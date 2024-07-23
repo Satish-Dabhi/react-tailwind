@@ -1,71 +1,73 @@
-import sustainableGrowthImage from "/img/first.png";
-import highPotentialImage from "/img/second.png"; // Update with correct paths to your images
+/* eslint-disable react/prop-types */
 
-const ServiceComponentInvest = () => {
+import ellipse from "/img/aboutus/ellipse.png";
+
+const ServiceComponentInvest = ({ servicesCard1, servicesCard2 }) => {
   return (
     <>
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 p-5 mt-12 mb-12">
+      <div className="container mx-auto flex flex-col md:flex-row justify-center gap-8 p-5 mt-12 mb-12">
         <img
-          src={sustainableGrowthImage}
+          src={servicesCard1.img}
           alt="Sustainable Growth and Risk Management"
-          className="h-[18rem] md:h-[20rem] object-cover"
+          className="h-[18rem] md:h-[20rem] object-cover md:w-[40%]"
         />
-        <div className="text-start md:w-[30rem]">
+        <div className="text-start md:w-[60%] lg:pl-16 lg:pr-8">
           <h2
-            className="text-2xl md:text-3xl font-semibold text-center md:text-start font-inria"
+            className="ml-2 text-2xl md:text-3xl font-semibold text-center md:text-start font-inria"
             style={{ color: "#5F5D5E" }}
           >
-            Sustainable Growth and Risk Management
+            {servicesCard1.title}
           </h2>
-          <ul className="list-disc ml-5 text-gray-600 mt-3 font-inria">
-            <li>
-              Investors often encounter poor returns despite their best efforts
-              in achieving sustainable growth.
-            </li>
-            <li>
-              For investors, managing risk effectively is essential for
-              long-term success.
-            </li>
-            <li>
-              A lack of solid commitments results in inconsistent performance
-              and increased vulnerability to market fluctuations.
-            </li>
+          <ul className="text-gray-600 mt-3 font-inter text-xl leading-normal font-light">
+            {servicesCard1.content &&
+              servicesCard1.content.length > 0 &&
+              servicesCard1.content.map((item, index) => {
+                return (
+                  <li className="flex items-start" key={index}>
+                    <img
+                      src={ellipse}
+                      height={35}
+                      width={35}
+                      className="mr-2"
+                    />
+                    {item}
+                  </li>
+                );
+              })}
           </ul>
         </div>
       </div>
       <div className="bg-bgprimary p-5">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 p-5 mt-12 mb-12">
-          <div className="text-start md:w-[30rem]">
+        <div className="container mx-auto flex flex-col md:flex-row justify-center gap-8 p-5 mt-6 mb-6">
+          <div className="text-start md:w-[60%] lg:pr-20">
             <h2
               className="text-2xl md:text-3xl font-semibold text-center md:text-start font-inria"
               style={{ color: "#5F5D5E" }}
             >
-              Identifying High-Potential Opportunities
+              {servicesCard2.title}
             </h2>
-            <ul className="list-disc ml-5 text-gray-600 mt-3 font-inria">
-              <li>
-                A deep understanding and expertise are required to identify
-                private investment opportunities.
-              </li>
-              <li>
-                The difficulty in assessing investment viability often limits
-                the potential for significant returns.
-              </li>
-              <li>
-                Investment alignment with regional government priorities is
-                critical to success.
-              </li>
-              <li>
-                To maximize success, investments must be well-informed and
-                strategically positioned to take advantage of emerging
-                opportunities and supportive regulatory environments.
-              </li>
+            <ul className="text-gray-600 mt-3 font-inter text-xl leading-normal font-light">
+              {servicesCard2.content &&
+                servicesCard2.content.length > 0 &&
+                servicesCard2.content.map((item, index) => {
+                  return (
+                    <li className="flex items-start" key={index}>
+                      <img
+                        src={ellipse}
+                        height={35}
+                        width={35}
+                        className="mr-2"
+                      />
+                      {item}
+                    </li>
+                  );
+                })}
             </ul>
           </div>
           <img
-            src={highPotentialImage}
+            src={servicesCard2.img}
             alt="Identifying High-Potential Opportunities"
-            className="h-[18rem] md:h-[20rem] object-cover"
+            className="h-[18rem] md:h-[20rem] object-cover md:w-[40%]"
           />
         </div>
       </div>

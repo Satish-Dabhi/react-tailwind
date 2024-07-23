@@ -13,7 +13,7 @@ const ServiceComponent = () => {
           <img
             alt="deal"
             src={Sfinance}
-            className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0 mr-auto"
+            className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0 m-auto"
           />
           <div className="text-center md:text-start max-w-full md:max-w-[30rem]">
             <p
@@ -73,7 +73,7 @@ const ServiceComponent = () => {
         <img
           alt="deal"
           src={Asset}
-          className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0 ml-auto"
+          className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0 m-auto"
         />
         </div>
       </div>
@@ -83,7 +83,7 @@ const ServiceComponent = () => {
           <img
             alt="deal"
             src={Lstocks}
-            className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0 mr-auto"
+            className="h-48 md:h-auto md:max-h-[18rem] mb-8 md:mb-0 m-auto"
           />
           <div className="text-start text-wrap">
             <p

@@ -16,7 +16,8 @@ export default withMT({
       },
       fontFamily:{
         inter: ["Inter", 'sans-serif'],
-        inria:["Inria Serif", 'serif']
+        inria:["Inria Serif", 'serif'],
+        poppins: ['Poppins', 'sans-serif']
       },
       keyframes:{
         slidein:{

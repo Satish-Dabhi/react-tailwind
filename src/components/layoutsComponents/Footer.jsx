@@ -47,7 +47,7 @@ export function Footer() {
               src={companyLogo}
               className="mb-4 w-[270px] h-[50px]"
             />
-            <Typography className="md:text-left text-lg mt-8 font-poppins">
+            <Typography className="md:text-left text-lg mt-8 font-poppins font-normal">
               818, Park Lane Tower, Business Bay,
               <br />
               415203, Dubai

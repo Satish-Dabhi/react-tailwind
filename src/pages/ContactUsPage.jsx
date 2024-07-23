@@ -5,7 +5,7 @@ const ContactUsPage = () => {
     <div className="container mx-auto m-6 p-4 mt-8">
       <div className="text-center mb-6 flex justify-center  ">
         <div className=" md:w-1/2">
-          <h1 className="text-3xl md:text-[64px] font-[600] text-[#39A1DE] font-inter">
+          <h1 className="text-3xl md:text-[64px] font-[600] text-[#39A1DE] font-inria">
             Contact Us
           </h1>
           <p className="mt-5 mb-5 font-inter">

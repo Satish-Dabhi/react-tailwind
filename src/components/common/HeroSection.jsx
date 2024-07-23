@@ -1,6 +1,8 @@
 import { Button } from "@material-tailwind/react";
 import PropTypes from "prop-types";
 import Card from "../../ui/Card";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function HeroSection({
   cards,
@@ -8,7 +10,12 @@ function HeroSection({
   bannerTitle,
   bannerDesc,
   buttonText,
+  // contentSectionWidth,
+  borderLeft,
+  buttonLink
 }) {
+  // const divWidth = contentSectionWidth || "70%";
+
   return (
     <div
       className={`relative w-full max-h-auto ${
@@ -20,15 +27,36 @@ function HeroSection({
         className="relative w-full h-[550px] bg-cover bg-center bg-no-repeat md:h-[600px]"
       >
         <div className="absolute inset-0 flex flex-col container mx-auto md:py-[70px] py-[50px] p-3">
-          <div className="w-full lg:w-[80%]">
-            <p className="text-3xl text-start md:text-6xl font-inria font-bold md:leading-[4.5rem] animate-slidein [--slidein-delay:300ms] opacity-0 text-white">
-              {bannerTitle}
-            </p>
-            <p className="font-inter text-start mt-5 font-light md:text-2xl md:mt-5 animate-slidein [--slidein-delay:500ms] opacity-0 text-white">
-              {bannerDesc}
-            </p>
+          <div className={`w-full`}>
+            <div
+              className={` pl-5 ${borderLeft ? "border-l-4" : "border-none"}`}
+              style={{
+                borderImage: "linear-gradient(to bottom, #339FDE, #1C5678) 1",
+                MozBorderImage:
+                  "linear-gradient(to bottom, #339FDE, #1C5678) 1",
+              }}
+            >
+              <p className="text-3xl text-start md:text-5xl font-inria font-bold md:leading-[4.5rem] animate-slidein [--slidein-delay:300ms] opacity-0 text-white">
+                {bannerTitle.split("\n").map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
+
+              <p className="font-inter text-start mt-5 md:text-2xl font-extralight md:mt-5 animate-slidein [--slidein-delay:500ms] opacity-0 text-white md:leading-[2.5rem]">
+                {bannerDesc.split("\n").map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
+            </div>
+            <Link to={buttonLink}>
             <Button
-              className="font-normal flex items-center w-fit mt-5 animate-slidein [--slidein-delay:700ms] opacity-0"
+              className="font-normal flex items-center w-fit mt-5 animate-slidein [--slidein-delay:700ms] opacity-0 border-2 border-transparent hover:border-white transition-all duration-300"
               style={{
                 backgroundImage:
                   "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
@@ -40,25 +68,12 @@ function HeroSection({
                 marginTop: "3rem",
               }}
             >
-              <span className="font-inter font-normal normal-case text-xl px-[1rem]">
+              <span className="font-inter font-normal normal-case text-xl">
                 {" "}
                 {buttonText}{" "}
               </span>{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 ml-1"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                />
-              </svg>
             </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -87,6 +102,9 @@ HeroSection.propTypes = {
   bannerTitle: PropTypes.string.isRequired,
   bannerDesc: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
+  contentSectionWidth: PropTypes.string,
+  borderLeft: PropTypes.bool,
+  buttonLink: PropTypes.string
 };
 
 export default HeroSection;

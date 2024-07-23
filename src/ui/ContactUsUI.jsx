@@ -27,7 +27,7 @@ const OfficeDetails = ({ office }) => {
   return (
     <div className="px-10 lg:pl-20 mt-5">
       <p className="text-3xl font-bold mb-4 font-inria">
-        Get A free consultation
+        Connect with Us
       </p>
       <ul className="mb-4">
         <li className="flex items-center mb-4">

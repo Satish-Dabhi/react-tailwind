@@ -11,7 +11,7 @@ const InvestmentCard = ({
   image,
 }) => {
   return (
-    <div className="max-w-[700px] w-full h-auto p-14 border shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white rounded-none mx-4">
+    <div className="max-w-[700px] w-full h-auto p-8 lg:p-14 transition-shadow duration-300 bg-white rounded-none mx-4">
       <div className="flex flex-col md:flex-row items-center mb-8">
         <div className=" rounded-full bg-gradient-to-br from-[#1FA0EB] to-[#125B85] flex items-center justify-center mb-4 md:mb-0 mr-3">
           <img

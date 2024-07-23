@@ -58,7 +58,6 @@ const TabContent = ({ selectedTab }) => {
             src={image4}
             alt={title}
             className="object-cover w-full h-full"
-            // style={{ maxWidth: "70%", marginLeft: "30%" }}
           />
         </div>
       </div>
@@ -72,8 +71,8 @@ const TabContent = ({ selectedTab }) => {
         <div
           className="flex flex-col lg:flex-row font-inter text-sm font-light text-[#5F5D5E] leading-7"
         >
-          <div className="lg:w-1/2 pl-6 pr-4">{part1}</div>
-          <div className="lg:w-1/2 pl-12 mt-4 lg:mt-0">{part2}</div>
+          <div className="lg:w-1/2 lg:pl-6 pr-4">{part1}</div>
+          <div className="lg:w-1/2 lg:pl-12 mt-4 lg:mt-0">{part2}</div>
         </div>
       </div>
     </div>
