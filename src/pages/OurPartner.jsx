@@ -20,7 +20,7 @@ const teamMembers = [
     name: "Ujjwal Singh",
     title: "Legal  & Administration - India & UAE",
     image: Ujjwall,
-    desc: `With 10+ years of experience, Ujjwal Singh is based in our India office and ensures seamless operations and efficient administration, contributing to our company's success.`,
+    desc: "With 10+ years of experience, Ujjwal Singh is based in our India office and ensures seamless operations and efficient administration,   contributing to our company's success.",
   },
 ];
 
@@ -65,7 +65,7 @@ const OurPartner = () => {
                 <p className="font-inria text-[#339FDE] text-xs font-bold mb-3 w-[60%] mx-auto">
                   {member.title}
                 </p>
-                <p className="font-inter text-[#5F5D5E] text-md font-light px-4 pb-3 text-justify">
+                <p className="font-inter text-[#5F5D5E] text-md font-light px-4 pb-3 text-center">
                   {member.desc}
                 </p>
               </div>

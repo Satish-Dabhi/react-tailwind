@@ -21,7 +21,7 @@ const SubNavbar = ({ selectedTab, setSelectedTab }) => {
             MozBorderImage: "linear-gradient(to left, #1C5678, #339FDE) 1", // For Firefox
             borderBottomWidth: `${ selectedTab === tab ? '4px' : '0'}`
           }}
-          className={`font-inter text-2xl leading-9 px-2 py-2 ${
+          className={`font-bold lg:text-xl font-inria text-center px-2 py-2 ${
             selectedTab === tab
               ? "text-[#339FDE] border-b-2 font-bold b-w-2"
               : "text-[#95989A]"

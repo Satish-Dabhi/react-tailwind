@@ -11,7 +11,7 @@ const ServiceComponentInvest = ({ servicesCard1, servicesCard2 }) => {
           alt="Sustainable Growth and Risk Management"
           className="h-[18rem] md:h-[20rem] object-cover md:w-[40%]"
         />
-        <div className="text-start md:w-[60%] lg:pl-16 lg:pr-8">
+        <div className="text-start md:w-[60%] lg:pl-16 lg:pr-8 flex flex-col justify-center">
           <h2
             className="ml-2 text-2xl md:text-3xl font-semibold text-center md:text-start font-inria"
             style={{ color: "#5F5D5E" }}
@@ -39,7 +39,7 @@ const ServiceComponentInvest = ({ servicesCard1, servicesCard2 }) => {
       </div>
       <div className="bg-bgprimary p-5">
         <div className="container mx-auto flex flex-col md:flex-row justify-center gap-8 p-5 mt-6 mb-6">
-          <div className="text-start md:w-[60%] lg:pr-20">
+          <div className="text-start md:w-[60%] lg:pr-20 flex flex-col justify-center">
             <h2
               className="text-2xl md:text-3xl font-semibold text-center md:text-start font-inria"
               style={{ color: "#5F5D5E" }}

@@ -17,7 +17,7 @@ const Options = () => {
               alt="Cost Efficiency"
               className="option-image w-full object-cover mb-4 w-[150px] mr-5"
             />
-            <div className="option-content font-inter">
+            <div className="option-content font-inter flex flex-col justify-center">
               <h3 className="text-xl font-bold mb-2 font-inter">
                 Cost Efficiency
               </h3>
@@ -41,7 +41,7 @@ const Options = () => {
               alt="Revenue Generation"
               className="option-image w-full object-cover mb-4 w-[150px] mr-5"
             />
-            <div className="option-content font-inter">
+            <div className="option-content font-inter flex flex-col justify-center">
               <h3 className="text-xl font-bold mb-2 font-inter">
                 Revenue Generation
               </h3>
@@ -68,7 +68,7 @@ const Options = () => {
               alt="Risk Management"
               className="option-image w-full object-cover mb-4 w-[150px] mr-5"
             />
-            <div className="option-content font-inter">
+            <div className="option-content font-inter flex flex-col justify-center">
               <h3 className="text-xl font-bold mb-2 font-inter">
                 Risk Management
               </h3>
@@ -91,7 +91,7 @@ const Options = () => {
               alt="Return on Investment (ROI)"
               className="option-image w-full object-cover mb-4 w-[150px] mr-5"
             />
-            <div className="option-content font-inter">
+            <div className="option-content font-inter flex flex-col justify-center">
               <h3 className="text-xl font-bold mb-2 font-inter">
                 Return on Investment (ROI)
               </h3>
@@ -108,7 +108,7 @@ const Options = () => {
               alt="Lock-In Period"
               className="option-image w-full object-cover mb-4 w-[150px] mr-5"
             />
-            <div className="option-content font-inter">
+            <div className="option-content font-inter flex flex-col justify-center">
               <h3 className="text-xl font-bold mb-2 font-inter">
                 Lock-In Period
               </h3>
@@ -125,7 +125,7 @@ const Options = () => {
               alt="Minimum Required Investment"
               className="option-image w-full object-cover mb-4 w-[150px] mr-5"
             />
-            <div className="option-content font-inter">
+            <div className="option-content font-inter flex flex-col justify-center">
               <h3 className="text-xl font-bold mb-2 font-inter">
                 Minimum Required Investment
               </h3>

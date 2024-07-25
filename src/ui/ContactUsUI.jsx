@@ -25,11 +25,11 @@ const OfficeDetails = ({ office }) => {
   const { email, phone, address, mapSrc } = officeData[office];
 
   return (
-    <div className="px-10 lg:pl-20 mt-5">
+    <div className=" mt-5">
       <p className="text-3xl font-bold mb-4 font-inria">
         Connect with Us
       </p>
-      <ul className="mb-4">
+      <ul className="mb-4 w-[80%]">
         <li className="flex items-center mb-4">
           <MdMail className="h-5 w-5 mr-4 text-3xl text-blue-500" />
           <span className="text-[#5F5D5E]"> {email}</span>
@@ -46,8 +46,8 @@ const OfficeDetails = ({ office }) => {
       <iframe
         title={`${office} Office Map`}
         src={mapSrc}
-        width="80%"
-        height="300"
+        width="90%"
+        height="250"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
@@ -64,10 +64,9 @@ const ContactUsUI = () => {
   };
 
   return (
-    <div className="bg-white shadow-md rounded-[50px]">
+    <div className="bg-white shadow-md rounded-[50px] lg:mx-[5rem]">
       <div className="flex justify-center mb-6">
         <nav className="flex space-x-4 relative">
-          {/* Solid line below the entire nav */}
           <span className="absolute bottom-0 left-0 w-full bg-gray-300 h-1" />
 
           <button
@@ -101,9 +100,9 @@ const ContactUsUI = () => {
         </nav>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:px-[8rem]">
         <OfficeDetails office={selectedOffice} />
-        <div className="md:px-5 lg:pl-10 md:mt-0">
+        <div className="md:px-5 md:mt-0">
           <ContactUsForm />
         </div>
       </div>

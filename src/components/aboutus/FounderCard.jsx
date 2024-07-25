@@ -9,8 +9,8 @@ const FounderCard = ({ image, name, title, description }) => {
           alt={name}
           className="w-full lg:w-80 rounded object-cover shadow-2xl mb-4 md:mb-0"
         />
-        <div className="md:ml-5 md:mr-10 lg:px-[4rem]">
-          <p className="font-inria text-xl font-normal">{title}</p>
+        <div className="md:ml-5 md:mr-10 lg:px-[4rem] flex flex-col justify-center">
+          <p className="font-inria text-xl font-normal w-full">{title}</p>
           <p className="font-inria text-3xl my-2 md:my-4 font-bold">{name}</p>
           <div className="flex flex-wrap">
             {description &&
@@ -18,7 +18,7 @@ const FounderCard = ({ image, name, title, description }) => {
               description.map((item, index) => (
                 <p
                   key={index}
-                  className="font-inter text-xl leading-normal font-light mb-2 mr-2"
+                  className="font-inter text-base font-light leading-normal mb-2 mr-2"
                 >
                   {item}
                 </p>

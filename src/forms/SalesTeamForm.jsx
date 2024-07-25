@@ -90,7 +90,7 @@ const SalesTeamForm = () => {
               className="mb-4 w-[270px] h-[50px]"
             />
             <br />
-            <p className="text-white mb-8 -tracking-2">
+            <p className="text-white mb-8 leading-7 font-inter font-light text-md">
               With Epiidosis, you can expect substantial returns on your initial
               investment. At Epiidosis, our investment management team is
               composed of seasoned professionals. They analyze investment
@@ -98,8 +98,8 @@ const SalesTeamForm = () => {
               Invest with confidence.
             </p>
             <div className="text-white">
-              <p className="mb-6 -tracking-2">Benefits of Investing with us:</p>
-              <ol className="list-decimal list-inside pl-3 -tracking-2">
+              <p className="mb-6 text-white mb-8 leading-7 font-inter font-light text-md">Benefits of Investing with us:</p>
+              <ol className="list-decimal list-inside pl-3 text-white mb-8 leading-7 font-inter font-light text-md">
                 <li>Complete transparency in investment process</li>
                 <li>24/7 dedicated sales team support</li>
                 <li>Full control of your investment</li>

@@ -23,7 +23,8 @@ const ServiceComponent = () => {
               Structured Finance
             </p>
             <p
-              className="text-md md:text-lg text-justify text-gray-600 mt-2 px-4 md:px-0 font-inter"
+              // className="text-md md:text-lg text-justify text-gray-600 mt-2 px-4 md:px-0 font-inter"
+            className="text-wrap text-md text-justify w-full md:w-[30rem] text-gray-600 mt-2 md:mt-3 font-inter p-5 md:p-0 font-inter"
               style={{
                 color: "#5F5D5E",
               }}
@@ -55,7 +56,6 @@ const ServiceComponent = () => {
             className="text-wrap text-md text-justify w-full md:w-[30rem] text-gray-600 mt-2 md:mt-3 font-inter p-5 md:p-0 font-inter"
             style={{
               color: "#5F5D5E",
-              // fontFamily: "Helvetica, Arial, sans-serif",
             }}
           >
             Unlock the potential of your assets with Epiidosis Investments. Our

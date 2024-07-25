@@ -9,12 +9,12 @@ const SubNavbar = ({ color }) => {
 
   return (
     <div
-      className={`flex p-5 w-full flex-col justify-center ${knowledgeColor} border-b border-blue-gray-50 py-2 md:flex-row md:justify-between`}
+      className={`flex py-5 w-full flex-col justify-center ${knowledgeColor} border-b border-blue-gray-50 py-2 md:flex-row md:justify-between`}
     >
       <div className="container mx-auto flex flex-col lg:flex-row md:items-center justify-end md:justify-between">
         <Typography
           variant="small"
-          className="mb-4 text-end font-normal text-blue-gray-900 md:mb-0 md:flex md:items-center gap-1 pl-[18px]"
+          className="mb-4 text-end font-normal text-blue-gray-900 md:mb-0 md:flex md:items-center gap-1"
         >
           <div className="email-container flex justify-end">
             <MdEmail
