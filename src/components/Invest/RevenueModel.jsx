@@ -6,7 +6,7 @@ function RevenueModel() {
       <div className="flex flex-col items-end text-right w-full md:w-1/2 pr-4 font-inria">
         <div className="flex items-center mb-4">
           <h2
-            className="font-medium text-xl hover:text-blue-500"
+            className="font-bold text-xl hover:text-blue-500"
             style={{ color: "#5F5D5E" }}
           >
             Revenue Sources
@@ -16,7 +16,7 @@ function RevenueModel() {
 
         <div className="flex items-center mb-4">
           <h2
-            className="font-medium text-xl hover:text-blue-500"
+            className="font-bold text-xl hover:text-blue-500"
             style={{ color: "#5F5D5E" }}
           >
             Recurring fundraising revenue (3% of funds deployed)
@@ -32,7 +32,7 @@ function RevenueModel() {
         <div className="flex items-center mb-4">
           <img src={ellipse} height={35} width={35} className="mr-2" />{" "}
           <h2
-            className="font-medium text-xl hover:text-blue-500"
+            className="font-bold text-xl hover:text-blue-500"
             style={{ color: "#5F5D5E" }}
           >
             6% service fee on funds deployed
@@ -42,7 +42,7 @@ function RevenueModel() {
         <div className="flex items-center mb-4">
           <img src={ellipse} height={35} width={35} className="mr-2" />{" "}
           <h2
-            className="font-medium text-xl hover:text-blue-500"
+            className="font-bold text-xl hover:text-blue-500"
             style={{ color: "#5F5D5E" }}
           >
             Year 1 Revenue: $5,125,000

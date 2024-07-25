@@ -1,8 +1,8 @@
 import { Button } from "@material-tailwind/react";
 import PropTypes from "prop-types";
-import Card from "../../ui/Card";
 import React from "react";
 import { Link } from "react-router-dom";
+import Card from "../../ui/Card";
 
 function HeroSection({
   cards,
@@ -12,7 +12,7 @@ function HeroSection({
   buttonText,
   // contentSectionWidth,
   borderLeft,
-  buttonLink
+  buttonLink,
 }) {
   // const divWidth = contentSectionWidth || "70%";
 
@@ -54,25 +54,26 @@ function HeroSection({
                 ))}
               </p>
             </div>
+
             <Link to={buttonLink}>
-            <Button
-              className="font-normal flex items-center w-fit mt-5 animate-slidein [--slidein-delay:700ms] opacity-0 border-2 border-transparent hover:border-white transition-all duration-300"
-              style={{
-                backgroundImage:
-                  "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
-                backgroundSize: "100%",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                borderRadius: "0",
-                textAlign: "center",
-                marginTop: "3rem",
-              }}
-            >
-              <span className="font-inter font-normal normal-case text-xl">
-                {" "}
-                {buttonText}{" "}
-              </span>{" "}
-            </Button>
+              <Button
+                className="ml-6 font-normal flex items-center w-fit mt-5 animate-slidein [--slidein-delay:700ms] opacity-0 hover:border-2 hover:border-white transition-all duration-300"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
+                  backgroundSize: "100%",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  borderRadius: "0",
+                  textAlign: "center",
+                  marginTop: "3rem",
+                }}
+              >
+                <span className="font-inter font-normal normal-case text-xl">
+                  {" "}
+                  {buttonText}{" "}
+                </span>{" "}
+              </Button>
             </Link>
           </div>
         </div>
@@ -104,7 +105,7 @@ HeroSection.propTypes = {
   buttonText: PropTypes.string.isRequired,
   contentSectionWidth: PropTypes.string,
   borderLeft: PropTypes.bool,
-  buttonLink: PropTypes.string
+  buttonLink: PropTypes.string,
 };
 
 export default HeroSection;

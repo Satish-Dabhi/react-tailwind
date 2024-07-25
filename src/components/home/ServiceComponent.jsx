@@ -26,7 +26,6 @@ const ServiceComponent = () => {
               className="text-md md:text-lg text-justify text-gray-600 mt-2 px-4 md:px-0 font-inter"
               style={{
                 color: "#5F5D5E",
-                // fontFamily: "Helvetica, Arial, sans-serif",
               }}
             >
               Elevate your projects with Epiidosis Investments. Join our
@@ -36,7 +35,7 @@ const ServiceComponent = () => {
               bring their projects to life and achieve their goals.
             </p>
             <div className="flex justify-center md:justify-start mt-4">
-              <ButtonPrimaryUi to="/structuredfinance" text="Know More">Know More</ButtonPrimaryUi>
+              <ButtonPrimaryUi to="/structured-finance" text="Know more">Know more</ButtonPrimaryUi>
             </div>
           </div>
         </div>
@@ -67,7 +66,7 @@ const ServiceComponent = () => {
             monetization solutions.
           </p>
           <div className="flex gap-2 mt-4 pl-5 pr-5 md:pr-0 md:pl-0">
-            <ButtonPrimaryUi to="/assetmonetization" text="Know More">Know More</ButtonPrimaryUi>
+            <ButtonPrimaryUi to="/asset-monetization" text="Know more">Know more</ButtonPrimaryUi>
           </div>
         </div>
         <img
@@ -111,8 +110,8 @@ const ServiceComponent = () => {
               rates.
             </p>
             <div className="flex gap-2 pl-5 pr-5 mt-4 md:pl-0 md:pr-0">
-              <ButtonPrimaryUi to="/loanssecuredbylistedstocks" text="Know More">
-                Know More
+              <ButtonPrimaryUi to="/loan-against-listed-stocks" text="Know more">
+                Know more
               </ButtonPrimaryUi>
             </div>
           </div>

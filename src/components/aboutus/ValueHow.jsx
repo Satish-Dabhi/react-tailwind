@@ -8,7 +8,7 @@ const ValueHow = ({ title, valueData }) => {
       <div className="w-full p-8">
         <div className="container text-center py-[1rem] pb-8 mx-auto">
           <p className="text-4xl font-inria font-semibold relative">
-            <span className="relative">
+            <span className="relative text-[#5F5D5E]">
               {title}
               <span className="absolute -bottom-[1rem] left-0 h-[4px] w-[30%] bg-gradient-to-r from-[#339FDE] to-[#1C5678]"></span>
             </span>

@@ -3,14 +3,78 @@ import Inputs from "../forms/Inputs";
 import companyLogo from "/logos/logo-white.png";
 
 const SalesTeamForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    number: "",
+    organization: "",
+    investment_amount: "",
+    description: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
   const [sent, setSent] = useState(false);
   const [arrowRotation, setArrowRotation] = useState("rotate-[-90deg]");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSent(true);
-    setArrowRotation(sent ? "rotate-[-90deg]" : "rotate-[-45deg]");
+  const validateFields = () => {
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+    if (!formData.email.trim() || !/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Valid email is required";
+    }
+    if (!formData.investment_amount.trim()) {
+      newErrors.investment_amount = "Investment amount is required";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (validateFields()) {
+      setSent(true);
+      setArrowRotation(sent ? "rotate-[-90deg]" : "rotate-[-45deg]");
+      console.log("Form Data:", formData);
+      try {
+        const response = await fetch(
+          "https://erp.epiidosisinvestments.com/lead/create",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
+        const apiResult = await response.json();
+        if (apiResult?.result?.status == 200) {
+          alert(apiResult?.result?.message);
+          setFormData({
+            name: "",
+            email: "",
+            number: "",
+            organization: "",
+            investment_amount: "",
+            description: "",
+          });
+        }
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    }
+  };
+
   return (
     <div style={{ backgroundColor: "#495b6e" }}>
       <div className="container mx-auto">
@@ -20,7 +84,11 @@ const SalesTeamForm = () => {
 
         <div className="flex flex-col lg:flex-row justify-center space-x-4">
           <div className="w-full lg:w-1/2 p-10">
-            <img alt="logo" src={companyLogo} className="mb-4 w-[270px] h-[50px]" />
+            <img
+              alt="logo"
+              src={companyLogo}
+              className="mb-4 w-[270px] h-[50px]"
+            />
             <br />
             <p className="text-white mb-8 -tracking-2">
               With Epiidosis, you can expect substantial returns on your initial
@@ -49,36 +117,73 @@ const SalesTeamForm = () => {
               <form onSubmit={handleSubmit}>
                 <div className="mb-6 flex">
                   <div className="w-full lg:w-1/2 mr-2">
-                    <Inputs label="Name" className="bg-white w-3/4" />{" "}
+                    <Inputs
+                      label="Name *"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      error={errors.name}
+                      className="bg-white w-3/4"
+                      required
+                    />
                   </div>
                   <div className="w-full lg:w-1/2">
-                    <Inputs label="Email" className="bg-white w-full" />{" "}
+                    <Inputs
+                      label="Email *"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      error={errors.email}
+                      className="bg-white w-full"
+                      required
+                    />
                   </div>
                 </div>
 
                 <div className="mb-6">
-                  <Inputs label="Phoine Number" className="bg-white" />
+                  <Inputs
+                    label="Phone Number"
+                    name="number"
+                    value={formData.number}
+                    onChange={handleChange}
+                    error={errors.number}
+                    className="bg-white"
+                    required
+                  />
                 </div>
                 <div className="mb-6">
-                  <Inputs label="Organization" className="bg-white" />
+                  <Inputs
+                    label="Organization"
+                    name="organization"
+                    value={formData.organization}
+                    onChange={handleChange}
+                    error={errors.organization}
+                    className="bg-white"
+                    required
+                  />
                 </div>
                 <div className="mb-6">
                   <Inputs
                     label="Initial Desired Investments (AED) *"
+                    name="investment_amount"
+                    value={formData.investment_amount}
+                    onChange={handleChange}
+                    error={errors.investment_amount}
                     className="bg-white"
+                    required
                   />
                 </div>
                 <div className="mb-6 flex items-center space-x-4">
                   <div className="w-full lg:w-3/4">
-                    {/* <Textarea
-                      label="Description"
-                      className="bg-white p-4 w-full"
-                    /> */}
+                    {/* Assuming this textarea is for some description or additional info */}
                     <div className="relative">
                       <label className="absolute -top-3 left-3 bg-white px-1 text-[#1FA0EB] font-inter">
-                        Initial Desired Investments (AED) *
+                        Your Query
                       </label>
                       <textarea
+                        name="description"
+                        value={formData.description}
+                        onChange={handleChange}
                         className="w-full p-3 rounded"
                         style={{
                           border: "2px solid #1FA0EB",
@@ -92,8 +197,8 @@ const SalesTeamForm = () => {
                       {sent ? "Sent" : "Send"}
                     </span>
                     <button
+                      type="submit"
                       className={`flex items-center justify-center w-10 h-10 rounded-full shadow-lg transform ${arrowRotation} bg-gradient-to-r from-[#1C5678] to-[#339FDE] border-2 border-transparent hover:border-white transition-all duration-300`}
-                      onClick={handleSubmit}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

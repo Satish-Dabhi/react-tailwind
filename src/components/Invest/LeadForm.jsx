@@ -1,78 +1,111 @@
-import { useState } from 'react';
-import { useSpring, animated } from '@react-spring/web';
-import emailjs from 'emailjs-com';
+import { animated, useSpring } from "@react-spring/web";
+import emailjs from "emailjs-com";
+import { useState } from "react";
 
 const LeadForm = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    organization: '',
-    investment: '100k',
+    fullName: "",
+    email: "",
+    phone: "",
+    organization: "",
+    investment: "100k",
   });
 
   const [errors, setErrors] = useState({
-    fullName: '',
-    phone: '',
+    fullName: "",
+    email: "",
+    phone: "",
+    organization: "",
   });
+
+  const validateField = (name, value) => {
+    let error = "";
+    if (name === "fullName") {
+      if (!value.trim()) {
+        error = "Full name is required";
+      } else if (!/^[A-Za-z\s]+$/.test(value)) {
+        error = "Only alphabets are allowed";
+      }
+    } else if (name === "email") {
+      if (!value.trim()) {
+        error = "Email is required";
+      } else if (!/\S+@\S+\.\S+/.test(value)) {
+        error = "Email is invalid";
+      }
+    } else if (name === "phone") {
+      if (!value.trim()) {
+        error = "Phone number is required";
+      } else if (!/^\d+$/.test(value)) {
+        error = "Only numbers are allowed";
+      }
+    } else if (name === "organization") {
+      if (!value.trim()) {
+        error = "Organization is required";
+      }
+    }
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: error }));
+    return error;
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Validate full name (only letters)
-    if (name === 'fullName') {
-      const isValid = /^[A-Za-z\s]*$/.test(value);
-      setErrors({ ...errors, fullName: isValid ? '' : 'Only alphabets are allowed' });
-    }
-
-    // Validate phone number (only digits)
-    if (name === 'phone') {
-      const isValid = /^\d*$/.test(value);
-      setErrors({ ...errors, phone: isValid ? '' : 'Only numbers are allowed' });
-    }
+    validateField(name, value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(".....", formData);
 
     // Check for errors before submission
     if (!errors.fullName && !errors.phone) {
       // Prepare template parameters for EmailJS
       const templateParams = {
-        to_name: 'Recipient Name', // Replace with actual recipient name or use dynamic value
+        to_name: "Recipient Name", // Replace with actual recipient name or use dynamic value
         from_name: formData.fullName, // Use full name from form data
         email_Id: formData.email, // Use email from form data
         message: `Phone: ${formData.phone}\nOrganization: ${formData.organization}\nInvestment: ${formData.investment}`, // Compose message using other form fields
       };
 
       // Send email with form data using EmailJS
-      emailjs.send('service_2q8uhxr', 'template_e5tqujz', templateParams, 'PJg6fdy1esCaTjljZ')
+      emailjs
+        .send(
+          "service_2q8uhxr",
+          "template_e5tqujz",
+          templateParams,
+          "PJg6fdy1esCaTjljZ"
+        )
         .then((response) => {
-          console.log('Email sent successfully:', response.status, response.text);
+          console.log(
+            "Email sent successfully:",
+            response.status,
+            response.text
+          );
           // Log form data
-          console.log('Form Data:', formData);
+          console.log("Form Data:", formData);
           // Optionally, reset the form after submission
           setFormData({
-            fullName: '',
-            email: '',
-            phone: '',
-            organization: '',
-            investment: '100k',
+            fullName: "",
+            email: "",
+            phone: "",
+            organization: "",
+            investment: "100k",
           });
         })
         .catch((error) => {
-          console.error('Failed to send email:', error);
+          console.error("Failed to send email:", error);
         });
     }
   };
 
   // Animation for the form container
   const formAnimation = useSpring({
-    from: { opacity: 0, transform: 'translateY(-50px)' },
-    to: { opacity: 1, transform: 'translateY(0)' },
+    from: { opacity: 0, transform: "translateY(-50px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
   });
 
+  console.log('errors',errors);
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 to-green-400 flex items-center justify-center p-4">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl flex flex-col md:flex-row items-center transform transition-all duration-500 hover:shadow-2xl">
@@ -81,7 +114,9 @@ const LeadForm = () => {
             INVEST WITH EPIIDOSIS INVESTMENTS LLC
           </h1>
           <p className="text-center text-gray-600 mb-8">
-            Expect substantial returns on your initial investment. Our team of seasoned professionals analyzes opportunities, manages risks, and maximizes returns for our clients. Invest with confidence.
+            Expect substantial returns on your initial investment. Our team of
+            seasoned professionals analyzes opportunities, manages risks, and
+            maximizes returns for our clients. Invest with confidence.
           </p>
         </div>
         <animated.div
@@ -96,10 +131,14 @@ const LeadForm = () => {
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
-                className={`w-full p-3 border ${errors.fullName ? 'border-red-500' : 'border-gray-300'} rounded`}
+                className={`w-full p-3 border ${
+                  errors.fullName ? "border-red-500" : "border-gray-300"
+                } rounded`}
                 required
               />
-              {errors.fullName && <p className="text-red-500 text-sm">{errors.fullName}</p>}
+              {errors.fullName && (
+                <p className="text-red-500 text-sm">{errors.fullName}</p>
+              )}
             </div>
             <div>
               <label className="block text-gray-700">Email:</label>
@@ -111,6 +150,9 @@ const LeadForm = () => {
                 className="w-full p-3 border border-gray-300 rounded"
                 required
               />
+              {errors.email && (
+                <p className="text-red-500 text-sm">{errors.email}</p>
+              )}
             </div>
             <div>
               <label className="block text-gray-700">Phone:</label>
@@ -119,11 +161,15 @@ const LeadForm = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className={`w-full p-3 border ${errors.phone ? 'border-red-500' : 'border-gray-300'} rounded`}
+                className={`w-full p-3 border ${
+                  errors.phone ? "border-red-500" : "border-gray-300"
+                } rounded`}
                 placeholder="+"
                 required
               />
-              {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
+              {errors.phone && (
+                <p className="text-red-500 text-sm">{errors.phone}</p>
+              )}
             </div>
             <div>
               <label className="block text-gray-700">Organization:</label>
@@ -135,9 +181,14 @@ const LeadForm = () => {
                 className="w-full p-3 border border-gray-300 rounded"
                 required
               />
+              {errors.organization && (
+                <p className="text-red-500 text-sm">{errors.organization}</p>
+              )}
             </div>
             <div>
-              <label className="block text-gray-700">Initial Desired Investment (AED):</label>
+              <label className="block text-gray-700">
+                Initial Desired Investment (AED):
+              </label>
               <select
                 name="investment"
                 value={formData.investment}

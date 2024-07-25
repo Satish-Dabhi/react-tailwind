@@ -1,29 +1,45 @@
 /* eslint-disable react/prop-types */
 
 import { Typography } from "@material-tailwind/react";
+import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import companyLogo from "/logos/logo-white.png";
-import { FaLinkedin } from "react-icons/fa";
 
 const LINKS = [
   {
     title: "Quick Links",
     items: [
-      { text: "Home", showArrow: false },
-      { text: "About Us", showArrow: false },
-      { text: "Contact Us", showArrow: false },
-      { text: "Structured Finance", showArrow: false },
-      { text: "Asset Monetization", showArrow: false },
-      { text: "Loans Secured by Listed Stocks", showArrow: false },
+      { text: "Home", showArrow: false, url: "/" },
+      { text: "About Us", showArrow: false, url: "/about-us" },
+      { text: "Contact Us", showArrow: false, url: "/contact-us" },
+      {
+        text: "Structured Finance",
+        showArrow: false,
+        url: "/structured-finance",
+      },
+      {
+        text: "Asset Monetization",
+        showArrow: false,
+        url: "/asset-monetization",
+      },
+      {
+        text: "Loans Secured by Listed Stocks",
+        showArrow: false,
+        url: "/loan-against-listed-stocks",
+      },
     ],
   },
   {
     title: "Useful Links",
     items: [
-      { text: "Invest With Us", showArrow: false },
-      { text: "Blogs", showArrow: false },
-      { text: "Privacy Policy", showArrow: false },
-      { text: "Terms Of Services", showArrow: false },
+      { text: "Invest With Us", showArrow: false, url: "/invest-with-us" },
+      { text: "Blogs", showArrow: false, url: "/blogs" },
+      { text: "Privacy Policy", showArrow: false, url: "/privacy-policy" },
+      {
+        text: "Terms Of Services",
+        showArrow: false,
+        url: "/terms-of-services",
+      },
     ],
   },
 ];
@@ -66,7 +82,9 @@ export function Footer() {
                 />
               </svg>
 
-              <Typography className="text-base font-poppins">+971 (04) 884-8644</Typography>
+              <Typography className="text-base font-poppins font-normal">
+                +971 (04) 884-8644
+              </Typography>
             </div>
             <div className="flex items-center gap-2 mt-3 text-white mt-5">
               <svg
@@ -90,7 +108,7 @@ export function Footer() {
                 />
               </svg>
 
-              <Typography className="text-base font-poppins">
+              <Typography className="text-base font-poppins font-normal">
                 info@epiidosisinvestments.com
               </Typography>
             </div>
@@ -106,11 +124,11 @@ export function Footer() {
                   {title}
                 </Typography>
                 <ul className="space-y-1">
-                  {items.map(({ text, showArrow }) => (
+                  {items.map(({ text, showArrow, url }) => (
                     <li key={text}>
                       <Typography
                         as={Link}
-                        to={`/${text.split(" ").join("").toLowerCase()}`}
+                        to={url}
                         color="gray"
                         className="flex items-center text-white gap-1 font-extralight transition-colors font-poppins text-base font-light"
                       >
@@ -166,7 +184,7 @@ export function Footer() {
                     fill="white"
                   />
                 </svg>
-              {/* </p> */}
+                {/* </p> */}
               </Typography>
 
               {/* Links */}

@@ -23,15 +23,15 @@ import { Link } from "react-router-dom";
 const navListMenuItems = [
   {
     title: "Structured Finance",
-    link: "/structuredfinance",
+    link: "/structured-finance",
   },
   {
     title: "Asset Monetization",
-    link: "/assetmonetization",
+    link: "/asset-monetization",
   },
   {
     title: "Loan Against Listed Stocks",
-    link: "/loanssecuredbylistedstocks",
+    link: "/loan-against-listed-stocks",
   },
 ];
 
@@ -42,15 +42,15 @@ const otherPagesMenuItems = [
   },
   {
     title: "Contact Us",
-    link: "/contactus",
+    link: "/contact-us",
   },
   {
     title: "Privacy Policy",
-    link: "/privacypolicy",
+    link: "/privacy-policy",
   },
   {
     title: "Terms Of Services",
-    link: "/termsofservices",
+    link: "/terms-of-services",
   },
 ];
 
@@ -200,7 +200,7 @@ function NavList() {
           </ListItem>
         </Typography>
       </Link>
-      <Link to={"/aboutus"}>
+      <Link to={"/about-us"}>
         <Typography
           variant="small"
           color="blue-gray"
@@ -211,7 +211,7 @@ function NavList() {
           </ListItem>
         </Typography>
       </Link>
-      <Link to={"/investwithus"}>
+      <Link to={"/invest-with-us"}>
         <Typography
           variant="small"
           color="blue-gray"

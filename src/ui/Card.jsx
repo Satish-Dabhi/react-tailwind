@@ -2,7 +2,6 @@ import { CardBody, CardHeader } from "@material-tailwind/react";
 import PropTypes from "prop-types";
 
 function Card({ imageSrc, altText, title, iconWidth }) {
-  console.log("title");
   // Example content for each card
   const cardContent = {
     Guidance: {

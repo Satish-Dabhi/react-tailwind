@@ -8,7 +8,7 @@ import OurClientService from "../components/home/OurClientService";
 import OurServiceSection from "../components/home/OurServiceSection";
 import ServiceComponent from "../components/home/ServiceComponent";
 import homeBanner from "/banner/home-banner.png";
-import SampleImage from "/img/home/hero-2 1.jpg";
+import SampleImage from "/img/map.png";
 import image1 from "/img/home/image1.png";
 import image2 from "/img/home/image2.png";
 import image3 from "/img/home/image3.png";
@@ -34,7 +34,7 @@ const Home = () => {
         contentSectionWidth={"60%"}
         buttonText={"Invest With Us"}
         borderLeft={true}
-        buttonLink={"/investwithus"}
+        buttonLink={"/invest-with-us"}
       />
       <OurServiceSection />
       <SectionTitle title={"Our Funding Solutions"} />

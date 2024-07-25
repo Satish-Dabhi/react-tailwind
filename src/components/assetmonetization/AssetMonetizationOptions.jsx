@@ -35,7 +35,7 @@ const AssetMonetizationOptions = ({ monetizationOptions, onButtonClick }) => {
           </div>
         ))}
       </div>
-      <Link to={"/contactus"}>
+      <Link to={"/contact-us"}>
         <Button
           className="px-10 font-inria font-normal flex items-center mt-8 lg:mt-6 animate-slidein [--slidein-delay:700ms] opacity-0"
           style={{

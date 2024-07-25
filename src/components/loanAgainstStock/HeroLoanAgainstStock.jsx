@@ -12,11 +12,11 @@ const breadcrumbs = [
   },
   {
     title: "Our Services",
-    link: "/aboutus",
+    link: "/about-us",
   },
   {
     title: "Fundraising",
-    link: "/aboutus",
+    link: "/about-us",
   },
 ];
 

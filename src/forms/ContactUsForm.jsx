@@ -1,7 +1,7 @@
+import { Button } from "@material-tailwind/react";
 import { useState } from "react";
 import { InputField } from "./InputField";
 import { TextAreaField } from "./TextAreaField";
-import { Button } from "@material-tailwind/react";
 
 const ContactUsForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +10,7 @@ const ContactUsForm = () => {
     number: "",
     description: "",
   });
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,21 +20,56 @@ const ContactUsForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic (e.g., send data to server)
-    console.log(formData);
-    // You can add further logic here, like sending data to a server via API
-    // Reset form fields if needed:
-    // setFormData({
-    //   name: "",
-    //   email: "",
-    //   number: "",
-    //   description: "",
-    // });
+  const validate = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email is invalid";
+    }
+    if (!formData.number.trim()) {
+      newErrors.number = "Number is required";
+    } else if (!/^\d+$/.test(formData.number)) {
+      newErrors.number = "Number is invalid";
+    }
+    if (!formData.description.trim())
+      newErrors.description = "Description is required";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
-  // Reusable input field component
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validate()) return;
+
+    try {
+      const response = await fetch(
+        "https://erp.epiidosisinvestments.com/lead/create",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      const apiResult = await response.json();
+      if (apiResult?.result?.status == 200) {
+        alert(apiResult?.result?.message);
+        setFormData({
+          name: "",
+          email: "",
+          number: "",
+          description: "",
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
 
   return (
     <div className="max-w-md mx-auto my-8">
@@ -47,6 +83,7 @@ const ContactUsForm = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="Enter your name"
+            error={errors.name}
           />
           <InputField
             label="Email"
@@ -56,6 +93,7 @@ const ContactUsForm = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="Enter your email"
+            error={errors.email}
           />
           <InputField
             label="Number"
@@ -65,6 +103,7 @@ const ContactUsForm = () => {
             value={formData.number}
             onChange={handleChange}
             placeholder="Enter your number"
+            error={errors.number}
           />
           <TextAreaField
             label="Description"
@@ -73,6 +112,7 @@ const ContactUsForm = () => {
             value={formData.description}
             onChange={handleChange}
             placeholder="Enter your description"
+            error={errors.description}
           />
           <div className="flex justify-end">
             <Button

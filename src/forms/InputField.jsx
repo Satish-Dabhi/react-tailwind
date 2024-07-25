@@ -8,6 +8,7 @@ export const InputField = ({
     value,
     onChange,
     placeholder,
+    error,
   }) => (
     <div className="relative">
       <label
@@ -23,13 +24,17 @@ export const InputField = ({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="w-full p-3 rounded"
+        // className="w-full p-3 rounded"
+        className={`w-full p-3 rounded ${
+          error ? "border-red-500" : ""
+        }`}
         style={{
           border: '2px solid',
           borderImage: 'linear-gradient(to right, #1FA0EB 0%, #125B85 100%)',
           borderImageSlice: '1',
         }}
       />
+          {error && <span className="text-red-500">{error}</span>}
     </div>
   );
   
