@@ -38,7 +38,7 @@ function VisionSection() {
         <div className="flex flex-col items-start p-6">
           <div className="flex items-center mb-3">
             <img src={ellipse} height={35} width={35} className="mr-2" />
-            <p className="text-2xl font-inria font-bold">Our Investment Expert:</p>
+            <p className="text-2xl font-inria font-bold">Our Investment Experties:</p>
           </div>
           <div className="font-inter text-base font-light text-left">
             Within a few years, we built a reputation as investment experts, with successful
