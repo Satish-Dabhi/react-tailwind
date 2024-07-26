@@ -269,7 +269,7 @@ export function StickyNavbar({ color }) {
                   Login
                 </Button>
               </Link>
-              <Link to={"/SignUp"}>
+              <Link to={"/contact-us"}>
                 <Button
                   size="sm"
                   className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal text-lg px-10"
@@ -280,7 +280,7 @@ export function StickyNavbar({ color }) {
                     textTransform: "none",
                   }}
                 >
-                  Sign Up
+                  Contact Us
                 </Button>
               </Link>
             </div>
