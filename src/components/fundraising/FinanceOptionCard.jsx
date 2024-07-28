@@ -29,15 +29,12 @@ const FinanceOptionCard = ({
         {description && (
           <p className="text-gray-600 text-lg mt-4 lg:mt-6">{description}</p>
         )}
-        <ul className="text-gray-600 mb-4 text-center flex justify-center">
-          <div className="text-left">
-            {features.map((feature, index) => (
-              <>
-                <span key={index}>{feature}</span>
-                <br></br>
-              </>
-            ))}
-          </div>
+        <ul className="list-disc text-gray-600 mb-4 pl-5 mt-6">
+          {features.map((feature, index) => (
+            <li key={index} className="mb-1">
+              {feature}
+            </li>
+           ))}
         </ul>
 
         {/* Feature Cards Section */}
