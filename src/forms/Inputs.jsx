@@ -26,7 +26,7 @@ const Inputs = ({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className={`w-full p-3 rounded-lg ${className} ${
+          className={`w-full p-3 rounded ${className} ${
             error ? "border-red-500" : "border-[#1FA0EB]"
           }`}
           style={{

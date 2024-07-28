@@ -18,12 +18,12 @@ const ServiceComponentInvest = ({ servicesCard1, servicesCard2 }) => {
           >
             {servicesCard1.title}
           </h2>
-          <ul className="text-gray-600 mt-3 font-inter text-xl leading-normal font-light">
+          <ul className="text-gray-600 mt-3 font-inter text-lg leading-normal font-light">
             {servicesCard1.content &&
               servicesCard1.content.length > 0 &&
               servicesCard1.content.map((item, index) => {
                 return (
-                  <li className="flex items-start" key={index}>
+                  <li className="flex items-start mb-2" key={index}>
                     <img
                       src={ellipse}
                       height={35}
@@ -46,12 +46,12 @@ const ServiceComponentInvest = ({ servicesCard1, servicesCard2 }) => {
             >
               {servicesCard2.title}
             </h2>
-            <ul className="text-gray-600 mt-3 font-inter text-xl leading-normal font-light">
+            <ul className="text-gray-600 mt-3 font-inter text-lg leading-normal font-light">
               {servicesCard2.content &&
                 servicesCard2.content.length > 0 &&
                 servicesCard2.content.map((item, index) => {
                   return (
-                    <li className="flex items-start" key={index}>
+                    <li className="flex items-start mb-2" key={index}>
                       <img
                         src={ellipse}
                         height={35}

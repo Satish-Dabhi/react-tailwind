@@ -1,7 +1,8 @@
+import { Button, Typography } from "@material-tailwind/react";
 import PropTypes from "prop-types";
-import { Typography } from "@material-tailwind/react";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const SubNavbar = ({ color }) => {
   const knowledgeColor = color ? "bg-primary text-white" : null;
@@ -37,12 +38,27 @@ const SubNavbar = ({ color }) => {
           </div>
         </Typography>
 
-        <div className="flex gap-4 text-blue-gray-900 justify-end md:justify-start">
-        <Typography
-                as="a"
-                href="https://www.facebook.com/epiidosisinvestments"
-                className="transition-opacity hover:opacity-100"
-              >
+        <div className="flex gap-4 text-blue-gray-900 justify-end md:justify-start items-center">
+          <Link to={"/login"}>
+            <Button
+              size="sm"
+              className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal text-lg"
+              style={{
+                background: "white",
+                color: "#1E8DCD",
+                border: "1px solid #1E8DCD",
+                borderRadius: "0",
+                textTransform: "none",
+              }}
+            >
+              Login
+            </Button>
+          </Link>
+          <Typography
+            as="a"
+            href="https://www.facebook.com/epiidosisinvestments"
+            className="transition-opacity hover:opacity-100"
+          >
             <svg
               className="h-5 w-5"
               fill={socialColorFill}
@@ -78,7 +94,7 @@ const SubNavbar = ({ color }) => {
 
           <Typography
             as="a"
-           href="https://www.linkedin.com/company/epiidosis-investments-llc/"
+            href="https://www.linkedin.com/company/epiidosis-investments-llc/"
             className="opacity-80 transition-opacity hover:opacity-100 flex items-center"
           >
             <FaLinkedin className="h-5 w-5" color={socialColorFill} />

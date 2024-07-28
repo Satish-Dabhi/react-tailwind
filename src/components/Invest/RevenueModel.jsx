@@ -9,7 +9,7 @@ function RevenueModel() {
             className="font-bold text-xl hover:text-blue-500"
             style={{ color: "#5F5D5E" }}
           >
-            Revenue Sources
+            AUM: $ 37.5 M
           </h2>
           <img src={ellipse} height={35} width={35} className="mr-2" />
         </div>
@@ -19,7 +19,7 @@ function RevenueModel() {
             className="font-bold text-xl hover:text-blue-500"
             style={{ color: "#5F5D5E" }}
           >
-            Recurring fundraising revenue (3% of funds deployed)
+            Revenue Estimate <br></br>(FY 2025): $ 5.35M{" "}
           </h2>
           <img src={ellipse} height={35} width={35} className="mr-2" />{" "}
         </div>
@@ -35,7 +35,7 @@ function RevenueModel() {
             className="font-bold text-xl hover:text-blue-500"
             style={{ color: "#5F5D5E" }}
           >
-            6% service fee on funds deployed
+            6% From Fundraising
           </h2>
         </div>
 
@@ -45,7 +45,7 @@ function RevenueModel() {
             className="font-bold text-xl hover:text-blue-500"
             style={{ color: "#5F5D5E" }}
           >
-            Year 1 Revenue: $5,125,000
+            2% Recurring <br></br> from Fund Management
           </h2>
         </div>
       </div>

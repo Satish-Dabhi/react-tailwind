@@ -13,6 +13,7 @@ function HeroSection({
   // contentSectionWidth,
   borderLeft,
   buttonLink,
+  otherInfoSection,
 }) {
   // const divWidth = contentSectionWidth || "70%";
 
@@ -26,8 +27,8 @@ function HeroSection({
         style={{ backgroundImage: `url(${bannerImg})` }}
         className="relative w-full h-[550px] bg-cover bg-center bg-no-repeat md:h-[600px]"
       >
-        <div className="absolute inset-0 flex flex-col container mx-auto md:py-[70px] py-[50px] p-3">
-          <div className={`w-full`}>
+        <div className="absolute inset-0 flex flex-col lg:flex-row container mx-auto md:py-[70px] py-[50px] p-3">
+          <div className={`w-full ${otherInfoSection ? "lg:w-[70%]" : "w-full"}`}>
             <div
               className={` pl-5 ${borderLeft ? "border-l-4" : "border-none"}`}
               style={{
@@ -76,6 +77,22 @@ function HeroSection({
               </Button>
             </Link>
           </div>
+          {otherInfoSection && (
+            <div className="items-end hidden lg:block">
+              <p className="font-inter text-end mt-5 md:text-2xl font-extralight md:mt-5 animate-slidein [--slidein-delay:500ms] opacity-0 text-white md:leading-[2.5rem]">
+                Assured ROI Per Annum
+              </p>
+              <p className="text-3xl text-end md:text-5xl font-inter font-bold md:leading-[4.5rem] animate-slidein [--slidein-delay:300ms] opacity-0 text-white">
+                24-30%
+              </p>
+              <p className="font-inter text-end mt-5 md:text-2xl font-extralight md:mt-5 animate-slidein [--slidein-delay:500ms] opacity-0 text-white md:leading-[2.5rem]">
+                Investment Opportunities Starting From
+              </p>
+              <p className="text-3xl text-end md:text-5xl font-inter font-bold md:leading-[4.5rem] animate-slidein [--slidein-delay:300ms] opacity-0 text-white">
+                25,000 USD
+              </p>
+            </div>
+          )}
         </div>
       </div>
       {cards && cards.length > 0 && (
@@ -106,6 +123,7 @@ HeroSection.propTypes = {
   contentSectionWidth: PropTypes.string,
   borderLeft: PropTypes.bool,
   buttonLink: PropTypes.string,
+  otherInfoSection: PropTypes.bool
 };
 
 export default HeroSection;

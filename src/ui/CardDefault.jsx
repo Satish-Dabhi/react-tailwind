@@ -15,7 +15,7 @@ export function CardDefault({ data }) {
                 <p className="mb-2 text-2xl font-medium font-inria">
                   {items?.title}
                 </p>
-                <Typography className="font-inter">{items?.content}</Typography>
+                <Typography className="font-inter text-justify">{items?.content}</Typography>
               </CardBody>
               <CardFooter className="pt-0">
                 <button

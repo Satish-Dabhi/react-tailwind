@@ -1,24 +1,24 @@
-import React from "react";
-import companyLogo from "/logos/companyLogo.png";
 import {
-  Navbar,
-  Collapse,
-  Typography,
+  Bars3Icon,
+  ChevronDownIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
+import {
   Button,
+  Collapse,
   IconButton,
   List,
   ListItem,
   Menu,
   MenuHandler,
-  MenuList,
   MenuItem,
+  MenuList,
+  Navbar,
+  Typography,
 } from "@material-tailwind/react";
-import {
-  ChevronDownIcon,
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import React from "react";
 import { Link } from "react-router-dom";
+import companyLogo from "/logos/companyLogo.png";
 
 const navListMenuItems = [
   {
@@ -240,21 +240,19 @@ export function StickyNavbar({ color }) {
   }, []);
 
   return (
-    <Navbar
-      className={`p-0 mx-auto max-w-full bg-${color} rounded-none `}
-    >
+    <Navbar className={`p-0 mx-auto max-w-full bg-${color} rounded-none `}>
       <div className="container mx-auto">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Link to={"/"}>
-            <img alt="logo" src={companyLogo} className="w-[256px]"/>
+            <img alt="logo" src={companyLogo} className="w-[200px] lg:-ml-[15px]" />
           </Link>
-          <div className="flex">
+          <div className="flex items-center">
             <div className="hidden lg:block mr-8">
               <NavList />
             </div>
 
             <div className="hidden gap-2 lg:flex">
-              <Link to={"/Login"}>
+              {/* <Link to={"/Login"}>
                 <Button
                   size="sm"
                   className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal text-lg px-10"
@@ -268,8 +266,8 @@ export function StickyNavbar({ color }) {
                 >
                   Login
                 </Button>
-              </Link>
-              <Link to={"/SignUp"}>
+              </Link> */}
+              <Link to={"/contact-us"}>
                 <Button
                   size="sm"
                   className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal text-lg px-10"
@@ -280,7 +278,7 @@ export function StickyNavbar({ color }) {
                     textTransform: "none",
                   }}
                 >
-                  Sign Up
+                  Contact Us
                 </Button>
               </Link>
             </div>
@@ -301,7 +299,7 @@ export function StickyNavbar({ color }) {
         <Collapse open={openNav}>
           <NavList />
           <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-            <Link to={"/Login"}>
+            {/* <Link to={"/Login"}>
               <Button
                 size="sm"
                 className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal"
@@ -316,8 +314,8 @@ export function StickyNavbar({ color }) {
               >
                 Login
               </Button>
-            </Link>
-            <Link to={"/SignUp"}>
+            </Link> */}
+            <Link to={"/contact-us"}>
               <Button
                 size="sm"
                 className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal"
@@ -329,7 +327,7 @@ export function StickyNavbar({ color }) {
                   textTransform: "none",
                 }}
               >
-                Sign Up
+                Contact Us
               </Button>
             </Link>
           </div>

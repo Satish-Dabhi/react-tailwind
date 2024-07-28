@@ -92,24 +92,25 @@ const Invest = () => {
           "Our portfolio includes assets from financial services, fintech, commercial enterprises, agriculture, energy, and\nmany other sectors. Our portfolio management ensures that capital is deployed where demand is strong.\nCorporate governance and ethics drive our approach to risk management."
         }
         buttonText={"Invest Now"}
+        otherInfoSection={true}
       />
       <SectionTitle title={"Challenges in Investing"} />
       <ServiceComponentInvest
-        servicesCard1={servicesCard1}
-        servicesCard2={servicesCard2}
+        servicesCard1={servicesCard2}
+        servicesCard2={servicesCard1}
       />
       <SectionTitle title={"Our Investing Solutions"} />
       <ServiceComponentInvest
         servicesCard1={servicesCard3}
         servicesCard2={servicesCard4}
       />
-      <ValueHow title={"How We Invest?"} valueData={valueData} />
       <SectionTitle title={"Monetary Benefits to Clients and Partners"} />
       <Options />
+      <ValueHow title={"How We Invest?"} valueData={valueData} />
       <InvestorExitStrategy />
       <RevenueModelSection
-        heading="Revenue Model"
-        description="Make the right investment with Epiidosis Investments today and achieve significant returns with sustainable growth."
+        heading="our revenue model"
+        description="At Epiidosis Investments, our revenue model is designed to maximize returns while fostering long-term growth. We leverage diverse investment opportunities across sectors to create value for our investments."
       />
       <RevenueModel />
       <SalesTeamForm />
