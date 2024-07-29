@@ -95,7 +95,7 @@ const InvestmentCard = ({
         </div>
       </div>
       <div className="text-center md:text-left">
-        <ButtonPrimaryUi text="Invest Now">Invest Now</ButtonPrimaryUi>
+        <ButtonPrimaryUi text="Invest Now" to="/invest-with-us">Invest Now</ButtonPrimaryUi>
       </div>
     </div>
   );
