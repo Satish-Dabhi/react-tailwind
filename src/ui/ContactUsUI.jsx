@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { MdLocationOn, MdMail, MdPhone } from "react-icons/md";
 import ContactUsForm from "../forms/ContactUsForm";
 
 const OfficeDetails = ({ office }) => {
@@ -26,23 +25,55 @@ const OfficeDetails = ({ office }) => {
 
   return (
     <div className=" mt-5">
-      <p className="text-3xl font-bold mb-4 font-inria">
-        Connect with Us
-      </p>
+      <p className="text-3xl font-bold mb-4 font-inria">Connect with Us</p>
       <ul className="mb-4 w-[80%]">
         <li className="flex items-center mb-4">
-          <MdMail className="h-5 w-5 mr-4 text-3xl text-blue-500" />
-          <span className="text-[#5F5D5E]"> {email}</span>
+          <svg
+            className="w-6 flex-shrink-0"
+            viewBox="0 0 41 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.1 33.9766C2.9725 33.9766 2.00763 33.573 1.2054 32.7659C0.403167 31.9587 0.00136667 30.9873 0 29.8516V5.10156C0 3.96719 0.4018 2.99644 1.2054 2.18931C2.009 1.38219 2.97387 0.977937 4.1 0.976562H36.9C38.0275 0.976562 38.993 1.38081 39.7966 2.18931C40.6002 2.99781 41.0014 3.96856 41 5.10156V29.8516C41 30.9859 40.5989 31.9574 39.7966 32.7659C38.9944 33.5744 38.0289 33.9779 36.9 33.9766H4.1ZM20.5 19.5391L36.9 9.22656V5.10156L20.5 15.4141L4.1 5.10156V9.22656L20.5 19.5391Z"
+              fill="#339FDE"
+            />
+          </svg>
+
+          <span className="text-[#5F5D5E] ml-3"> {email}</span>
         </li>
         <li className="flex items-center mb-4">
-          <MdPhone className="h-5 w-5 mr-4 text-3xl text-blue-500" />
-          <span className="text-[#5F5D5E]"> {phone}</span>
+          <svg
+            className="w-6 flex-shrink-0"
+            viewBox="0 0 38 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.64222 17.4221C10.6822 23.3966 15.58 28.2732 21.5544 31.3343L26.1989 26.6899C26.7689 26.1199 27.6133 25.9299 28.3522 26.1832C30.7167 26.9643 33.2711 27.3866 35.8889 27.3866C37.05 27.3866 38 28.3366 38 29.4977V36.8655C38 38.0266 37.05 38.9766 35.8889 38.9766C16.0656 38.9766 0 22.911 0 3.08767C0 1.92656 0.95 0.976562 2.11111 0.976562H9.5C10.6611 0.976562 11.6111 1.92656 11.6111 3.08767C11.6111 5.72656 12.0333 8.2599 12.8144 10.6243C13.0467 11.3632 12.8778 12.1866 12.2867 12.7777L7.64222 17.4221Z"
+              fill="#339FDE"
+            />
+          </svg>
+
+          <span className="text-[#5F5D5E] ml-3"> {phone}</span>
         </li>
         <li className="flex items-center mb-4">
-          <MdLocationOn className="h-5 w-5 mr-4 text-3xl text-blue-500" />
-          <span className="text-[#5F5D5E]"> {address}</span>
+          <svg
+            className="w-6 flex-shrink-0"
+            viewBox="0 0 37 54"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.5 26.1516C16.7477 26.1516 15.0671 25.4536 13.828 24.2111C12.589 22.9687 11.8929 21.2836 11.8929 19.5266C11.8929 17.7695 12.589 16.0844 13.828 14.842C15.0671 13.5996 16.7477 12.9016 18.5 12.9016C20.2523 12.9016 21.9329 13.5996 23.172 14.842C24.411 16.0844 25.1071 17.7695 25.1071 19.5266C25.1071 20.3966 24.9362 21.2581 24.6042 22.0618C24.2722 22.8656 23.7855 23.596 23.172 24.2111C22.5584 24.8263 21.8301 25.3143 21.0284 25.6473C20.2268 25.9802 19.3677 26.1516 18.5 26.1516ZM18.5 0.976562C13.5935 0.976562 8.88795 2.93093 5.41852 6.40973C1.9491 9.88853 0 14.6068 0 19.5266C0 33.4391 18.5 53.9766 18.5 53.9766C18.5 53.9766 37 33.4391 37 19.5266C37 14.6068 35.0509 9.88853 31.5815 6.40973C28.1121 2.93093 23.4065 0.976563 18.5 0.976562Z"
+              fill="#339FDE"
+            />
+          </svg>
+
+          <span className="text-[#5F5D5E] ml-3"> {address}</span>
         </li>
       </ul>
+
       <iframe
         title={`${office} Office Map`}
         src={mapSrc}
@@ -79,7 +110,7 @@ const ContactUsUI = () => {
           >
             Dubai Office
           </button>
-          <button 
+          <button
             className={`px-4 py-2 transition-colors duration-300 text-xl ${
               selectedOffice === "india"
                 ? "text-[#39A1DE] font-bold"

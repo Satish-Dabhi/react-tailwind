@@ -51,16 +51,19 @@ const heroBannerCards = [
     imageSrc: bannerImg1,
     altText: "retainPortfolioImg",
     title: "Unlock Value",
+    width: 'w-1/2'
   },
   {
     imageSrc: bannerImg2,
     altText: "flexibleFundImg",
     title: "Rigorous Due Diligence",
+    width: 'w-1/2'
   },
   {
     imageSrc: bannerImg3,
     altText: "efficientAndCompetitiveImg",
     title: "Global Reach & Flexible Solutions",
+    width: 'w-1/2'
   },
 ];
 

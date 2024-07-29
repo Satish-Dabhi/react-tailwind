@@ -30,8 +30,8 @@ const navListMenuItems = [
     link: "/asset-monetization",
   },
   {
-    title: "Loan Against Listed Stocks",
-    link: "/loan-against-listed-stocks",
+    title: "Loan Against Stocks",
+    link: "/loan-against-stocks",
   },
 ];
 

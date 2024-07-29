@@ -115,7 +115,7 @@ const ServiceComponent = () => {
               </p>
               <div className="flex gap-2 pl-5 pr-5 mt-4 md:pl-0 md:pr-0">
                 <ButtonPrimaryUi
-                  to="/loan-against-listed-stocks"
+                  to="/loan-against-stocks"
                   text="Know more"
                 >
                   Know more

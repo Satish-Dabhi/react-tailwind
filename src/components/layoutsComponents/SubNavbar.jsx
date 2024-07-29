@@ -22,7 +22,7 @@ const SubNavbar = ({ color }) => {
               className={`w-6 h-6 text-${socialColorFill}`}
               color={socialColorFill}
             />
-            <span className={`text-${socialColorFill} ml-0`}>
+            <span className={`text-${socialColorFill} ml-2`}>
               info@epiidosisinvestments.com
             </span>
           </div>
@@ -32,7 +32,7 @@ const SubNavbar = ({ color }) => {
               className={`w-6 h-6 text-${socialColorFill} lg:ml-3`}
               color={socialColorFill}
             />
-            <span className={`text-${socialColorFill}`}>
+            <span className={`text-${socialColorFill} ml-2`}>
               +971 (04) 884-8644
             </span>
           </div>
@@ -42,7 +42,7 @@ const SubNavbar = ({ color }) => {
           <Link to={"/login"}>
             <Button
               size="sm"
-              className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal text-lg"
+              className="hover:bg-[#1E8DCD]-600 hover:text-white transition duration-300 font-inria font-normal text-lg px-5 py-0 "
               style={{
                 background: "white",
                 color: "#1E8DCD",
@@ -60,15 +60,15 @@ const SubNavbar = ({ color }) => {
             className="transition-opacity hover:opacity-100"
           >
             <svg
-              className="h-5 w-5"
-              fill={socialColorFill}
-              viewBox="0 0 24 24"
-              aria-hidden="true"
+              width="10"
+              height="19"
+              viewBox="0 0 10 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fillRule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                clipRule="evenodd"
+                d="M2.1621 3.97546V6.49093H0V9.56662H2.1621V18.7076H6.60011V9.56753H9.57917C9.57917 9.56753 9.85829 8.09285 9.99356 6.47995H6.61836V4.37639C6.61836 4.06242 7.10145 3.63951 7.58025 3.63951H10V0.4375H6.71068C2.05153 0.4375 2.1621 3.51593 2.1621 3.97546Z"
+                fill="#339FDE"
               />
             </svg>
           </Typography>

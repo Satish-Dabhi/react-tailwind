@@ -12,10 +12,10 @@ export function CardDefault({ data }) {
                 <img src={items?.img} alt="card-image" />
               </div>
               <CardBody>
-                <p className="mb-2 text-2xl font-medium font-inria">
+                <p className="mb-2 text-xl text-bold font-medium font-inria uppercase lg:h-[6rem]">
                   {items?.title}
                 </p>
-                <Typography className="font-inter text-justify">{items?.content}</Typography>
+                <Typography className="font-inter text-justify lg:h-[11rem]">{items?.content}</Typography>
               </CardBody>
               <CardFooter className="pt-0">
                 <button

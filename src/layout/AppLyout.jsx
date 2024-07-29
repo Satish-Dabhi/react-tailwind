@@ -6,7 +6,7 @@ const AppLayout = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
 
-      <div className="pt-[226px] md:pt-[180px] lg:pt-[140px]">
+      <div className="pt-[206px] md:pt-[160px] lg:pt-[130px]">
         <Outlet />
       </div>
 

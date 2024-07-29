@@ -23,9 +23,9 @@ const LINKS = [
         url: "/asset-monetization",
       },
       {
-        text: "Loans Secured by Listed Stocks",
+        text: "Loan against stocks",
         showArrow: false,
-        url: "/loan-against-listed-stocks",
+        url: "/loan-against-stocks",
       },
     ],
   },

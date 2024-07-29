@@ -109,7 +109,7 @@ const Invest = () => {
       <ValueHow title={"How We Invest?"} valueData={valueData} />
       <InvestorExitStrategy />
       <RevenueModelSection
-        heading="our revenue model"
+        heading="Our Revenue Model"
         description="At Epiidosis Investments, our revenue model is designed to maximize returns while fostering long-term growth. We leverage diverse investment opportunities across sectors to create value for our investments."
       />
       <RevenueModel />

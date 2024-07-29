@@ -79,7 +79,7 @@ function Card({ imageSrc, altText, title, iconWidth }) {
           <img
             src={imageSrc}
             alt={altText}
-            className={`inset-0 object-cover rounded-full ${iconWidth} `}
+            className={`inset-0 object-cover ${iconWidth} `}
           />
         )}
       </CardHeader>

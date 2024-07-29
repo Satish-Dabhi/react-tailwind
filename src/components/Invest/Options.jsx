@@ -111,7 +111,7 @@ const Options = () => {
               </p>
             </div>
           </div>
-          <div className="bg-white p-6 flex flex-col lg:flex-row flex items-center">
+          <div className="bg-white p-6 flex flex-col lg:flex-row">
             <img
               src={img4}
               alt="Revenue Generation"

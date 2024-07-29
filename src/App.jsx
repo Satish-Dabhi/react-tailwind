@@ -39,7 +39,7 @@ const App = () => {
         <Route path="/structured-finance" element={<StructuredFinance />} />
         <Route path="/asset-monetization" element={<AssetMonetization />} />
         <Route
-          path="/loan-against-listed-stocks"
+          path="/loan-against-stocks"
           element={<LoanAgainstListedStocks />}
         />
         <Route path="/contact-us" element={<ContactUsPage />} />

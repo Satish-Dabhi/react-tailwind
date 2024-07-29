@@ -28,7 +28,9 @@ function HeroSection({
         className="relative w-full h-[550px] bg-cover bg-center bg-no-repeat md:h-[600px]"
       >
         <div className="absolute inset-0 flex flex-col lg:flex-row container mx-auto md:py-[70px] py-[50px]">
-          <div className={`w-full ${otherInfoSection ? "lg:w-[70%]" : "w-full"}`}>
+          <div
+            className={`w-full ${otherInfoSection ? "lg:w-[65%]" : "w-full"}`}
+          >
             <div
               className={`${borderLeft ? "border-l-4 pl-5" : "border-none"}`}
               style={{
@@ -58,7 +60,9 @@ function HeroSection({
 
             <Link to={buttonLink}>
               <Button
-                className="ml-6 font-normal flex items-center w-fit mt-5 animate-slidein [--slidein-delay:700ms] opacity-0 hover:border-2 hover:border-white transition-all duration-300"
+                className={`${
+                  borderLeft ? "ml-6" : ""
+                }  font-normal flex items-center w-fit mt-5 animate-slidein [--slidein-delay:700ms] opacity-0 hover:border-2 hover:border-white transition-all duration-300`}
                 style={{
                   backgroundImage:
                     "linear-gradient(278.35deg, #1C5678 14.04%, #339FDE 97.09%)",
@@ -105,6 +109,7 @@ function HeroSection({
                 altText={card.altText}
                 title={card.title}
                 className="text-white font-helvetica"
+                iconWidth={card.width ? card.width : ''}
               />
             ))}
           </div>
@@ -123,7 +128,7 @@ HeroSection.propTypes = {
   contentSectionWidth: PropTypes.string,
   borderLeft: PropTypes.bool,
   buttonLink: PropTypes.string,
-  otherInfoSection: PropTypes.bool
+  otherInfoSection: PropTypes.bool,
 };
 
 export default HeroSection;

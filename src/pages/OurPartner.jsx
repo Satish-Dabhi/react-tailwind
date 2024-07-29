@@ -5,16 +5,16 @@ import Mohit from "../../public/img/aboutus/mohit-rana.png";
 
 const teamMembers = [
   {
-    name: "Narender Chauhan",
-    title: "Administration- India Operations",
-    image: Narendar,
-    desc: "With 15+ years of experience in Business Development and Administration, Narender Kumar Chauhan is based in Epiidosis India and brings extensive experience and strategic insights to our leadership team.",
-  },
-  {
     name: "Mohit Rana",
     title: "Business Development- India & UAE",
     image: Mohit,
     desc: "With 17+ years of sales and business development experience in the finance industry, Mohit Rana drives our business development strategies and spearheads our growth initiatives.",
+  },
+  {
+    name: "Narender Chauhan",
+    title: "Administration- India Operations",
+    image: Narendar,
+    desc: "With 15+ years of experience in Business Development and Administration, Narender Kumar Chauhan is based in Epiidosis India and brings extensive experience and strategic insights to our leadership team.",
   },
   {
     name: "Ujjwal Singh",
@@ -37,15 +37,17 @@ const OurPartner = () => {
 
   return (
     <div className="text-center py-10 bg-gray-50p-3">
-      <div className=" container mx-auto ">
+      <div className="container mx-auto p-6">
         <div className="text-center font-inria my-5">
-          <p className="text-lg font-inria my-2">Our Team</p>
-          <p className="text-3xl font-semibold text-[#5F5D5E]">Executive Management</p>
+          <p className="text-lg font-inria my-2">Our Partner</p>
+          <p className="text-3xl font-semibold text-[#5F5D5E]">
+            Executive Management
+          </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 max-w-[65rem] mx-auto">
           {teamMembers.map((member, index) => (
             <div
-              className={`lg:mb-[15rem] mb-[4rem] bg-transparent transform transition-all duration-300 flex justify-center shadow-2xl ${
+              className={`mb-[15rem] bg-transparent transform transition-all duration-300 flex justify-center shadow-2xl ${
                 activeMember === index ? "scale-105" : "scale-100"
               }`}
               onMouseEnter={() => handleMouseEnter(index)}

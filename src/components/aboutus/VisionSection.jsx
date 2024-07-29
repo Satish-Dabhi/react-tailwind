@@ -4,7 +4,7 @@ import ellipse from "/img/aboutus/ellipse.png";
 function VisionSection() {
   return (
     <div className="container mx-auto">
-    <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto my-3">
+    <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto my-3">
       {/* Left Column */}
       <div className="flex flex-col md:border-r-2 border-[#5F5D5E]">
         {/* Section 1 */}
@@ -13,7 +13,7 @@ function VisionSection() {
             <p className="text-2xl font-inria font-bold">Established</p>
             <img src={ellipse} height={35} width={35} className="mr-2" />
           </div>
-          <div className="font-inter text-base font-light text-right md:text-end">
+          <div className="font-inter text-base font-light text-justify">
             Founded in 2020, Epiidosis Investments LLC set out to provide access to diversified
             high-potential investments in the Middle East and East Africa.
           </div>
@@ -24,7 +24,7 @@ function VisionSection() {
             <p className="text-2xl font-inria font-bold">Strategic Partnerships</p>
             <img src={ellipse} height={35} width={35} className="mr-2" />
           </div>
-          <div className="font-inter text-base font-light text-right md:text-end">
+          <div className="font-inter text-base font-light text-justify">
             Forged strategic alliances with global financial institutions, enabling us to offer
             attractive investment opportunities through our capital markets, private equity, and
             private debt platforms.
@@ -40,7 +40,7 @@ function VisionSection() {
             <img src={ellipse} height={35} width={35} className="mr-2" />
             <p className="text-2xl font-inria font-bold">Our Investment Expertise:</p>
           </div>
-          <div className="font-inter text-base font-light text-left">
+          <div className="font-inter text-base font-light text-justify">
             Within a few years, we built a reputation as investment experts, with successful
             ventures across various sectors including finance, fintech, energy, and healthcare.
           </div>
@@ -51,7 +51,7 @@ function VisionSection() {
             <img src={ellipse} height={35} width={35} className="mr-2" />
             <p className="text-2xl font-inria font-bold">Global Expansion:</p>
           </div>
-          <div className="font-inter text-base font-light text-left">
+          <div className="font-inter text-base font-light text-justify">
             Expanded our portfolio globally, managing credit and equity investments that enhanced
             diversification and liquidity for our investors.
           </div>

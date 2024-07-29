@@ -13,16 +13,19 @@ const heroBannerCards = [
     imageSrc: retainPortfolioImg,
     altText: "retainPortfolioImg",
     title: "Retain Portfolio Ownership",
+    width: 'w-1/2'
   },
   {
     imageSrc: flexibleFundImg,
     altText: "flexibleFundImg",
     title: "Flexible Fund Utilization",
+    width: 'w-1/2'
   },
   {
     imageSrc: efficientAndCompetitiveImg,
     altText: "efficientAndCompetitiveImg",
     title: "Efficient and Competitive",
+    width: 'w-1/2'
   },
 ];
 

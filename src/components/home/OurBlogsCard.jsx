@@ -29,7 +29,7 @@ const ourBlogData = [
 
 const OurBlogsCard = () => {
   return (
-    <div>
+    <div className="bg-[#E8F6FF]">
       <CardDefault data={ourBlogData} />
     </div>
   );

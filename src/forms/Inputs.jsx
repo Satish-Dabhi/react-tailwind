@@ -26,12 +26,12 @@ const Inputs = ({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className={`w-full p-3 rounded ${className} ${
+          className={`w-full p-3 ${className} ${
             error ? "border-red-500" : "border-[#1FA0EB]"
           }`}
           style={{
             border: "2px solid #1FA0EB",
-            borderImageSlice: "1",
+            borderRadius: "0", // Ensure the border is square
           }}
         />
       </div>

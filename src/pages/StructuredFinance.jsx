@@ -13,16 +13,19 @@ const heroBannerCards = [
     imageSrc: comprehensiveFundingImg,
     altText: "comprehensiveFundingImg",
     title: "Comprehensive Funding Process",
+    width: 'w-1/2'
   },
   {
     imageSrc: rigorousVerificationImg,
     altText: "rigorousVerificationImg",
     title: "Rigorous Verification Process",
+    width: 'w-1/2'
   },
   {
     imageSrc: flexibleInvestmentImg,
     altText: "flexibleInvestmentImg",
     title: "Flexible Investment Range",
+    width: 'w-1/2'
   },
 ];
 

@@ -96,13 +96,13 @@ const ContactUsForm = () => {
             error={errors.email}
           />
           <InputField
-            label="Number"
+            label="Phone"
             id="number"
             name="number"
             type="text"
             value={formData.number}
             onChange={handleChange}
-            placeholder="Enter your number"
+            placeholder="Enter phone number with code"
             error={errors.number}
           />
           <TextAreaField
@@ -114,7 +114,7 @@ const ContactUsForm = () => {
             placeholder="Enter your description"
             error={errors.description}
           />
-          <div className="flex justify-end">
+          <div className="flex justify-center">
             <Button
               className="font-normal flex items-center w-fit mt-3 animate-slidein [--slidein-delay:700ms] opacity-0 border-2 border-transparent hover:border-white"
               style={{
