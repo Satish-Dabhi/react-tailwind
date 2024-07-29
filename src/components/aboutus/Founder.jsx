@@ -1,5 +1,5 @@
 // AboutUs.jsx
-import ProcessFlowImage from "../../../public/img/aboutus/Shashwath Tomar 1.png";
+import ProcessFlowImage from "../../../public/img/aboutus/Shashwath Sir.png";
 import FounderCard from "./FounderCard";
 
 // Sample data
