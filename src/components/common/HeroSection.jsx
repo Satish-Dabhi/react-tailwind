@@ -27,10 +27,10 @@ function HeroSection({
         style={{ backgroundImage: `url(${bannerImg})` }}
         className="relative w-full h-[550px] bg-cover bg-center bg-no-repeat md:h-[600px]"
       >
-        <div className="absolute inset-0 flex flex-col lg:flex-row container mx-auto md:py-[70px] py-[50px] p-3">
+        <div className="absolute inset-0 flex flex-col lg:flex-row container mx-auto md:py-[70px] py-[50px]">
           <div className={`w-full ${otherInfoSection ? "lg:w-[70%]" : "w-full"}`}>
             <div
-              className={` pl-5 ${borderLeft ? "border-l-4" : "border-none"}`}
+              className={`${borderLeft ? "border-l-4 pl-5" : "border-none"}`}
               style={{
                 borderImage: "linear-gradient(to bottom, #339FDE, #1C5678) 1",
                 MozBorderImage:

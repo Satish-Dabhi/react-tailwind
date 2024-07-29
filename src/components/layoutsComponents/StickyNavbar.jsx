@@ -17,7 +17,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import companyLogo from "/logos/companyLogo.png";
 
 const navListMenuItems = [
@@ -40,10 +40,10 @@ const otherPagesMenuItems = [
     title: "Blogs",
     link: "/blogs",
   },
-  {
-    title: "Contact Us",
-    link: "/contact-us",
-  },
+  // {
+  //   title: "Contact Us",
+  //   link: "/contact-us",
+  // },
   {
     title: "Privacy Policy",
     link: "/privacy-policy",
@@ -62,8 +62,14 @@ function NavListMenu() {
   };
 
   const renderItems = navListMenuItems.map(({ title, link }, key) => (
-    <Link to={link} key={key}>
-      <MenuItem className="flex items-center gap-3 rounded-lg hover:text-blue-600 cursor-pointer">
+    <NavLink
+      to={link}
+      key={key}
+      className={({ isActive }) =>
+        `flex items-center gap-3 rounded-lg cursor-pointer ${isActive ? 'text-blue-600' : 'text-gray-900'}`
+      }
+    >
+      <MenuItem>
         <div>
           <Typography
             variant="h6"
@@ -74,16 +80,15 @@ function NavListMenu() {
           </Typography>
         </div>
       </MenuItem>
-    </Link>
+    </NavLink>
   ));
 
   return (
-    <React.Fragment>
-      <Menu
+    <Menu
         open={isFundraisingOpen}
         handler={setIsFundraisingOpen}
         offset={{ mainAxis: 20 }}
-        placement="bottom-start" // Adjust placement here
+        placement="bottom-start"
         allowHover={true}
       >
         <MenuHandler>
@@ -116,9 +121,9 @@ function NavListMenu() {
           </ul>
         </MenuList>
       </Menu>
-    </React.Fragment>
   );
 }
+
 
 function OtherPagesMenu() {
   const [isResourcesOpen, setIsResourcesOpen] = React.useState(false);
@@ -128,8 +133,14 @@ function OtherPagesMenu() {
   };
 
   const renderItems = otherPagesMenuItems.map(({ title, link }, key) => (
-    <Link to={link} key={key}>
-      <MenuItem className="flex items-center gap-3 rounded-lg hover:text-blue-600 cursor-pointer">
+    <NavLink
+      to={link}
+      key={key}
+      className={({ isActive }) =>
+        `flex items-center gap-3 rounded-lg cursor-pointer ${isActive ? 'text-blue-600' : 'text-gray-900'}`
+      }
+    >
+      <MenuItem>
         <div>
           <Typography
             variant="h6"
@@ -140,16 +151,15 @@ function OtherPagesMenu() {
           </Typography>
         </div>
       </MenuItem>
-    </Link>
+    </NavLink>
   ));
 
   return (
-    <React.Fragment>
-      <Menu
+    <Menu
         open={isResourcesOpen}
         handler={setIsResourcesOpen}
         offset={{ mainAxis: 20 }}
-        placement="bottom-start" // Adjust placement here
+        placement="bottom-start"
         allowHover={true}
       >
         <MenuHandler>
@@ -182,51 +192,63 @@ function OtherPagesMenu() {
           </ul>
         </MenuList>
       </Menu>
-    </React.Fragment>
   );
 }
+
 
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Link to={"/"}>
-        <Typography
+      <NavLink
+        to={"/"}
+        className={({ isActive }) =>
+          `font-inria flex items-center gap-2 py-2 pr-4 cursor-pointer text-xl ${isActive ? 'text-blue-600' : 'text-gray-900'}`
+        }
+      >
+        {/* <Typography
           variant="small"
           color="blue-gray"
-          className="font-inria font-bold"
-        >
-          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer text-xl">
-            Home
-          </ListItem>
-        </Typography>
-      </Link>
-      <Link to={"/about-us"}>
-        <Typography
+          className={({ isActive }) =>
+            `font-inria font-bold ${isActive ? 'text-blue-600' : 'text-gray-900'}`
+          }
+        > */}
+          Home
+        {/* </Typography> */}
+      </NavLink>
+      <NavLink
+        to={"/about-us"}
+        className={({ isActive }) =>
+          `font-inria flex items-center gap-2 py-2 pr-4 cursor-pointer text-xl ${isActive ? 'text-blue-600' : 'text-gray-900'}`
+        }
+      >
+        {/* <Typography
           variant="small"
           color="blue-gray"
           className="font-medium font-inria"
-        >
-          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer text-xl">
-            About
-          </ListItem>
-        </Typography>
-      </Link>
-      <Link to={"/invest-with-us"}>
-        <Typography
+        > */}
+          About
+        {/* </Typography> */}
+      </NavLink>
+      <NavLink
+        to={"/invest-with-us"}
+        className={({ isActive }) =>
+          `font-inria flex items-center gap-2 py-2 pr-4 cursor-pointer text-xl ${isActive ? 'text-blue-600' : 'text-gray-900'}`
+        }
+      >
+        {/* <Typography
           variant="small"
           color="blue-gray"
           className="font-medium font-inria"
-        >
-          <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-blue-600 cursor-pointer text-xl">
-            Invest with Us
-          </ListItem>
-        </Typography>
-      </Link>
+        > */}
+          Invest with Us
+        {/* </Typography> */}
+      </NavLink>
       <NavListMenu />
       <OtherPagesMenu />
     </List>
   );
 }
+
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
 export function StickyNavbar({ color }) {

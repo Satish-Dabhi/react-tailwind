@@ -89,7 +89,7 @@ const Invest = () => {
           "Why Choose Epiidosis Investments\nas your Investing Partner?"
         }
         bannerDesc={
-          "Our portfolio includes assets from financial services, fintech, commercial enterprises, agriculture, energy, and\nmany other sectors. Our portfolio management ensures that capital is deployed where demand is strong.\nCorporate governance and ethics drive our approach to risk management."
+          "Our portfolio includes assets from financial services, fintech, commercial enterprises, agriculture, energy, and many other sectors. Our portfolio management ensures that capital is deployed where demand is strong. Corporate governance and ethics drive our approach to risk management."
         }
         buttonText={"Invest Now"}
         otherInfoSection={true}

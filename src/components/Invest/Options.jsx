@@ -15,7 +15,7 @@ const Options = () => {
             <img
               src={img5}
               alt="Return on Investment (ROI)"
-              className="option-image w-full object-cover mb-4 w-[120px] h-[150px] mr-5"
+              className="option-imageobject-cover mb-4 w-[120px] h-[150px] mr-5"
             />
             <div className="option-content font-inter flex flex-col">
               <h3 className="text-xl font-bold mb-2 font-inter">
@@ -32,7 +32,7 @@ const Options = () => {
             <img
               src={img1}
               alt="Cost Efficiency"
-              className="option-image w-full object-cover mb-4 w-[120px] h-[150px] mr-5"
+              className="option-imageobject-cover mb-4 w-[120px] h-[150px] mr-5"
             />
             <div className="option-content font-inter flex flex-col">
               <h3 className="text-xl font-bold mb-2 font-inter">
@@ -56,7 +56,7 @@ const Options = () => {
             <img
               src={img6}
               alt="Minimum Required Investment"
-              className="option-image w-full object-cover mb-4 w-[120px] h-[150px] mr-5"
+              className="option-imageobject-cover mb-4 w-[120px] h-[150px] mr-5"
             />
             <div className="option-content font-inter flex flex-col">
               <h3 className="text-xl font-bold mb-2 font-inter">
@@ -74,7 +74,7 @@ const Options = () => {
             <img
               src={img2}
               alt="Risk Management"
-              className="option-image w-full object-cover mb-4 w-[120px] h-[150px] mr-5"
+              className="option-imageobject-cover mb-4 w-[120px] h-[150px] mr-5"
             />
             <div className="option-content font-inter flex flex-col">
               <h3 className="text-xl font-bold mb-2 font-inter">
@@ -98,7 +98,7 @@ const Options = () => {
             <img
               src={img3}
               alt="Lock-In Period"
-              className="option-image w-full object-cover mb-4 w-[120px] h-[150px] mr-5"
+              className="option-imageobject-cover mb-4 w-[120px] h-[150px] mr-5"
             />
             <div className="option-content font-inter flex flex-col">
               <h3 className="text-xl font-bold mb-2 font-inter">
@@ -111,11 +111,11 @@ const Options = () => {
               </p>
             </div>
           </div>
-          <div className="bg-white p-6 flex flex-col lg:flex-row">
+          <div className="bg-white p-6 flex flex-col lg:flex-row flex items-center">
             <img
               src={img4}
               alt="Revenue Generation"
-              className="option-image w-full object-cover mb-4 w-[120px] h-[150px] mr-5"
+              className="option-imageobject-cover mb-4 w-[120px] h-[150px] mr-5"
             />
             <div className="option-content font-inter flex flex-col">
               <h3 className="text-xl font-bold mb-2 font-inter">
