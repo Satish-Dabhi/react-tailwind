@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Narendar from "../../public/img/aboutus/Narender.webp";
-import Ujjwall from "../../public/img/aboutus/Ujjwal.webp";
+import Narendar from "../../public/img/aboutus/Narender.png";
+import Ujjwall from "../../public/img/aboutus/Ujjwal.png";
 import Mohit from "../../public/img/aboutus/mohit-rana.png";
 
 const teamMembers = [
