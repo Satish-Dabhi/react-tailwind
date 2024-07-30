@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom/dist";
+import { Route, Routes, useLocation } from "react-router-dom/dist";
 import "./App.css";
 import AppLayout from "./layout/AppLyout";
 import AboutUs from "./pages/AboutUs";
@@ -26,8 +26,15 @@ import SupportPage from "./pages/SupportPage";
 import SupportRequestPage from "./pages/SupportRequestPage";
 import TechnicalAssistancePage from "./pages/TechnicalAssistancePage";
 import VideoTutorial from "./pages/VideoTutorial";
+import { useLayoutEffect } from "react";
 
 const App = () => {
+  const location = useLocation();
+  // Scroll to top if path changes
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <Routes>
       <Route element={<AppLayout />}>
