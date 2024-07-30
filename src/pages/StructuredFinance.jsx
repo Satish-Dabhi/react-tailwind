@@ -35,9 +35,9 @@ const StructuredFinance = () => {
       <HeroSection
         cards={heroBannerCards}
         bannerImg={herosectionfundraising}
-        bannerTitle={"Empower Your Vision with Epiidosis Investments"}
+        bannerTitle={"Empower Your Vision with\nEpiidosis Investments"}
         bannerDesc={
-          "Join Epiidosis Investments and embark on a transformative journey to bring your projects to life. Our comprehensive funding process streamlines every step, ensuring transparency, efficiency, and support at every turn."
+          "Join Epiidosis Investments and embark on a transformative journey to bring your projects to life.\nOur comprehensive funding process streamlines every step, ensuring transparency, efficiency, and\nsupport at every turn."
         }
         buttonText={"Get Started"}
       />

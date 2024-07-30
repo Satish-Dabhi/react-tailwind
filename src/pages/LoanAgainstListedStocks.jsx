@@ -35,9 +35,9 @@ const LoanAgainstListedStocks = () => {
       <HeroSection
         cards={heroBannerCards}
         bannerImg={herosectionfundraising}
-        bannerTitle={"Unlock Liquidity with Your Listed Stocks"}
+        bannerTitle={"Unlock Liquidity with\nYour Listed Stocks"}
         bannerDesc={
-          "Unlock the potential of your investments with Epiidosis Investments LLC. Secure quick and flexible loans using your listed stocks as collateral. Start now and leverage your assets without selling them."
+          "Unlock the potential of your investments with Epiidosis Investments LLC. Secure quick\nand flexible loans using your listed stocks as collateral. Start now and leverage your assets\nwithout selling them."
         }
         buttonText={"Get Started"}
       />

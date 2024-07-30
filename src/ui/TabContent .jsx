@@ -1,18 +1,27 @@
 import PropTypes from "prop-types";
-import image4 from "/img/home/32422 1.jpg";
+import agricultureImg from "/img/home/Agriculture.jpg";
+import commercialImg from "/img/home/Commercial.jpg";
+import educationImg from "/img/home/Education.jpg";
+import healthcareImg from "/img/home/Healthcare.jpg";
+import industryImg from "/img/home/Industry.jpg";
+import renewableEnergyImg from "/img/home/Renewable-Energy.jpg";
+import tourismHospitalityImg from "/img/home/Tourism-Hospitality.jpg";
 
 const content = {
   "Renewable Energy": {
+    img: renewableEnergyImg,
     title: "Renewable Energy",
     part1: `In 2021, the renewable energy industry remained remarkably resilient. Rapid technology improvements and decreasing costs of renewable energy resources, along with the increased competitiveness of battery storage,`,
     part2: `have made renewables one of the most competitive energy sources in many areas. Epidlosis Investments Dubai is focused and has keen interest in developing and deploying investments in this key sector across the Globe.`,
   },
   "Tourism & Hospitality": {
+    img: tourismHospitalityImg,
     title: "Tourism & Hospitality",
     part1: `In 2023, the global travel and tourism sector has shown significant recovery, nearing its pre-pandemic peak. The sector is projected to contribute $9.5 trillion to the global GDP, just 5% below the 2019 levels.`,
     part2: `Epiidosis Investments Dubai is strategically positioned to capitalize on this growth, focusing on developing and deploying investments in the travel and tourism sector globally.`,
   },
   Commercial: {
+    img: commercialImg,
     title: "Commercial",
     part1:
       "The global commercial retail market is forecasted to grow at a CAGR of over 10% from 2022 to 2027, driven by increased private investments and e-commerce spending​​. Asia-Pacific, including China and Canada, has seen significant growth in office space and logistics.",
@@ -20,6 +29,7 @@ const content = {
       "The global commercial retail market is forecasted to grow at a CAGR of over 10% from 2022 to 2027, driven by increased private investments and e-commerce spending​​. Asia-Pacific, including China and Canada, has seen significant growth in office space and logistics.",
   },
   Agriculture: {
+    img: agricultureImg,
     title: "Agriculture",
     part1:
       "Healthy, sustainable, and inclusive food systems are essential for global development. Agricultural development is a powerful tool to end extreme poverty, boost shared prosperity, and feed an estimated 9.7 billion people by 2050. Agriculture contributes significantly to economic growth.",
@@ -27,6 +37,7 @@ const content = {
       "Healthy, sustainable, and inclusive food systems are essential for global development. Agricultural development is a powerful tool to end extreme poverty, boost shared prosperity, and feed an estimated 9.7 billion people by 2050. Agriculture contributes significantly to economic growth.",
   },
   Industry: {
+    img: industryImg,
     title: "Industry",
     part1:
       "Investments in manufacturing can yield strong returns. For instance, digital transformation and smart manufacturing can significantly boost productivity and reduce operational costs, leading to higher profitability. Companies that invest in automation and advanced manufacturing.​",
@@ -34,6 +45,7 @@ const content = {
       "Epiidosis Investments Dubai is focused on developing and deploying investments in this critical sector worldwide, leveraging growth opportunities and addressing challenges to enhance its portfolio and market presence. By investing in cutting-edge technologies .",
   },
   Education: {
+    img: educationImg,
     title: "Education",
     part1:
       "Integrated next-generation technologies are revolutionizing education, equipping students for lifelong learning while addressing three key goals: fortifying student skills, increasing education’s ROI, and enabling innovation and entrepreneurship.",
@@ -41,6 +53,7 @@ const content = {
       "Epiidosis Investments Dubai is keen on developing and deploying investments in the education sector globally, leveraging these innovative trends to maximize returns and impact​",
   },
   Healthcare: {
+    img: healthcareImg,
     title: "Healthcare",
     part1: `the World Health Organization's latest strategies aim to end epidemics and advance universal health coverage, primary health care, and health security. Key initiatives include the Preparedness and Resilience for Emerging Threats.`,
     part2: `WHO also highlights the importance of sustainable health promotion, aiming for 1 billion more people to enjoy better health and well-being by 2025 through improvements in air quality, water, sanitation and hygine.`,
@@ -48,14 +61,14 @@ const content = {
 };
 
 const TabContent = ({ selectedTab }) => {
-  const { title, part1, part2 } = content[selectedTab];
+  const { img, title, part1, part2 } = content[selectedTab];
 
   return (
     <div className="p-6 flex flex-col lg:flex-row">
       <div className="lg:w-[35%]">
         <div className="h-64 lg:h-auto flex items-center justify-center">
           <img
-            src={image4}
+            src={img}
             alt={title}
             className="object-cover w-full h-full"
           />

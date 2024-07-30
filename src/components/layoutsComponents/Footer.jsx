@@ -23,7 +23,7 @@ const LINKS = [
         url: "/asset-monetization",
       },
       {
-        text: "Loan against stocks",
+        text: "Loan Against Stocks",
         showArrow: false,
         url: "/loan-against-stocks",
       },

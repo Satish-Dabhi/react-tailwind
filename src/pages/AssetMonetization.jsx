@@ -82,7 +82,7 @@ const AssetMonetization = () => {
           "Unlock the Value of Your Assets with Epiidosis Investments"
         }
         bannerDesc={
-          "Epiidosis Investments provides access to a diverse range of investment opportunities across different sectors, both locally and globally. With a focus on high-demand sectors and strong government priorities, investors can explore avenues for substantial growth potential."
+          "Epiidosis Investments provides access to a diverse range of investment opportunities across different sectors,\nboth locally and globally. With a focus on high-demand sectors and strong government priorities, investors can\nexplore avenues for substantial growth potential."
         }
         buttonText={"Get Started"}
       />
