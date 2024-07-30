@@ -67,11 +67,7 @@ const TabContent = ({ selectedTab }) => {
     <div className="p-6 flex flex-col lg:flex-row">
       <div className="lg:w-[35%]">
         <div className="h-64 lg:h-auto flex items-center justify-center">
-          <img
-            src={img}
-            alt={title}
-            className="object-cover w-full h-full"
-          />
+          <img src={img} alt={title} className="object-cover w-full h-full" />
         </div>
       </div>
       <div className="lg:w-[70%] bg-white p-6 rounded-3xl shadow-lg ml-0 lg:ml-[-7rem] relative -top-16 lg:top-0 -left-0 lg:left-16 my-5">
@@ -81,12 +77,22 @@ const TabContent = ({ selectedTab }) => {
         >
           {title}
         </h2>
-        <div
-          className="flex flex-col lg:flex-row font-inter text-sm font-light text-[#5F5D5E] leading-7"
-        >
+        <div className="flex flex-col lg:flex-row font-inter text-sm font-light text-[#5F5D5E] leading-7 mb-3">
           <div className="lg:w-1/2 lg:pl-6 pr-4">{part1}</div>
           <div className="lg:w-1/2 lg:pl-12 mt-4 lg:mt-0">{part2}</div>
         </div>
+        <p
+          className="font-bold lg:text-sm font-inter text-center mb-1"
+          style={{ color: "#5F5D5E" }}
+        >
+          Our Focus - Green Energy Companies
+        </p>
+        <p
+          className="font-bold lg:text-sm font-inter text-center mb-1"
+          style={{ color: "#5F5D5E" }}
+        >
+          Target Region - Asia, Middle East, Europe, Africa
+        </p>
       </div>
     </div>
   );
