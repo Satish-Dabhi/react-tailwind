@@ -9,7 +9,7 @@ const OfficeDetails = ({ office }) => {
       phone: "+971 (04) 884 8644",
       address: "818, Park Lane Tower, Business Bay,415203,Dubai",
       mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.482678850987!2d55.26850901549535!3d25.187607283902174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6ad8b9cde8c3%3A0xc426e0d40297036d!2sEpiidosis%20Investments%20LLC!5e0!3m2!1sen!2sae",
+        "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28884.310132672523!2d55.25359281654428!3d25.185047260295335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s818%2C%20Park%20Lane%20Tower%2C%20Business%20Bay%2C415203%2CDubai!5e0!3m2!1sen!2sin!4v1722323750353!5m2!1sen!2sin",
     },
     india: {
       email: "info@epiidosisinvestments.com",
@@ -17,7 +17,7 @@ const OfficeDetails = ({ office }) => {
       address:
         "1210, 2ND FLOOR, TOWER A, THE CORRENTHUM, SECTOR 62, NOIDA-201301",
       mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.241263965979!2d78.96343261505283!3d20.593684986191605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf72b40587d27%3A0x5d0a210b670b6d53!2sIndia!5e0!3m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3502.0957406105267!2d77.37135947450979!3d28.626892534338584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s1210%2C%202ND%20FLOOR%2C%20TOWER%20A%2C%20THE%20CORRENTHUM%2C%20SECTOR%2062%2C%20NOIDA-201301!5e0!3m2!1sen!2sin!4v1722323893133!5m2!1sen!2sin",
     },
   };
 
